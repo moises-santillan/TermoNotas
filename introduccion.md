@@ -1,0 +1,12 @@
+# Introducción
+
+La mecánica estadística es una de las disciplinas más interesantes y complejas de las ciencias físicas. Su estudio demanda la convergencia de conocimientos en termodinámica, electrodinámica, mecánica clásica y mecánica cuántica. Por esta razón, no existe un conjunto estándar de temas que conformen un curso básico de la materia, así como existen casi tantas formas de introducir sus conceptos fundamentales como libros de texto publicados.
+
+Durante el tiempo que impartí el curso de mecánica estadística en la Licenciatura en Física y Matemáticas, así como en el posgrado en Física de la Escuela Superior de Física y Matemáticas del IPN, me enfrenté a la dificultad de encontrar un solo texto que contuviera todos los temas que, a mi juicio, deben ser incluidos. Esta carencia me llevó a emplear una bibliografía diversa, seleccionando cada libro por la manera particular en que abordaba un tema específico. Si bien este enfoque ofrece a los estudiantes un panorama más amplio y una bibliografía extensa, la mezcla de notaciones y estilos literarios puede dificultar la apreciación de la coherencia y unidad conceptual de la materia.
+
+Las presentes notas nacieron con el objetivo de paliar dichas dificultades. No pretenden conformar un libro de texto que sustituya a los clásicos, sino servir como material complementario y de repaso que ayude al alumno a conjuntar el conocimiento en un cuerpo homogéneo.
+
+Hoy, en mi labor dentro del posgrado en Ingeniería y Física Biomédicas del Cinvestav Monterrey, he decidido rescatar y actualizar estos apuntes con el fin de ayudar a los estudiantes a reforzar sus conocimientos en el área. Pensando en la necesidades de este programa, he incorporado un par de capítulos adicionales dedicados a la termodinámica de reacciones químicas y al transporte iónico a través de membranas. Considero que el dominio de estos temas es fundamental para quienes aplican la termodinámica y la física estadística a sistemas biológicos y procesos de ingeniería biomédica.
+
+El material incluido, así como la forma de introducirlo, dependen esencialmente de mi gusto y de la forma personal en que entiendo la termodinámica y la mecánica estadística. Aunque estos criterios son subjetivos, mantengo la esperanza de que sigan siendo una guía útil para los alumnos que cursan la materia, para aquellos que se preparan para exámenes de admisión o generales, y ahora, para quienes buscan tender un puente entre la física fundamental y las ciencias de la vida.
+
