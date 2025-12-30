@@ -12,7 +12,6 @@ project:
   github: https://github.com/moises-santillan/TermoNotas
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
 format: jb-book
-	root: index
 	chapters:
 		- file: introduccion
 		- file: capitulo1
