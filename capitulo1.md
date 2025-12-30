@@ -301,13 +301,11 @@ dU = \left(\frac{\partial U}{\partial S}\right)_{V, N} d S + \left(\frac{\partia
 $$
 
 Comparando término a término con la relación fundamental de Gibbs, se derivan las ecuaciones de estado del sistema, que vinculan las variables intensivas con las extensivas:
-$$
 \begin{align*}
 T(S, V, N) &= \left(\frac{\partial U}{\partial S}\right)_{V, N},\\
 P(S, V, N) &= -\left(\frac{\partial U}{\partial V}\right)_{S, N},\\
 \mu(S, V, N) &= \left(\frac{\partial U}{\partial N}\right)_{S, V}.
 \end{align*}
-$$
 
 ## Representación de la Entropía
 
@@ -330,13 +328,11 @@ d S = \left(\frac{\partial S}{\partial U}\right)_{V, N} d U + \left(\frac{\parti
 $$
 
 Al comparar este diferencial término a término con la relación de Gibbs para la entropía, derivamos las siguientes ecuaciones de estado:
-$$
 \begin{align*}
 \frac{1}{T(U, V, N)} &= \left(\frac{\partial S}{\partial U}\right)_{V, N},\\
 \frac{P(U, V, N)}{T(U, V, N)} &= \left(\frac{\partial S}{\partial V}\right)_{U, N},\\
 \frac{\mu(U, V, N)}{T(U, V, N)} &= -\left(\frac{\partial S}{\partial N}\right)_{U, V}.
 \end{align*}
-$$
 A esta descripción del sistema se le conoce formalmente como la representación de la entropía.
 
 ## Las Ecuaciones de Estado No Son Independientes
@@ -498,12 +494,11 @@ Consideremos un sistema con volumen $V$ y número de partículas $N$ constantes,
 Por otro lado, aunque la entropía de los subsistemas varía debido al intercambio continuo de calor, todo el calor cedido por la fuente es absorbido por el sistema (y viceversa). En consecuencia, la entropía del sistema compuesto $S+S_{f}$ permanece constante.
 
 Dado que la entropía, el volumen y el número de partículas del sistema compuesto están fijos, su estado de equilibrio puede estudiarse mediante la representación de la energía interna. El equilibrio obedece al principio de mínima energía interna, expresado como
-$$
 \begin{align*}
 d(U+U_{f})&=0, \tag{1.4}\\
 d^{2}(U+U_{f})&>0, \tag{1.5}
 \end{align*}
-$$sujeto a la restricción:
+sujeto a la restricción:
 
 $$
 d(S+S_{f})=0 \tag{1.6}
