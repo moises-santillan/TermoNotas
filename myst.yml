@@ -11,14 +11,7 @@ project:
 			- institution: Cinvestav 
   github: https://github.com/moises-santillan/TermoNotas
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
-format: jb-book
-	chapters:
-		- file: introduccion
-		- file: capitulo1
-		- file: capitulo2
-		- file: capitulo3
-		- file: capitulo4
-		- file: capitulo5
+
 	
 site:
   template: book-theme
