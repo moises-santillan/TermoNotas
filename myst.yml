@@ -2,12 +2,25 @@
 version: 1
 project:
   id: 5ceb4e79-b48c-4dfb-a3a6-9ce6bf2674f7
-  # title:
+  title: Notas de Termodinámica y Física Estadística
   # description:
   # keywords: []
-  # authors: []
+  authors: 
+  	- name: Moisés Santillán 
+  	  affiliations: 
+			- institution: Cinvestav 
   github: https://github.com/moises-santillan/TermoNotas
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+format: jb-book
+	root: index
+	chapters:
+		- file: introduccion
+		- file: capitulo1
+		- file: capitulo2
+		- file: capitulo3
+		- file: capitulo4
+		- file: capitulo5
+	
 site:
   template: book-theme
   # options:
