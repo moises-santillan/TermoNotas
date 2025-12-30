@@ -25,7 +25,7 @@ $$
 En este contexto, definimos el potencial electroquímico ($\tilde{\mu}_i$) como la derivada parcial de la energía libre de Gibbs respecto al número de moles de la especie $i$, manteniendo $T$, $P$ y el resto de especies constantes:
 
 $$
-\tilde{\mu}_i = \left( \frac{\partial G}{\partial N_i} \right)_{T, P, N_{j \neq i}} = $\tilde{\mu}_i = \mu_i^{quim} + z_i F \phi.
+\tilde{\mu}_i = \left( \frac{\partial G}{\partial N_i} \right)_{T, P, N_{j \neq i}} = \tilde{\mu}_i = \mu_i^{quim} + z_i F \phi.
 $$
 
 Sustituyendo la definición del potencial químico para una solución ideal ($\mu_i^{quim} = \mu_i^0 + RT \ln c_i$), llegamos a la siguiente expresión:
