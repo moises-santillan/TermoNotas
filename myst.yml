@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 5ceb4e79-b48c-4dfb-a3a6-9ce6bf2674f7
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/moises-santillan/TermoNotas
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
