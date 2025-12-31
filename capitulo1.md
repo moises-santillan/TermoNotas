@@ -2,7 +2,7 @@
 
 ## Tópicos Fundamentales
 
-### Los objetos de la Termodinámica
+### Los Objetos de la Termodinámica
 
 A continuación, se describen los conceptos y términos fundamentales empleados en la termodinámica. Para favorecer la claridad pedagógica, se prioriza la comprensión conceptual sobre el rigor formal extremo en ciertas definiciones.
 
@@ -13,15 +13,16 @@ A continuación, se describen los conceptos y términos fundamentales empleados 
 * **Sistema Abierto:** Es aquel que permite el intercambio tanto de materia como de energía con sus alrededores.
 
 
-### El concepto de Equilibrio Termodinámico (Ley Cero de la Termodinámica)
+### El Concepto de Equilibrio 4ermodinámico (Ley Cero de la Termodinámica)
 
 * **Equilibrio Termodinámico de un Sistema Aislado:** Independientemente de la complejidad de su estado inicial, si un sistema aislado evoluciona libremente, alcanzará eventualmente un estado final estacionario. Este estado se denomina equilibrio térmico o termodinámico.
 * **Equilibrio Térmico de dos Sistemas:** Al poner en contacto dos sistemas aislados ($A$ y $B$), el sistema compuesto ($A+B$) relajará con el tiempo hacia un estado de equilibrio. En este punto, se dice que $A$ y $B$ están en equilibrio entre sí, encontrándose también cada uno en su propio equilibrio termodinámico. Esta condición de equilibrio es persistente: no se pierde si el contacto se interrumpe y se restaura posteriormente. Por lo tanto, dos sistemas están en equilibrio térmico ($A \sim B$) si sus estados permanecen inalterados al ser puestos en contacto.
-* **Ley Cero de la Termodinámica (Ley de transitividad del equilibrio):** Establece que si el sistema $A$ está en equilibrio con el sistema $B$, y a su vez $B$ está en equilibrio con el sistema $C$, entonces $A$ y $C$ están necesariamente en equilibrio térmico entre sí:
+* **Ley Cero de la Termodinámica (Ley de Transitividad del Equilibrio):** Establece que si el sistema $A$ está en equilibrio con el sistema $B$, y a su vez $B$ está en equilibrio con el sistema $C$, entonces $A$ y $C$ están necesariamente en equilibrio térmico entre sí:
 
 $$
 A \sim B, \quad B \sim C \quad \rightarrow \quad A \sim C.
 $$
+
 * **Estado Termodinámico:** Aunque frecuentemente se utiliza como sinónimo de estado de equilibrio, en un sentido más general, un sistema compuesto se encuentra en un estado termodinámico si sus partes constituyentes poseen equilibrio térmico local, incluso si el sistema total aún no ha alcanzado el equilibrio global.
 
 
@@ -96,11 +97,11 @@ Cualquier proceso que resulte en una disminución neta de la entropía del unive
 
 Este postulado establece que la entropía de un sistema en equilibrio térmico se aproxima a una constante universal cuando la temperatura absoluta tiende a cero. Dicha constante puede tomarse, por convención, como nula. Se suele presentar en dos niveles de generalidad:
 
-* **Forma débil (Teorema de Nernst):** $$
-\lim_{T \rightarrow 0} \left( \frac{\partial S}{\partial X_{i}} \right)_{X_{j}, T} = 0
+* **Forma Débil (Teorema de Nernst):** $$
+\lim_{T \rightarrow 0} \left( \frac{\partial S}{\partial X_{i}} \right)_{X_{j}, T} = 0.
 $$
-* **Forma fuerte (Postulado de Planck):** $$
-\lim_{T \rightarrow 0} S = 0
+* **Forma Fuerte (Postulado de Planck):** $$
+\lim_{T \rightarrow 0} S = 0.
 $$
 
 
@@ -126,13 +127,13 @@ $$
 
 Este dispositivo proporciona lecturas independientes de la sustancia de trabajo en el límite de densidades muy bajas pues la presión de un gas diluido varía linealmente con la temperatura; esta escala será validada posteriormente mediante la Segunda Ley.
 
-## Consideraciones Sobre la Primera Ley
+## Consideraciones sobre la Primera Ley
 
-### Energía Interna ($U$)
+### Energía interna ($U$)
 
 Representa la energía total del sistema, excluyendo efectos cinéticos o potenciales macroscópicos. La Primera Ley enfatiza que $U$ es una función de estado. Microscópicamente, equivale a la suma de energías cinéticas e interacciones moleculares, aunque la termodinámica clásica se limita a su comportamiento macroscópico.
 
-### El calor y el trabajo como funciones de trayectoria
+### El calor y el Trabajo como Funciones de Trayectoria
 
 A diferencia de $U$, el trabajo mecánico ($W$), el trabajo químico ($Z$) y el calor ($Q$) dependen del tipo de proceso realizado. No son cantidades de estado. No obstante, la Primera Ley establece que la suma $W + Q + Z$ es igual a la variación de la energía interna ($\Delta U$), la cual sí es independiente de la trayectoria.
 
@@ -151,13 +152,13 @@ La Segunda Ley de la Termodinámica puede enunciarse a través de dos proposicio
 
 La equivalencia entre ambos se demuestra comprobando que la negación de uno invalida necesariamente al otro.
 
-**I. Si Clausius es falso $\implies$ Kelvin es falso:** Supongamos un refrigerador capaz de extraer calor $Q_2$ de un foco frío y entregarlo a uno caliente con un trabajo $W = 0$. Si una máquina térmica convencional extrae $Q_1$ del foco caliente, produce un trabajo $W$ y libera $Q_2$ al foco frío, el refrigerador "devolvería" dicho $Q_2$ al foco caliente. El efecto neto sería la extracción de calor $(Q_1 - Q_2)$ de una sola fuente para producir trabajo, violando así el postulado de Kelvin.
+**I. Si Clausius es Falso $\implies$ Kelvin es Falso:** Supongamos un refrigerador capaz de extraer calor $Q_2$ de un foco frío y entregarlo a uno caliente con un trabajo $W = 0$. Si una máquina térmica convencional extrae $Q_1$ del foco caliente, produce un trabajo $W$ y libera $Q_2$ al foco frío, el refrigerador "devolvería" dicho $Q_2$ al foco caliente. El efecto neto sería la extracción de calor $(Q_1 - Q_2)$ de una sola fuente para producir trabajo, violando así el postulado de Kelvin.
 
-**II. Si Kelvin es falso $\implies$ Clausius es falso:** Supongamos un motor que convierte íntegramente el calor $Q$ en trabajo $W$. Si empleamos ese trabajo para accionar un refrigerador que extrae $Q_f$ de un foco frío, este entregaría $Q_f + W$ al foco caliente. El resultado neto es el flujo de calor $Q_f$ desde el foco frío al caliente sin aporte externo neto, violando el postulado de Clausius.
+**II. Si Kelvin es Falso $\implies$ Clausius es Falso:** Supongamos un motor que convierte íntegramente el calor $Q$ en trabajo $W$. Si empleamos ese trabajo para accionar un refrigerador que extrae $Q_f$ de un foco frío, este entregaría $Q_f + W$ al foco caliente. El resultado neto es el flujo de calor $Q_f$ desde el foco frío al caliente sin aporte externo neto, violando el postulado de Clausius.
 
 ### El Teorema de Carnot
 
-**La máquina de Carnot:** Se define como una máquina térmica ideal que opera entre dos fuentes de temperatura, en la cual todos los procesos que conforman el ciclo son reversibles.
+**La Máquina de Carnot:** Se define como una máquina térmica ideal que opera entre dos fuentes de temperatura, en la cual todos los procesos que conforman el ciclo son reversibles.
 
 **Teorema de Carnot:** Ninguna máquina térmica que opere entre dos fuentes de temperatura dadas puede ser más eficiente que una máquina de Carnot trabajando entre las mismas fuentes.
 
@@ -207,14 +208,14 @@ $$
 
 La igualdad se satisface estrictamente en procesos reversibles.
 
-**Demostración (caso discreto):** Sea un sistema que intercambia calores $Q_i$ con fuentes a temperaturas $T_i$.
+**Demostración (Caso Discreto):** Sea un sistema que intercambia calores $Q_i$ con fuentes a temperaturas $T_i$.
 
 1. Acoplamos cada fuente $T_i$ a un depósito común $T_0$ mediante máquinas de Carnot reversibles.
 2. Para cada máquina $i$, el calor extraído de $T_0$ es $Q_{0,i} = T_0 \frac{Q_i}{T_i}$.
 3. El sistema total solo intercambia calor con $T_0$. Según el postulado de Kelvin, el trabajo neto $W_{total}$ no puede ser positivo: $W_{total} = Q_{0,total} = \sum Q_{0,i} \leq 0$.
 4. Sustituyendo: $\sum T_0 \frac{Q_i}{T_i} \leq 0$. Como $T_0 > 0$, se obtiene $\sum \frac{Q_i}{T_i} \leq 0$.
 
-Para el caso continuo, al hacer los intercambios infinitesimales ($dQ$) a través de una trayectoria cíclica, la sumatoria se convierte en una integral de línea: $\oint \frac{dQ}{T} \leq 0$.
+Para el **Caso Continuo**, al hacer los intercambios infinitesimales ($dQ$) a través de una trayectoria cíclica, la sumatoria se convierte en una integral de línea: $\oint \frac{dQ}{T} \leq 0$.
 
 **Corolario:** Para una transformación reversible, la integral $\int_{A}^{B} \frac{d Q}{T}$ es independiente de la trayectoria, ya que sobre un ciclo cerrado la integral es nula. Esto implica que el resultado depende únicamente de los estados inicial y final.
 
@@ -239,7 +240,7 @@ donde $dS$ constituye una diferencial exacta.
 Cualquier proceso que lleve al sistema de un estado $A$ a un estado $B$ debe satisfacer:
 
 $$
-\int_{A}^{B} \frac{d Q}{T} \leq S(B) - S(A)
+\int_{A}^{B} \frac{d Q}{T} \leq S(B) - S(A).
 $$
 
 En el caso particular de un sistema aislado (paredes adiabáticas, $dQ = 0$), se tiene que:
@@ -301,6 +302,7 @@ dU = \left(\frac{\partial U}{\partial S}\right)_{V, N} d S + \left(\frac{\partia
 $$
 
 Comparando término a término con la relación fundamental de Gibbs, se derivan las ecuaciones de estado del sistema, que vinculan las variables intensivas con las extensivas:
+
 \begin{align*}
 T(S, V, N) &= \left(\frac{\partial U}{\partial S}\right)_{V, N},\\
 P(S, V, N) &= -\left(\frac{\partial U}{\partial V}\right)_{S, N},\\
@@ -328,14 +330,16 @@ d S = \left(\frac{\partial S}{\partial U}\right)_{V, N} d U + \left(\frac{\parti
 $$
 
 Al comparar este diferencial término a término con la relación de Gibbs para la entropía, derivamos las siguientes ecuaciones de estado:
+
 \begin{align*}
 \frac{1}{T(U, V, N)} &= \left(\frac{\partial S}{\partial U}\right)_{V, N},\\
 \frac{P(U, V, N)}{T(U, V, N)} &= \left(\frac{\partial S}{\partial V}\right)_{U, N},\\
 \frac{\mu(U, V, N)}{T(U, V, N)} &= -\left(\frac{\partial S}{\partial N}\right)_{U, V}.
 \end{align*}
+
 A esta descripción del sistema se le conoce formalmente como la representación de la entropía.
 
-## Las Ecuaciones de Estado No Son Independientes
+## Interdependencia de las Ecuaciones de Estado
 
 Para sistemas simples de un solo componente, es factible seleccionar cualquier tríada de cantidades extensivas como variables independientes. Para ello, basta con despejar la variable deseada de la relación de Gibbs y de la ecuación fundamental; las cantidades intensivas asociadas se obtienen directamente de las ecuaciones de estado resultantes. Aunque también es posible emplear variables intensivas como variables independientes, dicho procedimiento se formalizará más adelante mediante la introducción de los potenciales termodinámicos.
 
@@ -401,7 +405,7 @@ $$
 
 En consecuencia, cuando en un sistema simple se mantienen constantes $U, V$ y $N$, cualquier proceso interno tenderá invariablemente a incrementar su entropía.
 
-### El equilibrio como estado extremal
+### El equilibrio como Estado Extremal
 
 Dado que un sistema simple monocomponente posee únicamente tres grados de libertad termodinámicos, la fijación de los valores de $U, V$ y $N$ determina un único estado de equilibrio global. No obstante, es posible concebir una infinidad de estados termodinámicos en equilibrio local mediante la imposición de restricciones internas (como paredes adiabáticas o rígidas).
 
@@ -415,7 +419,7 @@ En la representación de la energía interna, la segunda ley toma la forma de un
 
 **Postulado:** Cuando se fijan las variables $S, V$ y $N$, el estado de equilibrio del sistema es, de entre todos los estados compatibles, aquel que minimiza la energía interna.
 
-**Demostración (por reducción al absurdo):** Supongamos la existencia de un estado fuera del equilibrio con energía $U_{no-eq} < U_{eq}$ para una misma entropía $S$.
+**Demostración (por Reducción al Absurdo):** Supongamos la existencia de un estado fuera del equilibrio con energía $U_{no-eq} < U_{eq}$ para una misma entropía $S$.
 
 1. Consideremos el estado inicial $E_1 = (U_{no-eq}, S, V, N)$.
 2. Suministramos energía al sistema en forma de calor hasta que su energía alcance el valor $U_{eq}$.
@@ -492,63 +496,84 @@ Consideremos un sistema con volumen $V$ y número de partículas $N$ constantes,
 Por otro lado, aunque la entropía de los subsistemas varía debido al intercambio continuo de calor, todo el calor cedido por la fuente es absorbido por el sistema (y viceversa). En consecuencia, la entropía del sistema compuesto $S+S_{f}$ permanece constante.
 
 Dado que la entropía, el volumen y el número de partículas del sistema compuesto están fijos, su estado de equilibrio puede estudiarse mediante la representación de la energía interna. El equilibrio obedece al principio de mínima energía interna, expresado como
-\begin{align*}
-d(U+U_{f})&=0, \\
-d^{2}(U+U_{f})&>0, 
-\end{align*}(eq01)
+
+$$
+d(U+U_{f})=0, \quad
+d^{2}(U+U_{f})>0, 
+$$(eq:eq01)
+
 sujeto a la restricción
+
 $$
 d(S+S_{f})=0 .
 $$
+
 De la ecuación {eq}`eq01` se deduce que $dU + dU_{f} = 0$. Asumiendo que la energía interna de la fuente térmica solo cambia mediante el intercambio de calor, tenemos:
+
 $$
 d U_{f}=T_{f} d S_{f}. 
 $$
+
 Combinando estas expresiones, y considerando que $dS_f = -dS$ por la restricción de entropía constante, obtenemos:
+
 $$
 0 = d U - T_{f} d S = d(U - T_{f} S).
 $$
+
 Si nos restringimos a estados donde la temperatura del sistema iguala a la de la fuente ($T = T_{f}$), llegamos a $dF = 0$. Al analizar la diferencial de segundo orden:
+
 $$
 d^{2} F = d^{2}(U - T_{f} S) = d^{2}(U + U_{f}) > 0
 $$
-De lo anterior demuestra el **Principio de mínima energía libre de Helmholtz:** Para un sistema con volumen y número de partículas constantes en contacto con una fuente térmica, el estado de equilibrio es aquel que, de todos los estados termodinámicos posibles, minimiza la energía libre de Helmholtz ($F = U - TS$).
 
-De manera análoga se puede demostrar el **Principio de mínima energía libre de Gibbs:** Para un sistema con número de partículas constantes en contacto con una fuente térmica y una fuente de presión, el estado de equilibrio es aquel que, de todos los estados termodinámicos posibles, minimiza la energía libre de Gibbs ($F = U - TS + PV$).
+De lo anterior demuestra el **Principio de Mínima Energía Libre de Helmholtz:** Para un sistema con volumen y número de partículas constantes en contacto con una fuente térmica, el estado de equilibrio es aquel que, de todos los estados termodinámicos posibles, minimiza la energía libre de Helmholtz ($F = U - TS$).
+
+De manera análoga se puede demostrar el **Principio de Mínima Energía Libre de Gibbs:** Para un sistema con número de partículas constantes en contacto con una fuente térmica y una fuente de presión, el estado de equilibrio es aquel que, de todos los estados termodinámicos posibles, minimiza la energía libre de Gibbs ($F = U - TS + PV$).
 
 ## Interpretación Física de los Potenciales
 
 ### Energía Libre de Helmholtz y Trabajo Mecánico
 
 Consideremos un sistema con $N$ constante en contacto con una fuente a temperatura $T$. Según la segunda ley, en un proceso entre los estados $A$ y $B$:
+
 $$
 \int_{A}^{B} \frac{d Q}{T} \leq S(B)-S(A). 
 $$
+
 Como la temperatura de la fuente es constante, $Q \leq T[S(B)-S(A)]$. De la primera ley ($Q = \Delta U + W_{\mathrm{mec}}$), sustituyendo obtenemos:
+
 $$
 W_{\mathrm{mec}} \leq -[F(B)-F(A)]. 
 $$
+
 Esta desigualdad demuestra que el trabajo mecánico máximo obtenible de un sistema a temperatura constante está acotado por la disminución de su energía libre de Helmholtz. Si el volumen es constante ($dV = 0$), entonces $\Delta F \leq 0$.
 
 ### Energía Libre de Gibbs y Trabajo Químico
 
 Para un sistema en equilibrio con fuentes de temperatura ($T$) y presión ($P$) constantes, la primera ley establece:
+
 $$
 Q = \Delta U + P \Delta V + W_{\mathrm{quim}}, 
 $$
+
 donde $W_{\mathrm{quim}} = -\int \mu dN$ es el trabajo químico desarrollado por el sistema. Combinando con la segunda ley ($Q \leq T \Delta S$):
+
 $$
-W_{\mathrm{quim}} \leq -\Delta G = -[G(B)-G(A)].  \tag{1.17}
+W_{\mathrm{quim}} \leq -\Delta G = -[G(B)-G(A)].
 $$
+
 Por lo tanto, el trabajo químico máximo extraíble a $T$ y $P$ constantes está acotado por la disminución de la energía libre de Gibbs. Si $N$ es constante ($W_{\text{quim}} = 0$), entonces $\Delta G \leq 0$ para cualquier proceso espontáneo.
 
 ### Entalpía y Calor Isobárico
 
 La entalpía se define como $H = U + PV$. Para un sistema con número de partículas fijo en contacto con una fuente de presión constante ($dP = 0$):
+
 $$
 d H = d U + P d V = d Q.
 $$
+
 En consecuencia, el cambio de entalpía mide directamente el calor intercambiado en un proceso isobárico. Esto define la capacidad calorífica a presión constante:
+
 $$
 C_{P} = \left(\frac{\partial H}{\partial T}\right)_{P}.
 $$
