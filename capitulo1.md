@@ -435,11 +435,9 @@ Geométricamente, una curva $y = y(x)$ puede representarse de dos formas:
 2. Como la envolvente de una familia de rectas tangentes.
 
 La pendiente $P$ y la ordenada al origen $\psi$ de la recta tangente en el punto $(x,y)$ están relacionadas mediante la siguiente expression:
-
 $$
-\psi = y - Px \tag{1.3}.
+\psi = y - Px .
 $$
-
 Si $x$ y $y$ se escriben cono funciones de $P$, obtenemos una transformación que permite que la pendiente actúe como la nueva variable independiente, preservando la capacidad de reconstruir la función original.
 
 ## Potenciales Termodinámicos
@@ -495,83 +493,62 @@ Por otro lado, aunque la entropía de los subsistemas varía debido al intercamb
 
 Dado que la entropía, el volumen y el número de partículas del sistema compuesto están fijos, su estado de equilibrio puede estudiarse mediante la representación de la energía interna. El equilibrio obedece al principio de mínima energía interna, expresado como
 \begin{align*}
-d(U+U_{f})&=0, \tag{1.4}\\
-d^{2}(U+U_{f})&>0, \tag{1.5}
-\end{align*}
-sujeto a la restricción:
-
+d(U+U_{f})&=0, \\
+d^{2}(U+U_{f})&>0, 
+\end{align*}(eq01)
+sujeto a la restricción
 $$
-d(S+S_{f})=0 \tag{1.6}
+d(S+S_{f})=0 .
 $$
-
-De la ecuación (1.4) se deduce que $dU + dU_{f} = 0$. Asumiendo que la energía interna de la fuente térmica solo cambia mediante el intercambio de calor, tenemos:
-
+De la ecuación {eq}`eq01` se deduce que $dU + dU_{f} = 0$. Asumiendo que la energía interna de la fuente térmica solo cambia mediante el intercambio de calor, tenemos:
 $$
-d U_{f}=T_{f} d S_{f}. \tag{1.8}
+d U_{f}=T_{f} d S_{f}. 
 $$
-
 Combinando estas expresiones, y considerando que $dS_f = -dS$ por la restricción de entropía constante, obtenemos:
-
 $$
 0 = d U - T_{f} d S = d(U - T_{f} S).
 $$
-
 Si nos restringimos a estados donde la temperatura del sistema iguala a la de la fuente ($T = T_{f}$), llegamos a $dF = 0$. Al analizar la diferencial de segundo orden:
-
 $$
 d^{2} F = d^{2}(U - T_{f} S) = d^{2}(U + U_{f}) > 0
 $$
-
 De lo anterior demuestra el **Principio de mínima energía libre de Helmholtz:** Para un sistema con volumen y número de partículas constantes en contacto con una fuente térmica, el estado de equilibrio es aquel que, de todos los estados termodinámicos posibles, minimiza la energía libre de Helmholtz ($F = U - TS$).
 
-De manera análoga se puede demostrar un principio extremal para la energía libre de Gibbs:
-
-**Principio de mínima energía libre de Gibbs:** Para un sistema con número de partículas constantes en contacto con una fuente térmica y una fuente de presión, el estado de equilibrio es aquel que, de todos los estados termodinámicos posibles, minimiza la energía libre de Gibbs ($F = U - TS + PV$).
+De manera análoga se puede demostrar el **Principio de mínima energía libre de Gibbs:** Para un sistema con número de partículas constantes en contacto con una fuente térmica y una fuente de presión, el estado de equilibrio es aquel que, de todos los estados termodinámicos posibles, minimiza la energía libre de Gibbs ($F = U - TS + PV$).
 
 ## Interpretación Física de los Potenciales
 
 ### Energía Libre de Helmholtz y Trabajo Mecánico
 
 Consideremos un sistema con $N$ constante en contacto con una fuente a temperatura $T$. Según la segunda ley, en un proceso entre los estados $A$ y $B$:
-
 $$
-\int_{A}^{B} \frac{d Q}{T} \leq S(B)-S(A). \tag{1.9}
+\int_{A}^{B} \frac{d Q}{T} \leq S(B)-S(A). 
 $$
-
 Como la temperatura de la fuente es constante, $Q \leq T[S(B)-S(A)]$. De la primera ley ($Q = \Delta U + W_{\mathrm{mec}}$), sustituyendo obtenemos:
-
 $$
-W_{\mathrm{mec}} \leq -[F(B)-F(A)]. \tag{1.12}
+W_{\mathrm{mec}} \leq -[F(B)-F(A)]. 
 $$
-
 Esta desigualdad demuestra que el trabajo mecánico máximo obtenible de un sistema a temperatura constante está acotado por la disminución de su energía libre de Helmholtz. Si el volumen es constante ($dV = 0$), entonces $\Delta F \leq 0$.
 
 ### Energía Libre de Gibbs y Trabajo Químico
 
 Para un sistema en equilibrio con fuentes de temperatura ($T$) y presión ($P$) constantes, la primera ley establece:
-
 $$
-Q = \Delta U + P \Delta V + W_{\mathrm{quim}}, \tag{1.16}
+Q = \Delta U + P \Delta V + W_{\mathrm{quim}}, 
 $$
-
 donde $W_{\mathrm{quim}} = -\int \mu dN$ es el trabajo químico desarrollado por el sistema. Combinando con la segunda ley ($Q \leq T \Delta S$):
-
 $$
 W_{\mathrm{quim}} \leq -\Delta G = -[G(B)-G(A)].  \tag{1.17}
 $$
-
 Por lo tanto, el trabajo químico máximo extraíble a $T$ y $P$ constantes está acotado por la disminución de la energía libre de Gibbs. Si $N$ es constante ($W_{\text{quim}} = 0$), entonces $\Delta G \leq 0$ para cualquier proceso espontáneo.
 
 ### Entalpía y Calor Isobárico
 
 La entalpía se define como $H = U + PV$. Para un sistema con número de partículas fijo en contacto con una fuente de presión constante ($dP = 0$):
-
 $$
 d H = d U + P d V = d Q.
 $$
-
 En consecuencia, el cambio de entalpía mide directamente el calor intercambiado en un proceso isobárico. Esto define la capacidad calorífica a presión constante:
-
 $$
 C_{P} = \left(\frac{\partial H}{\partial T}\right)_{P}.
 $$

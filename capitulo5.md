@@ -79,7 +79,6 @@ $$
 J_i &= -u_i c_i \left( \frac{RT}{c_i} \nabla c_i + z_i F \nabla \phi \right)
 J_i &= -u_i RT \nabla c_i - u_i z_i F c_i \nabla \phi
 \end{align*}
-$$
 Utilizamos la relación de Einstein, que vincula la movilidad con el coeficiente de difusión: $D_i = u_i RT$. Sustituyendo esto, obtenemos la ecuación de Nernst-Planck:
 $$
 J_i = -D_i \left( \nabla c_i + \frac{z_i F c_i}{RT} \nabla \phi \right).
