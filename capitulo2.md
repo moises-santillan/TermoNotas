@@ -2,19 +2,19 @@
 
 ## Conceptos Fundamentales
 
-**Sistema Termodinámico:** Es un sistema dinámico (mecánico en este caso) con un número de grados de libertad del orden de grados de libertad del orden del número de Avogrado.
+**Sistema Termodinámico:** Es un sistema dinámico (mecánico en este caso) con un número de grados de libertad del orden del número de Avogrado.
 
-**Estado macroscópico de un sistema termodinámico:** El estado macroscópico o mesoestado de un sistema termodinámico es sinónimo de estado de equilibrio. Así, en un sistema con $n$ grados de libertad termodinámicos, el macroestado está determinado por el valor de las $n$ variables independientes. Para propósitos de esta parte del curso consideraremos únicamente sistemas simples en la representación de la entropía, por lo que el conjunto de variables independientes es ( $U, V, N_{i}$ ).
+**Estado Macroscópico:** El estado macroscópico o mesoestado de un sistema termodinámico es sinónimo de estado de equilibrio. Así, en un sistema con $n$ grados de libertad termodinámicos, el macroestado está determinado por el valor de las $n$ variables independientes. Para propósitos de esta parte del curso consideraremos únicamente sistemas simples en la representación de la entropía, por lo que el conjunto de variables independientes es ( $U, V, N_{i}$ ).
 
-**Estado microscópico de un sistema termodinámico:** El estado microscópico o microestado de un sistema termodinámico con $f$ grados de libertad dinámicos $\left(f \approx 10^{23}\right)$ está determinado por el valor de las $f$ coordenadas generalizadas y los $f$ momentos generalizados.
+**Estado Microscópico:** El estado microscópico o microestado de un sistema termodinámico con $f$ grados de libertad dinámicos $\left(f \approx 10^{23}\right)$ está determinado por el valor de las $f$ coordenadas generalizadas y los $f$ momentos generalizados.
 
-**Espacio fase termodinámico:** Para un sistema con $n$ grados de libertad termodinámicos, éste es un espacio cartesiano con $n$ dimensiones, cada una de las cuales corresponde a una de las variables termodinámicas independientes. Por construcción, el estado macroscópico de un sistema termodinámico se representa mediante un punto en el espacio fase termodinámico correspondiente.
+**Espacio Fase Termodinámico:** Para un sistema con $n$ grados de libertad termodinámicos, éste es un espacio cartesiano con $n$ dimensiones, cada una de las cuales corresponde a una de las variables termodinámicas independientes. Por construcción, el estado macroscópico de un sistema termodinámico se representa mediante un punto en el espacio fase termodinámico correspondiente.
 
-**Espacio fase dinámico o espacio $\Gamma$:** Para un sistema con $f$ grados de libertad dinámicos, el espacio $\Gamma$ es un espacio de $2 f$ dimensiones, $f$ de las cuales corresponden a las coordenadas generalizadas, mientras que las otras $f$ corresponden a los momentos generalizados. Por construcción, el estado microscópico de un sistema termodinámico se representa mediante un punto en el espacio $\Gamma$ correspondiente.
+**Espacio Fase Dinámico o Espacio $\Gamma$:** Para un sistema con $f$ grados de libertad dinámicos, el espacio $\Gamma$ es un espacio de $2 f$ dimensiones, $f$ de las cuales corresponden a las coordenadas generalizadas, mientras que las otras $f$ corresponden a los momentos generalizados. Por construcción, el estado microscópico de un sistema termodinámico se representa mediante un punto en el espacio $\Gamma$ correspondiente.
 
-**Ensemble termodinámico:** Es un conjunto de sistemas dinámicos que obedecen el mismo Hamiltoneano microscópico y cuyos macroestados son iguales; sus microestados son generalmente distintos.
+**Ensemble Termodinámico:** Es un conjunto de sistemas dinámicos que obedecen el mismo Hamiltoneano microscópico y cuyos macroestados son iguales; sus microestados son generalmente distintos.
 
-## Microestados, macroestados, mesoestados y su representación geométrica
+## Microestados, Macroestados y Mesoestados 
 
 ### Representación geométrica del macroestado de un sistema en el espacio $\Gamma$
 

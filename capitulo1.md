@@ -500,7 +500,7 @@ Dado que la entropía, el volumen y el número de partículas del sistema compue
 $$
 d(U+U_{f})=0, \quad
 d^{2}(U+U_{f})>0, 
-$$(eq:eq01)
+$$ (eq:01)
 
 sujeto a la restricción
 
@@ -508,7 +508,7 @@ $$
 d(S+S_{f})=0 .
 $$
 
-De la ecuación {eq}`eq01` se deduce que $dU + dU_{f} = 0$. Asumiendo que la energía interna de la fuente térmica solo cambia mediante el intercambio de calor, tenemos:
+De la ecuación {eq}`eq:01` se deduce que $dU + dU_{f} = 0$. Asumiendo que la energía interna de la fuente térmica solo cambia mediante el intercambio de calor, tenemos:
 
 $$
 d U_{f}=T_{f} d S_{f}. 
