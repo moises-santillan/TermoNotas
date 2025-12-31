@@ -8,15 +8,15 @@
 
 **Estado Microscópico:** El estado microscópico o microestado de un sistema termodinámico con $f$ grados de libertad dinámicos $\left(f \approx 10^{23}\right)$ está determinado por el valor de las $f$ coordenadas generalizadas y los $f$ momentos generalizados.
 
-**Espacio Fase Termodinámico:** Para un sistema con $n$ grados de libertad termodinámicos, éste es un espacio cartesiano con $n$ dimensiones, cada una de las cuales corresponde a una de las variables termodinámicas independientes. Por construcción, el estado macroscópico de un sistema termodinámico se representa mediante un punto en el espacio fase termodinámico correspondiente.
+**Espacio Fase Termodinámico:** Para un sistema con $n$ grados de libertad termodinámicos, el espacio fase termodinámico es un espacio cartesiano con $n$ dimensiones, cada una de las cuales corresponde a una de las variables termodinámicas independientes. Por construcción, el estado macroscópico de un sistema termodinámico se representa mediante un punto en el espacio fase termodinámico correspondiente.
 
 **Espacio Fase Dinámico o Espacio $\Gamma$:** Para un sistema con $f$ grados de libertad dinámicos, el espacio $\Gamma$ es un espacio de $2 f$ dimensiones, $f$ de las cuales corresponden a las coordenadas generalizadas, mientras que las otras $f$ corresponden a los momentos generalizados. Por construcción, el estado microscópico de un sistema termodinámico se representa mediante un punto en el espacio $\Gamma$ correspondiente.
 
-**Ensemble Termodinámico:** Es un conjunto de sistemas dinámicos que obedecen el mismo Hamiltoneano microscópico y cuyos macroestados son iguales; sus microestados son generalmente distintos.
+**Ensemble Termodinámico:** Es un conjunto de sistemas dinámicos que obedecen el mismo Hamiltoniano microscópico y cuyos macroestados son iguales, aunque sus microestados son generalmente distintos.
 
 ## Microestados, Macroestados y Mesoestados 
 
-### Representación geométrica del macroestado de un sistema en el espacio $\Gamma$
+### Representación de un Macroestado en el espacio $\Gamma$
 
 En un macroestado, el valor de todas las variables termodinámicas permanece constante en el tiempo. Sin embargo y aun cuando el sistema está en equilibrio, su microestado cambia constantemente. En otras palabras, dado un macroestado, existe una gran cantidad de microestados compatibles con él. Dicho conjunto de microestados está completamente determinado por las restricciones macroscópicas (los valores de las variables termodinámicas independientes).
 
@@ -24,29 +24,29 @@ Los puntos representativos de los microestados compatibles con el macroestado co
 
 Recapitulando, el estado microscópico describe al sistema de la manera más precisa. Geométricamente, establece la posición exacta del punto representativo del microestado en el espacio $\Gamma$. Para ello requiere de conocer el valor del orden de $10^{23}$ variables, $f$ coordenadas generalizadas y $f$ momentos generalizados. Por otra parte, el conocimiento del estado macroscópico establece una descripción mucho más gruesa. En esta descripción no es posible decir la posición exacta del punto representativo del microestado en el espacio $\Gamma$. Solamente establece una región en dicho espacio dentro de la se encuentra el punto representativo. Para ello se requiere un número mucho más pequeño de variables (del orden de $10^{1}$ ). Para sistemas simples en la representación de la entropía las variables del macroestado son $U, V$, y $N_{i}$.
 
-### Microestado de un ensemble y representacion del mismo en el espacio $\Gamma$
+### Representación del Microestado de un Ensemble en $\Gamma$
 
-Para especificar el microestado de un ensemble es necesario especificar el microestado de cada uno de los sistemas que lo conforman. Esto significa conocer los valores de $2 N^{*} f$ variables, $N^{*} f$ correspondientes a coordenadas generalizadas y $N^{*} f$ correspondientes a momentos generalizados. $N^{*}$ es el número de sistemas que conforman el ensemble. Como se trata de un sistema termodinámico $f \approx 1 o^{23}$. El microestado del ensemble se representa en el espacio $\Gamma$ mediante los $N^{*}$ puntos representativos de los microestados de los sistemas del ensemble.
+Para determinar el microestado de un ensemble es necesario especificar el microestado de cada uno de los sistemas que lo conforman. Esto significa conocer los valores de $2 N^{*} f$ variables, $N^{*} f$ correspondientes a coordenadas generalizadas y $N^{*} f$ correspondientes a momentos generalizados. $N^{*}$ es el número de sistemas que conforman el ensemble. Como se trata de un sistema termodinámico $f \approx 1 o^{23}$. El microestado del ensemble se representa en el espacio $\Gamma$ mediante los $N^{*}$ puntos representativos de los microestados de los sistemas del ensemble.
 
-### Macroestado de un ensemble y representacion del mismo en el espacio $\Gamma$
+### Representación del Macroestado de un ensemble en $\Gamma$
 
 Dado que todos los sistemas del ensemble son macroscópicamente idénticos, para especificar el macroestado del sistema solamente se necesita conocer el número de sistemas que lo conforman ( $N^{*}$ ), además de las variables macroscópicas que determinan el macroestado de cada sistema ( $U, V, N_{i}$ ). Por la misma razón, la región $\Omega$ que representa el macroestado de cada uno de los sistemas del ensemble también representa el macroestado del ensemble. Sólo que en este caso, hay $N^{*}$ puntos representativos en el interior de la misma.
 
 Comparando, el microestado del ensemble establece la descripción más precisa posible (determina la posición exacta de los puntos representativos de los microestados de todos los sistemas) y con la mayor cantidad de información (los valores de las $N^{*} f$ coordenadas generalizadas y los $N^{*} f$ momentos generalizados). Por su parte, la descripción correspondiente al macroestado del ensemble es mucho más gruesa (solamente determina una región $\Omega$ dentro de la cual están los $N^{*}$ puntos representativos) e involucra mucho menor información (los valores de las variables $U, V, N_{i}$ y $N^{*}$ ).
 
-### Estado mesoscópico o mesoestado
+### Estado Mesoscópico o Mesoestado
 
-La conexión entre los estados micro y macroscópicos se construye estadísticamente a través de un estado intermedio. Este estado intermedio, conocido como estado mesoscópico o mesoestado, se construye de la siguiente forma. Se toma la región $\Omega$ que representa el macroestado y se divide en $r$ celdas. Para que el mesoestado que estamos construyendo sea en verdad intermedio, debemos tener que $1 \ll r \ll f$, con $f$ el número de grados de libertad dinámicos del sistema. Además, si $\omega_{i}$ representa el volumen fase de la $i$-ésima celda, $\omega_{i} \approx \omega_{j}, \forall i \neq j$. El mesoestado queda entonces definido por el conjunto de números de ocupación $n_{i}^{*} . n_{i}^{*}$ es el número de puntos representativos que yacen en la $i$-ésima celda. Evidentemente $n_{i}^{*}$ satisface $\sum_{i} n_{i}^{*}=N^{*}$.
+La conexión entre los estados micro y macroscópicos se construye estadísticamente a través de un estado intermedio. Este estado intermedio, conocido como estado mesoscópico o mesoestado, se construye de la siguiente forma. Se toma la región $\Omega$ que representa el macroestado y se divide en $r$ celdas. Para que el mesoestado que estamos construyendo sea en verdad intermedio, debemos tener que $1 \ll r \ll f$, con $f$ el número de grados de libertad dinámicos del sistema. Además, si $\omega_{i}$ representa el volumen fase de la $i$-ésima celda, $\omega_{i} \approx \omega_{j}, \forall i \neq j$. El mesoestado queda entonces definido por el conjunto de números de ocupación, $n_{i}^{*}$: el número de puntos representativos que yacen en la $i$-ésima celda. Evidentemente $n_{i}^{*}$ satisface $\sum_{i} n_{i}^{*}=N^{*}$.
 
 Es fácil ver que así como está definido, es mesoestado establece una descripción intermedia en todos los sentidos entre el microestado y macroestado. La descripción mesoscópica es más fina que la macroscópica pues además de saber que los $N^{*}$ puntos representativos están en el interior de $\Omega$, tenemos información acerca de cómo están distribuidos en su interior. Sin embargo, no se alcanza la precisión de la descripción microscópica, en la que se establece la posición exacta de cada punto representativo. En cuanto al número de variables involucradas, el estado mesoscópico también es intermedio. El microestado requiere de $N^{*} f$ variables, el macroestado requiere sólo del orden de $10^{0}$ variables. Por su parte, el mesoestado está definido por las variables mesoscópicas (que determinan la región $\Omega$ ), más los $r$ números de ocupación. Y dado que sabemos que $1 \ll r \ll f$, tenemos que el número de variables requeridas por el mesoestado es mucho menos que el número de variables del microestado, pero mucho mayor que el del macroestado.
 
-## Conexión entre los mundos micro y macroscópicos
+## Conexión entre las Descripciones Micro y Macroscópicas
 
-### Hipótesis de igualdad de probabilidad a priori
+### Hipótesis de Igualdad de Probabilidad a Priori
 
 Esta hipótesis establece que todos los estados microscópicos compatibles con el macroestado son igualmente probables. Como su nombre lo dice, es una hipótesis. No está basada en primeros principios. Su validez está sujeta a la comprobación esperimental de los resultados derivados a partir de ella.
 
-### Probabilidad de un mesoestado
+### Probabilidad de un Mesoestado
 
 Dado que la representación gráfica del macroestado únicamente establece que los puntos representativos de los sistemas del ensemble yacen el la región $\Omega$, sin precisar dónde, todas las combinaciones de números de ocupación que satisfagan $\sum_{i} n_{i}^{*}=N^{*}$ definirán mesoestados compatibles con el estado macroscópico. Por otra parte, si se cambia la posición de un punto representativo dentro de una celda, o si se intercambian dos puntos representativos entre celdas distintas, el microestado del sistema cambia, pero sin alterar su mesoestado pues los números de ocupación permanecen iguales.
 
@@ -60,32 +60,31 @@ $$
 
 La fracción con los factoriales da cuenta del número de maneras en que los $N^{*}$ puntos representativos se pueden acomodar en $r$ celdas, poniendo $n_{1}^{*}$ en la primera, $n_{2}^{*}$ en la segunda, etc. Los factores de la forma $\omega_{i}^{n_{i}^{*}}$ dan cuenta del número de posiciones que los $n_{i}^{*}$ puntos representativos de la $i$-ésima celda pueden tomar en su interior.
 
-### Definición de entropía
+### Definición de Entropía
 
 Como se vió anteriormente, la probabilidad de un mesoestado es función del conjunto de números de ocupación. Sea $\tilde{n}_{i}^{*}$ el conjunto de números de ocupación correspondientes al mesoestado más probable de todos.
 
-El evolucionar en el tiempo, el microestado del sistema cambia constantemente. De acuerdo con la hipótesis de igualdad de probabilidad a priori, después de un tiempo bastante largo, el sistema pasa tanto tiempo en uno de sus microestados compatibles como en cualquier otro. Sin embargo, el tiempo que el sistema pasa en cada mesoestado no es el mismo, sino que es proporcional al número de microestados compatibles con él. En otras palabras, al evolucionar, el sistema pasa más tiempo en el mesoestado más probable que en cualquier otro. En este sentido, resulta razonable suponer que el mesoestado más probable caracteriza al macroestado. De esta forma, la conexión entre los mundos mesoscópico y macroscópico la construiremos usando el mesoestado más probable.
+El evolucionar en el tiempo, el microestado del sistema cambia constantemente. De acuerdo con la hipótesis de igualdad de probabilidad a priori, después de un tiempo bastante largo, el sistema pasa tanto tiempo en uno de sus microestados compatibles como en cualquier otro. Sin embargo, el tiempo que el sistema pasa en cada mesoestado no es el mismo, sino que es proporcional al número de microestados compatibles con él. En otras palabras, al evolucionar, el sistema pasa más tiempo en el mesoestado más probable que en cualquier otro. En este sentido, resulta razonable suponer que el mesoestado más probable caracteriza al macroestado. De esta forma, la conexión entre las descripciones meso y macroscópica a construiremos usando el mesoestado más probable.
 
-De segunda ley sabemos que si el ensemble está aislado y en equilibrio termodinámico, el estado de equilibrio se caracteriza por tener la entropía máxima, comparado con el conjunto de estados termodinámicos compatibles con las restricciones macroscópicas.
+De segunda ley sabemos que si el ensemble está aislado y en equilibrio termodinámico, el estado de equilibrio se caracteriza por tener la entropía máxima, con respecto al conjunto de estados termodinámicos compatibles con las restricciones macroscópicas.
 
 Recapitulando, un ensemble en equilibrio tiene un único macroestado. Compatibles con este macroestado hay muchos mesoestados compatibles. De todos los mesoestados compatibles con el macroestado, el que maximiza la probabilidad es el que caracteriza al estado de equilibrio. Por otra parte, un ensemble aislado tiene un estado de equilibrio único. Se pueden construir muchos estados termodinámicos compatibles con el estado de equilibrio, imponiendo restricciones internas. De todos los estados termodinámicos así construidos, el estado de equilibrio es el que tiene probabilidad máxima.
 
-Sabemos que dado un ensemble aislado, su macroestado y su estado de equilibrio son la misma cosa. Las similitudes mencionadas en el párrafo anterior sugieren mapear el conjunto de mesoestados compatibles con co macroestado, con el conjunto de estados termodinámicos compatibles con el estado de equilibrio. Si lo
-anterior es válido, entonces el estado termodinámico o mesoestado que caracteriza al estado de equilibrio o macroestado es aquél que al mismo tiempo tiene probabilidad y entropía máximas, lo que sugiere una relación entre la probabilidad y la entropía. Por otra parte, la probabilidad es multiplicativa (la probabilidad de dos eventos independientes es el producto de las probabilidades de los eventos individuales), mientras que la entropía es aditiva (la entropía de dos sistemas independientes es la suma de las entropías individuales). Se puede demostrar que la única relación entre probabilidad y entropía que se maximiza para el mismo mesoestado y es compatible con la multiplicatividad de la probabilidad y la aditividad de la entropía es si la entropía es proporcional al logaritmo de la probabilidad.
+Sabemos que dado un ensemble aislado, su macroestado y su estado de equilibrio son la misma cosa. Las similitudes mencionadas en el párrafo anterior sugieren relacionar el conjunto de mesoestados compatibles con el macroestado, con el conjunto de estados termodinámicos compatibles con el estado de equilibrio. Si lo anterior es válido, entonces el estado termodinámico o mesoestado que caracteriza al estado de equilibrio o macroestado es aquél que al mismo tiempo tiene probabilidad y entropía máximas, lo que sugiere una relación entre la probabilidad y la entropía. Por otra parte, la probabilidad es multiplicativa (la probabilidad de dos eventos independientes es el producto de las probabilidades de los eventos individuales), mientras que la entropía es aditiva (la entropía de dos sistemas independientes es la suma de las entropías individuales). Se puede demostrar que la única relación entre probabilidad y entropía que se maximiza para el mismo mesoestado y es compatible con la multiplicatividad de la probabilidad y la aditividad de la entropía es si la entropía es proporcional al logaritmo de la probabilidad.
 
 Del razonamiento anterior se sigue que la entropía del estado de equilibrio del ensemble ( $S^{*}$ ) se puede calcular a partir de los números de ocupación del ensemble más probable $\left(\tilde{n}_{i}^{*}\right)$ como
 
 $$
 S^{*}=k \ln \left[\frac{N^{*}!}{\tilde{n}_{1}^{*}!\tilde{n}_{2}^{*}!\ldots \tilde{n}_{r}^{*}!} \omega_{1}^{\tilde{n}_{r}^{*}} \omega_{2}^{\tilde{n}_{1}^{*}} \ldots \omega_{r}^{\tilde{n}_{r}^{*}}\right]. 
-$$(eq:eq01)
+$$ (eq:01)
 
 $k$ es la constante de Boltzmann, que es una constante universal con unidades de Joules sobre Kelvin (unidades de entropía).
 
-## La entropía de Gibbs
+## La Entropía de Gibbs
 
-### Entropía de cada sistema del ensemble
+### Entropía de Cada Sistema del Ensemble
 
-La ecuación {eq}`eq01` permite calcular la entropía del ensemble a partir de los números de ocupación del mesoestado más probable. Todos los sistemas del ensemble están en equilibrio y tienen elmismo macroestado. Esto significa que la entropía está bien definida y que todos los sistemas tienen el mismo valor de entropía. Haciendo uso de este hecho, así como de la aditividad de la entropía, la entropía de cada sistema del ensemble se calcula como
+La ecuación {eq}`eq:01` permite calcular la entropía del ensemble a partir de los números de ocupación del mesoestado más probable. Todos los sistemas del ensemble están en equilibrio y tienen el mismo macroestado. Esto significa que la entropía está bien definida y que todos los sistemas tienen el mismo valor de entropía. Haciendo uso de este hecho, así como de la aditividad de la entropía, la entropía de cada sistema del ensemble se calcula como
 
 $$
 S=\frac{S^{*}}{N^{*}}=k \frac{1}{N^{*}} \ln \left[\frac{N^{*}!}{\tilde{n}_{1}^{*}!\tilde{n}_{2}^{*}!\ldots \tilde{n}_{r}^{*}!} \omega_{1}^{\tilde{n}_{r}^{*}} \omega_{2}^{\tilde{n}_{1}^{*}} \ldots \omega_{r}^{\tilde{n}_{r}^{*}}\right].
@@ -95,146 +94,172 @@ Usando la aproximación de Stirling $(\ln N!\approx N \ln N-N)$, las propiedades
 
 $$
 S=-k \sum_{i} p_{i} \ln p_{i} \omega_{i}.
-$$(eq:eq02)
+$$ (eq:02)
 
 $p_{i}=\tilde{n}_{i}^{*} / N^{*} \omega_{i}$ es la probabilidad por unidad de volumen, o densidad de probabilidad, de que el punto representativo de uno de los sistemas del ensemble se encuentre el la $i$-ésima celda. $p_{i}$ satisface $\sum_{i} p_{i} \omega_{i}=1$.
 
-### El límite al continuo
+### El límite al Continuo
 
-La definición de entropía dada por la ecuación {eq}`eq02` es inconsistente con la naturaleza física de la entropía. Esto se debe a que su valor depende de la forma en que se construye el sistema de celdas. Esto está en desacuerdo con el hecho de que la entropía, como toda vantidad termodinámica, es una propiedad del sistema cuyo valor es independiente de la forma en que se mide o se calcula. Este problema se resuelve considerando un ensemble formado por una cantidad no numerable de sistemas (tal que sus puntos representativos forman un continum en el espacio $\Gamma$ ) y tomando el límite al contínuo. Con esto, la ecuación 2.2 se convierte en
+La definición de entropía dada por la ecuación {eq}`eq:02` es inconsistente con la naturaleza física de la entropía. Esto se debe a que su valor depende de la forma en que se construye el sistema de celdas. Esto está en desacuerdo con el hecho de que la entropía, como toda vantidad termodinámica, es una propiedad del sistema cuyo valor es independiente de la forma en que se mide o se calcula. Este problema se resuelve considerando un ensemble formado por una cantidad no numerable de sistemas (tal que sus puntos representativos forman una continuidad en el espacio $\Gamma$ ) y tomando el límite al contínuo. Con esto, la ecuación {eq}`eq:02` se convierte en
+
 $$
 S=-k \int_{\Omega} \rho(x) \ln \rho(x) d \gamma. 
-$$(eq:eq03)
+$$ (eq:03)
+
 $\Omega$ es la región formada por el conjunto de puntos representativos de microestados compatibles con el macroestado. $x$ es un punto del espacio $\Gamma . d \gamma$ es el volumen fase de una vecindad infinitesimal alrededor de $x . \rho(x) d \gamma$ es la probabilidad de que el punto representativo del ensemble se encuentre en una vecindad de volumen $d \gamma$ alrededor de $x$. La densidad de probabilidad $\rho(x)$ está normalizada:
+
 $$
-\int_{\Omega} \rho(x) d \gamma=1. \tag{2.4}
-$$(eq:eq04)
-La definición de entropía dada por la ecuación {eq}`eq03` se conoce como la entropía de Gibbs.
+\int_{\Omega} \rho(x) d \gamma=1. 
+$$ (eq:04)
 
-## Ensemble microcanónico y ensemble canónico
+La definición de entropía dada por la ecuación {eq}`eq:03` se conoce como la entropía de Gibbs.
 
-La definición de entropía dada por la ecuación {eq}`eq03` permite conocer la entropía del sistema (macroestado) a partir de la densidad de probabilidad que determina al mesoestado más probable, $(\rho(x))$. Pero así, dicha definición es poco útil, pues rara vez es posible conocer el mesoestado a partir de resultados experimentales. Sin embargo, la segunda ley de la termodinámica provee la información necesaria para conocer este mesoestado más probable a partir de las condiciones macroscópicas de los sistemas del ensemble.
+## Ensembles Microcanónico y Canónico
 
-La segunda ley de la termodinámica en la representación de la entropía establece que el estado de equilibrio de un sistema aislado es, de entre todos los estados termodinámicos compatibles con el macroestado, aquel que maximiza la entropía. Por otra parte, cada función de distribución que satisfaga la condición de normalización corresponde a un mesoestado compatible con las condiciones macroscópicas del sistema. Aunque esto no garantiza que el sistema está aislado. Si equiparamos los mesoestados con los estados termodinámicos, la segunda ley nos permite buscar $\rho(x)$ como la densidad de probabilidad que maximiza la ecuación {eq}`eq03`, sujeta a la condición de normalización -ecuación {eq}`eq04`, más las condiciones necesarias para garantizar que el ensemble es un sistema aislado.
+La definición de entropía dada por la ecuación {eq}`eq:03` permite conocer la entropía del sistema (macroestado) a partir de la densidad de probabilidad que determina al mesoestado más probable, $(\rho(x))$. Pero así, dicha definición es poco útil, pues rara vez es posible conocer el mesoestado a partir de resultados experimentales. Sin embargo, la segunda ley de la termodinámica provee la información necesaria para conocer este mesoestado más probable a partir de las condiciones macroscópicas de los sistemas del ensemble.
 
-### Ensemble microcanónico
+La segunda ley de la termodinámica en la representación de la entropía establece que el estado de equilibrio de un sistema aislado es, de entre todos los estados termodinámicos compatibles con el macroestado, aquel que maximiza la entropía. Por otra parte, cada función de distribución que satisfaga la condición de normalización corresponde a un mesoestado compatible con las condiciones macroscópicas del sistema. Aunque esto no garantiza que el sistema está aislado. Si equiparamos los mesoestados con los estados termodinámicos, la segunda ley nos permite buscar $\rho(x)$ como la densidad de probabilidad que maximiza la ecuación {eq}`eq:03`, sujeta a la condición de normalización -ecuación {eq}`eq:04`, más las condiciones necesarias para garantizar que el ensemble es un sistema aislado.
+
+### Ensemble Microcanónico
 
 Por definición, el ensemble microcanónico está constituido por sistemas en equilibrio y rodeados por paredes rígidas, adiabáticas e impermeables; es decir, están aislados. Todos los sistemas de un ensemble canónico tienen valores constantes e iguales de $U, V$ y $N_{i}$.
 
-Dada la forma en que se construye un ensemble canónico, no es necesaria ninguna condición además de la condición de normalización {eq}`eq04` para garantizar que el ensemble es un sistema aislado y en equilibrio. Así pues, la densidad de probabilidad de equilibrio den ensemble microcanónico es aquella que maximiza la entropía {eq}`eq04`, sujeta a la condición de normalización {eq}`eq04`. Este problema se resuelve empleando cálculo variacional. Para ello, se define el Lagrangiano:
+Dada la forma en que se construye este ensemble, no es necesaria ninguna condición además de la condición de normalización {eq}`eq:04` para garantizar que el ensemble es un sistema aislado y en equilibrio. Así pues, la densidad de probabilidad de equilibrio es aquella que maximiza la entropía {eq}`eq:03`, sujeta a la condición de normalización {eq}`eq04`. Este problema se resuelve empleando cálculo variacional. Para ello, se define el Lagrangiano:
+
 $$
 \Lambda=\int_{\Omega}[\rho(x) \ln \rho(x)-\alpha \rho(x)] d \gamma,
 $$
-donde $\alpha$ es un multiplicador de Lagrange indeterminado. De acuerdo a la teoría del cálculo variacional, la función $\rho(x)$ que maximiza {eq}`eq03` sujeta a la restricción {eq}`eq04` es aquella para la cual la variación de $\Lambda$ se anula:
+
+donde $\alpha$ es un multiplicador de Lagrange indeterminado. De acuerdo a la teoría del cálculo variacional, la función $\rho(x)$ que maximiza {eq}`eq:03` sujeta a la restricción {eq}`eq:04` es aquella para la cual la variación de $\Lambda$ se anula:
+
 $$
 \delta \Lambda=\int_{\Omega}[\ln \rho(x)+1-\alpha] \delta \rho(x) d \gamma=0.
 $$
-$\delta \rho(x)$ es la variación de $\rho(x)$. $\delta \rho(x)$ es una variación arbitraria. En consecuencia, para que $\delta \Delta$ se anule se requiere que el integrando de la ecuación anterior sea igual con cero:
+
+$\delta \rho(x)$ es la variación de $\rho(x)$, que es arbitraria. En consecuencia, para que $\delta \Delta$ se anule se requiere que el integrando de la ecuación anterior sea igual con cero:
+
 $$
 \rho(x) \ln \rho(x)-\alpha \rho(x)=0.
 $$
+
 Despejando, podemos encontrar la densidad de probabilidad del ensemble microcanónico.
+
 $$
 \rho(x)=C
 $$
-$C=\exp (\alpha-1)$ es una constante indeterminada. Su valor se encuentra requiriendo que $\rho(x)$ satisfaga la condición de normalización {eq}`eq04`. Es fácil que después de hacer lo anterior, la densidad de probabilidad de equilibrio del ensemble microcanónico es:
+
+$C=\exp (\alpha-1)$ es una constante indeterminada. Su valor se encuentra requiriendo que $\rho(x)$ satisfaga la condición de normalización {eq}`eq:04`. Por lo tanto, la densidad de probabilidad de equilibrio del ensemble microcanónico es:
+
 $$
 \rho(x)=\frac{1}{\Gamma}. 
-$$(eq:eq05)
+$$ (eq:05)
+
 $\Gamma=\int_{\Omega} d \gamma$ es el volumen fase de la región $\Omega$.
 El tamaño y forma de la región Omega están determinados por las condiciones macroscópicas de los sistemas del ensemble $\left(U, V, N_{i}\right)$. Es decir $\Gamma=\Gamma\left(U, V, N_{i}\right)$.
 
-Finalmente, sustituyendo {eq}`eq05` en {eq}`eq04` se obtiene la ecuación fundamental para cada uno de los sistemas del ensemble microcanónico:
+Finalmente, sustituyendo {eq}`eq:05` en {eq}`eq:03` se obtiene la ecuación fundamental para cada uno de los sistemas del ensemble microcanónico:
+
 $$
-S\left(U, V, N_{i}\right)=k \ln \Omega\left(U, V, N_{i}\right). \tag{2.6}
-$$
+S\left(U, V, N_{i}\right)=k \ln \Omega\left(U, V, N_{i}\right). 
+$$ (eq:06)
 
-### Ensemble canónico
+### Ensemble Canónico
 
-El ensemble canónico está constituido por sistemas con valores constantes e iguales de $V$ y $N_{i}$. Además, todos los sistemas del ensemble están en contacto térmico y en equilibrio con una fuente térmica a temperatura $T$. Como está definido, un ensemble canónico es un sistema en equilibrio termodinámico, pero no necesariamente está aislado. La razón de esto es que todos los sistemas intercambian energía con una fuente térmica que puede ser ajena al ensemble. Para que a pesar de esto el ensemble sea un sistema aislado, la fuente térmica debe ser parte del ensemble mismo. Una forma de concebir lo anterior es considerar que la fuente térmica con que cada sistema del ensemble está en contacto está formada por el resto de sistemas. De esta manera, los intercambios de calor se llevan a cabo al interior del ensemble y se garantiza que se trata de un sistema aislado.
+El ensemble canónico está constituido por sistemas con valores constantes e iguales de $V$ y $N_{i}$. Además, todos los sistemas del ensemble están en contacto térmico y en equilibrio con una fuente térmica a temperatura $T$. Como está definido, este ensemble es un sistema en equilibrio termodinámico, pero no necesariamente está aislado. La razón de esto es que todos los sistemas intercambian energía con una fuente térmica que puede ser ajena al ensemble. Para que, a pesar de esto, el ensemble sea un sistema aislado, la fuente térmica debe ser parte del ensemble mismo. Una forma de asegurar lo anterior es considerar que la fuente térmica con que cada sistema del ensemble está en contacto está formada por el resto de sistemas. De esta manera, los intercambios de calor se llevan a cabo al interior del ensemble y se garantiza que se trata de un sistema aislado.
 
-Como se ha visto, para garantizar que el ensemble es un sistema aislado es necesario pedir explícitamente que la energía total del ensemble permanece constante. Esta condición se puede escribir como
+Como se ha visto, para garantizar que el ensemble sea un sistema aislado es necesario pedir explícitamente que la energía total del ensemble permanezca constante. Esta condición se puede escribir como
 
 $$
 \int_{\Omega} \epsilon(x) \rho(x) d \gamma=\bar{\epsilon}. 
-$$(eq:eq07)
-En la ecuación anterior $\epsilon(x)$ es la energía de un sistema cuyo punto representativo es $x$ y $\bar{\epsilon}$ es la energía promedio del ensemble (la energía total dividida por el número de sistemas del ensemble).
+$$ (eq:07)
 
-De acuerdo con la segunda ley de la termodinámica, la densidad de probabilidad de equilibrio del ensemble canónico es aquella que maximiza la entropía {eq}`eq03`, sujeta a las restricciones {eq}`eq04` y {eq}`eq07`. La teoría del cálculo variacional establece que esta densidad de probabilidad es la que optimiza al Lagrangiano $\Lambda$ definido como
+En la expresión anterior, $\epsilon(x)$ es la energía de un sistema cuyo punto representativo es $x$ y $\bar{\epsilon}$ es la energía promedio del ensemble (la energía total dividida por el número de sistemas del ensemble).
+
+De acuerdo con la segunda ley de la termodinámica, la densidad de probabilidad de equilibrio del ensemble canónico es aquella que maximiza la entropía {eq}`eq:03`, sujeta a las restricciones {eq}`eq:04` y {eq}`eq:07`. La teoría del cálculo variacional establece que esta densidad de probabilidad es la que optimiza al Lagrangiano $\Lambda$ definido como
+
 $$
 \Lambda=\int_{\Omega}[\rho(x) \ln \rho(x)-(\alpha-\beta \epsilon(x)) \rho(x)], d \gamma,
 $$
+
 donde $\alpha$ y $\beta$ son multiplicadores de Lagrange. La variación de $\Lambda$ es
+
 $$
 \delta \Lambda=\int_{\Omega}[\ln \rho(x)+1-\alpha+\beta \epsilon(x)] \delta \rho(x) d \gamma.
 $$
+
 La función $\rho(x)$ que optimiza $\Lambda$ es aquella para la cual $\delta \Lambda=0$. Por otra parte, dado que $\delta \rho(x)$ es una variación arbitraria, $\delta \Lambda=0$ sólo si $\rho(x)+1-\alpha-\beta \epsilon(x)=0$. Despejando $\rho(x)$ tenemos que
 
 $$
 \rho(x)=\frac{1}{Z} e^{-\beta \epsilon(x)}. 
-$$(eq:eq08)
-$Z=\exp (\alpha-1)$ y $\beta$ son constantes indeterminadas. El valor de $Z$ se determina usando la condición de normalización {eq}`eq04` como
+$$ (eq:08)
+
+$Z=\exp (\alpha-1)$ y $\beta$ son constantes indeterminadas. El valor de $Z$, conocida como la función de partición, se determina usando la condición de normalización {eq}`eq:04`:
+
 $$
 Z=\int_{\Omega} e^{-\beta \epsilon(x)} d \gamma. 
-$$(eq:eq09)
+$$ (eq:09)
 
-$Z$ se conoce como la función de partición.
-En principio, debería ser posible determinar el valor de $\beta$ a partir de la restricción {eq}`eq07`. Sin embargo, el álgebra es bastante complicada. Alternativamente, se sustituye la densidad de probabilidad dada por la ecuación {eq}`eq08` en la definición de entropía {eq}`eq03`, de donde se obtiene que
+En principio, debería ser posible determinar el valor de $\beta$ a partir de la restricción {eq}`eq:07`. Sin embargo, el álgebra es bastante complicada. Alternativamente, podemos sustituir la densidad de probabilidad dada por la ecuación {eq}`eq0:8` en la definición de entropía {eq}`eq:03`:
+
 $$
-S=k \beta \bar{\epsilon}+k \ln Z. 
-$$(eq:eq10)
+S=k \beta \bar{\epsilon}+k \ln Z,
+$$ (eq:10)
 
-A continuación se usa la relación termodinámica $1 / T=(\partial S / \partial \bar{\epsilon})_{V, N_{i}}$, de donde finalmente resulta
+e imponer la relación termodinámica $1 / T=(\partial S / \partial \bar{\epsilon})_{V, N_{i}}$, para obtener
+
 $$
 \beta=\frac{1}{k T}. 
-$$(eq:eq11)
+$$ (eq:11)
 
-En resumen, la densidad de probabilidad de equilibrio del ensemble canónico está dada por la ecuación {eq}`eq08`, con $Z$ y $\beta$ determinadas respectivamente por las ecuaciones {eq}`eq09` y {eq}`eq11`.
+En resumen, la densidad de probabilidad de equilibrio del ensemble canónico está dada por la ecuación {eq}`eq:08`, con $Z$ y $\beta$ respectivamente dadas por las ecuaciones {eq}`eq:09` y {eq}`eq:11`.
 
-Puesto que en este caso las variables independientes son $T, V$ y $N_{i}$, que corresponden a la representación de la energía libre de Helmholtz, la ecuación fundamental se obtiene a partir de la ecuación {eq}`eq10` y la definición de $F$ como
+Puesto que en este caso las variables independientes son $T, V$ y $N_{i}$, que corresponden a la representación de la energía libre de Helmholtz, la ecuación fundamental se obtiene a partir de la ecuación {eq}`eq:10` y la definición de $F$ como
+
 $$
-F\left(T, V, N_{i}\right)=-k T \ln Z\left(T, V, N_{i}\right). \tag{2.12}
-$$
+F\left(T, V, N_{i}\right)=-k T \ln Z\left(T, V, N_{i}\right). 
+$$ (eq:12)
 
-## Física estadística del gas ideal
+## Física Estadística del Gas Ideal
 
-### Ensemble canónico
+### Ensemble Canónico
 
 Por definición, el gas ideal es un sistema cuyas partículas no interactúan entre sí y sólo tienen componente de energía cinética. Por ende, el Hamiltoniano de un gas ideal con $N$ partículas es de la forma
+
 $$
 H=\sum_{i=1}^{3 N} \frac{p_{i}^{2}}{2 m}.
 $$
+
 Sea pues un gas ideal contenido en un recipiente cúbico de lado $V^{1 / 3}$. Su función de partición se calcula como
-$$
-\begin{aligned}
+
+\begin{aligned*}
 Z= & \int_{-\infty}^{\infty} \ldots \int_{-\infty}^{\infty} d x_{1} \ldots d x_{3 N} \\
 & \int_{0}^{V^{1 / 3}} \ldots \int_{0}^{V^{1 / 3}} e^{-\beta / 2 m\left(p_{1}^{2}+\ldots p_{3 N}^{2}\right)} d p_{1} \ldots d p_{3 N}.
-\end{aligned}
-$$
+\end{aligned*}
+
 Los límites de integración de los momentos $p_{i}$ son de $-\infty$ a $\infty$ porque los sistemas del ensemble están en contacto con una fuente térmica. En consecuencia, su energía presenta fluctuaciones, pudiendo estas ser incluso de tamaño infinito. Las integrales sobre las variables $x_{i}$ se pueden separar en $3 N$ integrales de la forma $\int_{0}^{V^{1 / 3}} d x=V^{1 / 3}$. Las integrales sobre las variable $p_{i}$ también se pueden separar. En esta caso, resultan $3 N$ integrales de la forma $\int_{-\infty}^{\infty} e^{\beta p_{i}^{2} / 2 m} d p_{i}=\sqrt{x \pi m / \beta}$.
 
 De los resultados anteriores tenemos entonces que la función de partición del gas ideal es
+
 $$
-Z=\left[V(2 \pi m k T)^{3 / 2}\right]^{N}. \tag{2.13}
-$$
+Z=\left[V(2 \pi m k T)^{3 / 2}\right]^{N}. 
+$$ (eq:13)
+
 A partir de esta función de partición se puede encontrar la ecuación fundamental del sistema como
-$$
+
 \begin{align*}
 F(T, V, N) & =-k T \ln Z(T, V, N) \\
-& =-k T N\left[\ln V+\frac{3}{2} \ln (2 \pi m k T)\right] \tag{2.14}
-\end{align*}
-$$
-Las ecuaciones de estado resultantes de la ecuación fundamental dada por la ecuación (2.14) son
-$$
+& =-k T N\left[\ln V+\frac{3}{2} \ln (2 \pi m k T)\right] .
+\end{align*} (eq:14)
+
+Las ecuaciones de estado resultantes de la anteror ecuación fundamental son
+
 \begin{align*}
-S &=-\left(\frac{\partial F}{\partial T}\right)_{V, N}=-\frac{F}{T}+\frac{3}{2} N k.  \tag{2.15}\\
-P &=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{k T N}{V}. \tag{2.16}
-\end{align*}
-$$
-y
-$$
-\mu=\left(\frac{\partial F}{\partial N}\right)_{T, V}=-k T\left[\ln V+\frac{3}{2} \ln (2 \pi m k T)\right]. \tag{2.17}
-$$
+S &=-\left(\frac{\partial F}{\partial T}\right)_{V, N}=-\frac{F}{T}+\frac{3}{2} N k. \\
+P &=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{k T N}{V}. \\
+\mu&=\left(\frac{\partial F}{\partial N}\right)_{T, V}=-k T\left[\ln V+\frac{3}{2} \ln (2 \pi m k T)\right]. 
+\end{align*} (eq:15)
+
+
 La ecuación (2.16) es una de las ecuaciones de estado del gas ideal. Por otra parte, de la ecuación (2.15) y de la definición de la energía libre de Helmholtz se sigue que
 $$
 \bar{\epsilon}=F+T S=\frac{3}{2} N k T. \tag{2.18}
