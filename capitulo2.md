@@ -20,9 +20,7 @@
 
 En un macroestado, el valor de todas las variables termodinámicas permanece constante en el tiempo. Sin embargo y aun cuando el sistema está en equilibrio, su microestado cambia constantemente. En otras palabras, dado un macroestado, existe una gran cantidad de microestados compatibles con él. Dicho conjunto de microestados está completamente determinado por las restricciones macroscópicas (los valores de las variables termodinámicas independientes).
 
-Los puntos representativos de los microestados compatibles con el macroestado conforman una región en el espacio $\Gamma$. En adelante, llamaremos a esta región la región $\Omega$. El tamaño y forma de $\Omega$ están determinados por las restricciones macroscópicas.
-
-La región $\Omega$ es la representación de geométrica del macroestado en el espacio $\Gamma$.
+Los puntos representativos de los microestados compatibles con el macroestado conforman una región en el espacio $\Gamma$. En adelante, llamaremos a esta región la región $\Omega$. El tamaño y forma de $\Omega$ están determinados por las restricciones macroscópicas. La región $\Omega$ es la representación de geométrica del macroestado en el espacio $\Gamma$.
 
 Recapitulando, el estado microscópico describe al sistema de la manera más precisa. Geométricamente, establece la posición exacta del punto representativo del microestado en el espacio $\Gamma$. Para ello requiere de conocer el valor del orden de $10^{23}$ variables, $f$ coordenadas generalizadas y $f$ momentos generalizados. Por otra parte, el conocimiento del estado macroscópico establece una descripción mucho más gruesa. En esta descripción no es posible decir la posición exacta del punto representativo del microestado en el espacio $\Gamma$. Solamente establece una región en dicho espacio dentro de la se encuentra el punto representativo. Para ello se requiere un número mucho más pequeño de variables (del orden de $10^{1}$ ). Para sistemas simples en la representación de la entropía las variables del macroestado son $U, V$, y $N_{i}$.
 
@@ -242,44 +240,34 @@ Z= & \int_{-\infty}^{\infty} \ldots \int_{-\infty}^{\infty} d x_{1} \ldots d x_{
 \end{aligned}
 $$
 
-Los límites de integración de los momentos $p_{i}$ son de $-\infty$ a $\infty$ porque los sistemas del ensemble están en contacto con una fuente térmica. En consecuencia, su energía presenta fluctuaciones, pudiendo estas ser incluso de tamaño infinito. Las integrales sobre las variables $x_{i}$ se pueden separar en $3 N$ integrales de la forma $\int_{0}^{V^{1 / 3}} d x=V^{1 / 3}$. Las integrales sobre las variable $p_{i}$ también se pueden separar. En esta caso, resultan $3 N$ integrales de la forma $\int_{-\infty}^{\infty} e^{\beta p_{i}^{2} / 2 m} d p_{i}=\sqrt{x \pi m / \beta}$
+Los límites de integración de los momentos $p_{i}$ son de $-\infty$ a $\infty$ porque los sistemas del ensemble están en contacto con una fuente térmica. En consecuencia, su energía presenta fluctuaciones, pudiendo estas ser incluso de tamaño infinito. Las integrales sobre las variables $x_{i}$ se pueden separar en $3 N$ integrales de la forma $\int_{0}^{V^{1 / 3}} d x=V^{1 / 3}$. Las integrales sobre las variable $p_{i}$ también se pueden separar. En esta caso, resultan $3 N$ integrales de la forma $\int_{-\infty}^{\infty} e^{\beta p_{i}^{2} / 2 m} d p_{i}=\sqrt{x \pi m / \beta}$.
 
 De los resultados anteriores tenemos entonces que la función de partición del gas ideal es
-
 $$
 Z=\left[V(2 \pi m k T)^{3 / 2}\right]^{N}. \tag{2.13}
 $$
-
 A partir de esta función de partición se puede encontrar la ecuación fundamental del sistema como
-
 $$
 \begin{align*}
 F(T, V, N) & =-k T \ln Z(T, V, N) \\
 & =-k T N\left[\ln V+\frac{3}{2} \ln (2 \pi m k T)\right] \tag{2.14}
 \end{align*}
 $$
-
 Las ecuaciones de estado resultantes de la ecuación fundamental dada por la ecuación (2.14) son
-
 $$
 \begin{align*}
 S &=-\left(\frac{\partial F}{\partial T}\right)_{V, N}=-\frac{F}{T}+\frac{3}{2} N k.  \tag{2.15}\\
 P &=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{k T N}{V}. \tag{2.16}
 \end{align*}
 $$
-
 y
-
 $$
 \mu=\left(\frac{\partial F}{\partial N}\right)_{T, V}=-k T\left[\ln V+\frac{3}{2} \ln (2 \pi m k T)\right]. \tag{2.17}
 $$
-
 La ecuación (2.16) es una de las ecuaciones de estado del gas ideal. Por otra parte, de la ecuación (2.15) y de la definición de la energía libre de Helmholtz se sigue que
-
 $$
 \bar{\epsilon}=F+T S=\frac{3}{2} N k T. \tag{2.18}
 $$
-
 Esta ecuación es otra de las ecuaciones de estado del gas ideal. La ecuación (2.17) no corresponde a la tercera ecuación de estado del sistema. Sin embargo, este problema se estudiará posteriormente.
 
 En conclusión, a sido posible recuperar al menos dos de las ecuaciones de estado del gas ideal, usando el formalismo del ensemble canónico. Esto en cierta medida valida las suposiciones hechas en la construcción de esta teoría. Particularmente, la hipótesis de igualdad de probabilidad a priori y la definición de entropía.

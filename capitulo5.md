@@ -41,21 +41,16 @@ $$
 ### Condición de Equilibrio y Ecuación de Nernst
 
 El equilibrio termodinámico de una especie a través de una membrana permeable que separa 2 compartimentos (1 y 2) se alcanza cuando no hay variación neta de energía libre al mover una partícula de uno al otro; es decir, cuando el potencial electroquímico es igual en ambos compartimentos:
-$$
 \begin{align*}
 \tilde{\mu}_i^{(1)} &= \tilde{\mu}_i^{(2)}, \\
 \mu_i^0 + RT \ln c_i^{(1)} + z_i F \phi^{(1)} &= \mu_i^0 + RT \ln c_i^{(2)} + z_i F \phi^{(2)}.
 \end{align*}
-$$
 Haciendo un poco de álgebra:
-$$
 \begin{align*}
 z_i F (\phi^{(2)} - \phi^{(1)}) &= RT \ln c_i^{(1)} - RT \ln c_i^{(2)}, \\
 z_i F \Delta \phi &= RT \ln \frac{c_i^{(1)}}{c_i^{(2)}}.
 \end{align*}
-$$
 Finalmente, despejando $\Delta \phi$ de la última expresión obtenemos la ecuación de Nernst:
-
 $$
 \Delta \phi = \frac{RT}{z_i F} \ln \frac{c_i^{(1)}}{c_i^{(2)}}.
 $$
@@ -65,25 +60,19 @@ La ecuación de Nernst representa el estado de equilibrio dinámico en el que se
 ### Cinética del Transporte: La Ecuación de Nernst-Planck
 
 En sistemas fuera del equilibrio, el transporte de una especie química es impulsado por el gradiente de su potencial electroquímico. El flujo de una especie $i$ ($J_i$, medido en $mol \cdot m^{-2} \cdot s^{-1}$) es proporcional a la fuerza impulsora: el negativo del gradiente del potencial electroquímico ($-\nabla \tilde{\mu}_i$). O anterior se traduce en la siguiente relación fenomenológica:
-
 $$
 J_i = -u_i c_i \nabla \tilde{\mu}_i,
 $$
-
 donde $u_i$ es la movilidad del ion y $c_i$ su concentración local.
 
 Calculamos el gradiente del potencial electroquímico:
-
 $$
 \nabla \tilde{\mu}_i = \nabla (\mu_i^0 + RT \ln c_i + z_i F \phi).
 $$
-
 Como $\mu_i^0$ es una constante, su gradiente es cero. Aplicando la regla de la cadena al término logarítmico ($\nabla \ln c = \frac{1}{c} \nabla c$) obtenemos:
-
 $$
 \nabla \tilde{\mu}_i = \frac{RT}{c_i} \nabla c_i + z_i F \nabla \phi.
 $$
-
 Sustituyendo en la relación fenomenológica:
 $$
 \begin{align*}
@@ -92,24 +81,19 @@ J_i &= -u_i RT \nabla c_i - u_i z_i F c_i \nabla \phi
 \end{align*}
 $$
 Utilizamos la relación de Einstein, que vincula la movilidad con el coeficiente de difusión: $D_i = u_i RT$. Sustituyendo esto, obtenemos la ecuación de Nernst-Planck:
-
 $$
 J_i = -D_i \left( \nabla c_i + \frac{z_i F c_i}{RT} \nabla \phi \right).
 $$
 
 La ecuación de Nernst-Planck divide el transporte iónico en dos contribuciones:
-
 1. **Término de Difusión ($-D_i \nabla c_i$):** Movimiento debido al gradiente de concentración (Ley de Fick). Los iones se mueven hacia zonas de baja concentración para maximizar la entropía.
 2. **Término de Migración Eléctrica ($-D_i \frac{z_i F c_i}{RT} \nabla \phi$):** Movimiento bajo la influencia de un campo eléctrico (Electroforesis).
 
 Si el sistema alcanza el equilibrio, el flujo neto se anula ($J_i = 0$). En una dimensión ($x$):
-
 $$
 0 = \frac{dc_i}{dx} + \frac{z_i F c_i}{RT} \frac{d\phi}{dx}.
 $$
-
 Integrando entre dos compartimentos, recuperamos la ecuación de Nernst:
-
 $$
 \ln \frac{c_i^{(2)}}{c_i^{(1)}} = -\frac{z_i F}{RT} (\phi^{(2)} - \phi^{(1)}) \implies \Delta \phi = \frac{RT}{z_i F} \ln \frac{c_i^{(1)}}{c_i^{(2)}}.
 $$
