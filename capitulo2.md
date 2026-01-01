@@ -305,8 +305,8 @@ $$
 Del resultado anterior y la fórmula para la ecuación fundamental del ensemble microcanónico {eq}`eq:06`, tenemos que la ecuación fundamental del gas ideal en condiciones de energía $E$, volumen $V$ y número de partículas $N$ constantes es
 
 $$
-S=k N\left\{\ln V\left[\frac{4 \pi m E}{3 N}\right]^{3 / 2}+\frac{3}{2}\right\}. \tag{2.19}
-$$
+S=k N\left\{\ln V\left[\frac{4 \pi m E}{3 N}\right]^{3 / 2}+\frac{3}{2}\right\}. 
+$$ (eq:19)
 
 Las ecuaciones de estado derivadas de la anterior ecuación fundamental son
 
@@ -366,14 +366,14 @@ La paradoja de Gibbs se resuelve empleando argumentos cuánticos. En particular 
 
 \begin{align*}
 S(U, V, N) & =k \ln \frac{\Gamma}{h^{3 N} N!} \\
-& =k N\left\{\ln \frac{V}{N} \left[\frac{4 \pi m E}{3 N h^{2}}\right]^{3 / 2}+\frac{5}{2}\right\}, \tag{2.26}
+& =k N\left\{\ln \frac{V}{N} \left[\frac{4 \pi m E}{3 N h^{2}}\right]^{3 / 2}+\frac{5}{2}\right\}, 
 \end{align*}
 
 y
 
 \begin{align*}
 F(T, V, N) & =-k T \ln \frac{Z}{h^{3 N} N!} \\
-& =-k T N\left[\ln \frac{V}{N}+\frac{3}{2} \ln \left(\frac{2 \pi m k T}{h^{2}}\right)+1\right]. \tag{2.27}
+& =-k T N\left[\ln \frac{V}{N}+\frac{3}{2} \ln \left(\frac{2 \pi m k T}{h^{2}}\right)+1\right]. 
 \end{align*}
 
 ## Teorema de equipartición de la energía
@@ -387,7 +387,7 @@ $$
 $f$ es el número de grados de libertad del sistema, $p_{i}$ son los momentos generalizados, $q_{i}$ las coordenadas generalizadas, y $A_{i}$ y $B_{i j}$ son constantes arbitrarias. Tanto la componente de energía cinética como la de energía potencial de este Hamiltoniano es homogéneas de segundo orden los los momentos y en las coordenadas generalizadas, respectivamente:
 
 ```{math}
-:label:eq:28
+:label: eq:28
 \begin{align*}
 & \sum_{j=1}^{f} p_{j} \frac{\partial K}{\partial p_{j}}=2 \sum_{j=1}^{f} A_{j} p_{j}^{2}=2 K,  \\
 & \sum_{j=1}^{f} q_{j} \frac{\partial V}{\partial q_{j}}=2 \sum_{i, j=1}^{f} B_{i j} q_{i} q_{j}=2 V. 
@@ -402,7 +402,7 @@ $$ (eq:30)
 La integral se lleva a cabo sobre todas las coordenadas y todos los momentos generalizados, incluyendo $p_{j}$. Separando la integral sobre $p_{j}$ y llevándola a cabo por partes tenemos que
 
 ```{math}
-:label:eq:31
+:label: eq:31
 \begin{align*}
 \int_{-\infty}^{\infty} e^{-\beta H} \frac{\partial H}{\partial p_{j}} p_{j} d p_{j} &=-\frac{1}{\beta} \int_{-\infty}^{\infty} \frac{\partial e^{-\beta H}}{\partial p_{j}} p_{j} d p_{j}, \\
 &=-\left.\frac{e^{-\beta H} p_{j}}{\beta}\right|_{-\infty} ^{\infty}+\frac{1}{\beta} \int_{-\infty}^{\infty} e^{-\beta H} d p_{j}. 
@@ -411,7 +411,7 @@ La integral se lleva a cabo sobre todas las coordenadas y todos los momentos gen
 
 El primer término se cancela en ambos límites dada la dependencia del hamiltoniano en $p_{j}$.
 
-Así pues, reinsertando de la integral {eq}`eq:31` en {eq}`eq:32`
+Así pues, sustituyendo la integral {eq}`eq:31` en {eq}`eq:32` obtenemos 
 
 $$
 \overline{p_{j} \frac{\partial K}{\partial p_{j}}}=\frac{1}{\beta} \int \frac{e^{-\beta H}}{Z} d \gamma=k T. 
