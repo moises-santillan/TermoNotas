@@ -246,12 +246,10 @@ $$ (eq:13)
 
 A partir de esta función de partición se puede encontrar la ecuación fundamental del sistema como
 
-```{math}
 \begin{align*}
 F(T, V, N) & =-k T \ln Z(T, V, N) \\
 & =-k T N\left[\ln V+\frac{3}{2} \ln (2 \pi m k T)\right] .
 \end{align*} (eq:14)
-```
 
 Las ecuaciones de estado resultantes de la anteror ecuación fundamental son
 
@@ -267,7 +265,7 @@ P &=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{k T N}{V}. \\
 La primera expresión de {eq}`eq:15`  es una de las ecuaciones de estado del gas ideal. Por otra parte, de la segunda y de la definición de la energía libre de Helmholtz se sigue que
 
 $$
-\bar{\epsilon}=F+T S=\frac{3}{2} N k T. \tag{2.18}
+\bar{\epsilon}=F+T S=\frac{3}{2} N k T. 
 $$
 
 Esta ecuación es otra de las ecuaciones de estado del gas ideal. La tercera expresión de {eq}`eq:15` no corresponde a la tercera ecuación de estado del sistema. Sin embargo, este problema se estudiará posteriormente.
@@ -279,6 +277,7 @@ En conclusión, a sido posible recuperar al menos dos de las ecuaciones de estad
 Considere un gas formado por $N$ partículas, contenido en un recipiente de volumen fijo $V$ y rodeado de paredes adiabáticas e impermeables, de tal forma que tiene una energía interna en el intervalo $[E-\delta E, E] (\delta E \ll E)$.
 
 El hamiltoniano de este sistema es:
+
 $$
 H=\sum_{i=1}^{3 N} \frac{p_{i}^{2}}{2 m}.
 $$
@@ -286,34 +285,38 @@ $$
 De aquí se sigue que la restricción en la energía del gas implica que la proyección de la región $\Omega$ en el espacio de momentos es un cascarón hiperesférico de $3 N$ dimensiones, radio externo $R=\sqrt{2 m E}$ y espesor $\delta E=\sqrt{2 m E}-\sqrt{2 m(E-\delta E)}$. Por su parte, la proyección de la región $\Omega$ en el espacio de configuración es el producto cartesiano de $N$ veces el volumen que contiene al gas.
 
 En hiperesferas de dimensión muy grande, el volumen se concentra en su mayor parte cerca de la superficie. Luego, el volumen del cascarón se puede aproximar por el volumen de la esfera completa. El volumen de una hiperesfera de $f$ dimensiones y radio $R$ está dado por
+
 $$
 V_{f}(R)=\frac{\pi^{f / 2}}{(f / 2)!} R^{f},
 $$
+
 de donde se sigue que el volumen de la proyección de $\Omega$ en el espacio de momentos es
+
 $$
 \frac{(2 \pi m E)^{3 N / 2}}{(3 N / 2)!}.
 $$
+
 Esto, más el hecho de que el volumen de la proyección de $\Omega$ en el espacio de configuración es $V^{N}$ nos da el siguiente valor para el volumen fase ( $\Gamma$ ) de la región $\Omega$,
+
 $$
 \Gamma=\frac{\left(V(2 \pi m E)^{3 N / 2}\right)^{N}}{(3 N / 2)!} .
 $$
-Del resultado anterior y la fórmula para la ecuación fundamental del ensemble microcanónico {Eq}`eq06`, tenemos que la ecuación fundamental del gas ideal en condiciones de energía $E$, volumen $V$ y número de partículas $N$ constantes es
+
+Del resultado anterior y la fórmula para la ecuación fundamental del ensemble microcanónico {eq}`eq06`, tenemos que la ecuación fundamental del gas ideal en condiciones de energía $E$, volumen $V$ y número de partículas $N$ constantes es
+
 $$
 S=k N\left\{\ln V\left[\frac{4 \pi m E}{3 N}\right]^{3 / 2}+\frac{3}{2}\right\}. \tag{2.19}
 $$
 
 Las ecuaciones de estado derivadas de la anterior ecuación fundamental son
-$$
+
 \begin{align*}
-\frac{1}{T} & =\frac{3}{2} \frac{k N}{E}, \tag{2.20}\\
-\frac{P}{T} & =\frac{k N}{V}. \tag{2.21},
+\frac{1}{T} & =\frac{3}{2} \frac{k N}{E}, \\
+\frac{P}{T} & =\frac{k N}{V}., \\
+\frac{\mu}{T}&=-k\left[\ln V+\frac{3}{2} \ln \left[\frac{4 \pi m E}{3 N}\right]\right]. 
 \end{align*}
-$$
-y
-$$
-\frac{\mu}{T}=-k\left[\ln V+\frac{3}{2} \ln \left[\frac{4 \pi m E}{3 N}\right]\right]. 
-$$
-Estas ecuaciones de estado son completamente compatibles con las ecuaciones de estado derivadas con el ensemble microcanónico:{eq}`eq15`-{eq}`eq17`.
+
+Estas ecuaciones de estado son completamente compatibles con las ecuaciones de estado derivadas con el ensemble microcanónico:{eq}`eq15`.
 
 ## Fluctuaciones termodinámicas
 
