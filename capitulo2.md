@@ -422,7 +422,7 @@ $$
 \bar{V}=\frac{f}{2} k T. 
 $$
 
-Estos resultados constituyen el Teorema de Equipartición de la Energía. Este teorema establece que, si la energía cinética y potencial son funciones homogéneas de segundo orden, la energía total del sistema en equilibrio térmico se distribuye equitativamente, asignando un promedio de \frac{1}{2}kT a cada término cuadrático ("grado de libertad") del Hamiltoniano.
+Estos resultados constituyen el Teorema de Equipartición de la Energía. Este teorema establece que, si la energía cinética y potencial son funciones homogéneas de segundo orden, la energía total del sistema en equilibrio térmico se distribuye equitativamente, asignando un promedio de $\frac{1}{2}kT$ a cada término cuadrático ("grado de libertad") del Hamiltoniano.
 
 ​Cabe mencionar que este teorema es de carácter general y también puede ser demostrado bajo el formalismo del ensemble microcanónico.
 
