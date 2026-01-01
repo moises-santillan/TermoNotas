@@ -94,13 +94,13 @@ Usando la aproximación de Stirling $(\ln N!\approx N \ln N-N)$, las propiedades
 
 $$
 S=-k \sum_{i} p_{i} \ln p_{i} \omega_{i}.
-$$ (eq:02)
+$$ (gato)
 
 $p_{i}=\tilde{n}_{i}^{*} / N^{*} \omega_{i}$ es la probabilidad por unidad de volumen, o densidad de probabilidad, de que el punto representativo de uno de los sistemas del ensemble se encuentre el la $i$-ésima celda. $p_{i}$ satisface $\sum_{i} p_{i} \omega_{i}=1$.
 
 ### El Limite al Continuo
 
-La definición de entropía dada por la ecuación {eq}`eq:02` es inconsistente con la naturaleza física de la entropía. Esto se debe a que su valor depende de la forma en que se construye el sistema de celdas. Esto está en desacuerdo con el hecho de que la entropía, como toda vantidad termodinámica, es una propiedad del sistema cuyo valor es independiente de la forma en que se mide o se calcula. Este problema se resuelve considerando un ensemble formado por una cantidad no numerable de sistemas (tal que sus puntos representativos forman una continuidad en el espacio $\Gamma$ ) y tomando el límite al contínuo. Con esto, la ecuación {eq}`eq:02` se convierte en
+La definición de entropía dada por la ecuación {eq}`gato` es inconsistente con la naturaleza física de la entropía. Esto se debe a que su valor depende de la forma en que se construye el sistema de celdas. Esto está en desacuerdo con el hecho de que la entropía, como toda vantidad termodinámica, es una propiedad del sistema cuyo valor es independiente de la forma en que se mide o se calcula. Este problema se resuelve considerando un ensemble formado por una cantidad no numerable de sistemas (tal que sus puntos representativos forman una continuidad en el espacio $\Gamma$ ) y tomando el límite al contínuo. Con esto, la ecuación {eq}`eq:02` se convierte en
 
 $$
 S=-k \int_{\Omega} \rho(x) \ln \rho(x) d \gamma. 
@@ -376,7 +376,7 @@ F(T, V, N) & =-k T \ln \frac{Z}{h^{3 N} N!} \\
 & =-k T N\left[\ln \frac{V}{N}+\frac{3}{2} \ln \left(\frac{2 \pi m k T}{h^{2}}\right)+1\right]. 
 \end{align*}
 
-## Teorema de equipartición de la energía
+## Teorema de Equipartición de la Energía
 
 Considere un sistema cuya dinámica está determinada por un Hamiltoniano de la forma
 
@@ -417,7 +417,7 @@ $$
 \overline{p_{j} \frac{\partial K}{\partial p_{j}}}=\frac{1}{\beta} \int \frac{e^{-\beta H}}{Z} d \gamma=k T. 
 $$ (eq:32)
 
-Finalmente, de las ecuaciones {eq}`eq33` y {eq}`eq:28` se sigue que
+Finalmente, de las ecuaciones {eq}`eq:33` y {eq}`eq:28` se sigue que
 
 $$
 \bar{K}=\frac{f}{2} k T
