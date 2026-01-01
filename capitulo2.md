@@ -199,7 +199,7 @@ $$
 Z=\int_{\Omega} e^{-\beta \epsilon(x)} d \gamma. 
 $$ (eq:09)
 
-En principio, debería ser posible determinar el valor de $\beta$ a partir de la restricción {eq}`eq:07`. Sin embargo, el álgebra es bastante complicada. Alternativamente, podemos sustituir la densidad de probabilidad dada por la ecuación {eq}`eq0:8` en la definición de entropía {eq}`eq:03`:
+En principio, debería ser posible determinar el valor de $\beta$ a partir de la restricción {eq}`eq:07`. Sin embargo, el álgebra es bastante complicada. Alternativamente, podemos sustituir la densidad de probabilidad dada por la ecuación {eq}`eq:08` en la definición de entropía {eq}`eq:03`:
 
 $$
 S=k \beta \bar{\epsilon}+k \ln Z,
@@ -231,10 +231,10 @@ $$
 
 Sea pues un gas ideal contenido en un recipiente cúbico de lado $V^{1 / 3}$. Su función de partición se calcula como
 
-\begin{aligned*}
+\begin{align*}
 Z= & \int_{-\infty}^{\infty} \ldots \int_{-\infty}^{\infty} d x_{1} \ldots d x_{3 N} \\
 & \int_{0}^{V^{1 / 3}} \ldots \int_{0}^{V^{1 / 3}} e^{-\beta / 2 m\left(p_{1}^{2}+\ldots p_{3 N}^{2}\right)} d p_{1} \ldots d p_{3 N}.
-\end{aligned*}
+\end{align*}
 
 Los límites de integración de los momentos $p_{i}$ son de $-\infty$ a $\infty$ porque los sistemas del ensemble están en contacto con una fuente térmica. En consecuencia, su energía presenta fluctuaciones, pudiendo estas ser incluso de tamaño infinito. Las integrales sobre las variables $x_{i}$ se pueden separar en $3 N$ integrales de la forma $\int_{0}^{V^{1 / 3}} d x=V^{1 / 3}$. Las integrales sobre las variable $p_{i}$ también se pueden separar. En esta caso, resultan $3 N$ integrales de la forma $\int_{-\infty}^{\infty} e^{\beta p_{i}^{2} / 2 m} d p_{i}=\sqrt{x \pi m / \beta}$.
 
@@ -246,19 +246,23 @@ $$ (eq:13)
 
 A partir de esta función de partición se puede encontrar la ecuación fundamental del sistema como
 
+```{math}
 \begin{align*}
 F(T, V, N) & =-k T \ln Z(T, V, N) \\
 & =-k T N\left[\ln V+\frac{3}{2} \ln (2 \pi m k T)\right] .
 \end{align*} (eq:14)
+```
 
 Las ecuaciones de estado resultantes de la anteror ecuación fundamental son
 
+```{math}
+:label: eq:15
 \begin{align*}
 S &=-\left(\frac{\partial F}{\partial T}\right)_{V, N}=-\frac{F}{T}+\frac{3}{2} N k. \\
 P &=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{k T N}{V}. \\
 \mu&=\left(\frac{\partial F}{\partial N}\right)_{T, V}=-k T\left[\ln V+\frac{3}{2} \ln (2 \pi m k T)\right]. 
-\end{align*} (eq:15)
-
+\end{align*} 
+```
 
 La primera expresión de {eq}`eq:15`  es una de las ecuaciones de estado del gas ideal. Por otra parte, de la segunda y de la definición de la energía libre de Helmholtz se sigue que
 
