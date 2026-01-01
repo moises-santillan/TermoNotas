@@ -7,6 +7,8 @@ project:
   # keywords: []
   authors:
     - name: Moisés Santillán
+      affiliation: Cinvestav Monterrey 
+      email: msantillan@cinvestav.mx
   github: https://github.com/moises-santillan/TermoNotas
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
@@ -24,3 +26,9 @@ site:
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
+
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
