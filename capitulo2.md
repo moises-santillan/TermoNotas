@@ -76,7 +76,7 @@ Del razonamiento anterior se sigue que la entropía del estado de equilibrio del
 
 $$
 S^{*}=k \ln \left[\frac{N^{*}!}{\tilde{n}_{1}^{*}!\tilde{n}_{2}^{*}!\ldots \tilde{n}_{r}^{*}!} \omega_{1}^{\tilde{n}_{r}^{*}} \omega_{2}^{\tilde{n}_{1}^{*}} \ldots \omega_{r}^{\tilde{n}_{r}^{*}}\right]. 
-$$ (eq:01)
+$$ (entro)
 
 $k$ es la constante de Boltzmann, que es una constante universal con unidades de Joules sobre Kelvin (unidades de entropía).
 
@@ -84,7 +84,7 @@ $k$ es la constante de Boltzmann, que es una constante universal con unidades de
 
 ### Entropía de Cada Sistema del Ensemble
 
-La ecuación {eq}`eq:01` permite calcular la entropía del ensemble a partir de los números de ocupación del mesoestado más probable. Todos los sistemas del ensemble están en equilibrio y tienen el mismo macroestado. Esto significa que la entropía está bien definida y que todos los sistemas tienen el mismo valor de entropía. Haciendo uso de este hecho, así como de la aditividad de la entropía, la entropía de cada sistema del ensemble se calcula como
+La ecuación {eq}`entro` permite calcular la entropía del ensemble a partir de los números de ocupación del mesoestado más probable. Todos los sistemas del ensemble están en equilibrio y tienen el mismo macroestado. Esto significa que la entropía está bien definida y que todos los sistemas tienen el mismo valor de entropía. Haciendo uso de este hecho, así como de la aditividad de la entropía, la entropía de cada sistema del ensemble se calcula como
 
 $$
 S=\frac{S^{*}}{N^{*}}=k \frac{1}{N^{*}} \ln \left[\frac{N^{*}!}{\tilde{n}_{1}^{*}!\tilde{n}_{2}^{*}!\ldots \tilde{n}_{r}^{*}!} \omega_{1}^{\tilde{n}_{r}^{*}} \omega_{2}^{\tilde{n}_{1}^{*}} \ldots \omega_{r}^{\tilde{n}_{r}^{*}}\right].
@@ -346,7 +346,7 @@ $$ (eq:25)
 
 ## Paradoja de Gibbs y Otros Problemas
 
-En la ecuación fundamental del gas ideal en el ensemble canónico {eq}`eq:13`, así como en la del ensemble microcanónico en {eq}`eq:19`, existen un par de problemas. En primer lugar, las unidades son incorrectas. En ambos casos, el argumento de la función logaritmo debe de ser adimensional. Este problema tiene su origen en la derivación original de la entropía de un ensemble {eq}`eq:01`. En dicha derivación se toma el volumen fase de una celda de la región $\Omega$ como medida del número de posiciones distintas que un punto representativo puede tomar dentro de dicha celda. Por esta razón, aparecen multiplicados los volúmenes de las celdas elevados a una potencia igual al número de ocupación de las mismas. Esto le da a la entropía del ensemble unidades de Joule soble Kelvin, por unidades de volumen fase, lo cual es incorrecto. Este problema se soluciona con argumentos cuánticos. Debido a las relaciones de incertidumbre de Heisenberg, es imposible localizar exactamente la posición de el punto relativo del sistema en el espacio fase. A lo más, se puede determinar una vecindad de volumen $h^{3 N}$, con $N$ el número de partículas del gas. Bajo estas consideraciones, el número de posiciones distintas que un punto representativo puede tomar en el interior de una celda de del espacio $\Gamma$ está dado por el volumen de la misma, dividido por $h^{3 N}$. Tomando esto en cuenta, para evitar problemas con las unidades, hay que corregir las ecuaciones fundamentales de los ensembles microcanónico y canónico de la siguiente forma, respectivamente:
+En la ecuación fundamental del gas ideal en el ensemble canónico {eq}`eq:13`, así como en la del ensemble microcanónico en {eq}`eq:19`, existen un par de problemas. En primer lugar, las unidades son incorrectas. En ambos casos, el argumento de la función logaritmo debe de ser adimensional. Este problema tiene su origen en la derivación original de la entropía de un ensemble {eq}`entro`. En dicha derivación se toma el volumen fase de una celda de la región $\Omega$ como medida del número de posiciones distintas que un punto representativo puede tomar dentro de dicha celda. Por esta razón, aparecen multiplicados los volúmenes de las celdas elevados a una potencia igual al número de ocupación de las mismas. Esto le da a la entropía del ensemble unidades de Joule soble Kelvin, por unidades de volumen fase, lo cual es incorrecto. Este problema se soluciona con argumentos cuánticos. Debido a las relaciones de incertidumbre de Heisenberg, es imposible localizar exactamente la posición de el punto relativo del sistema en el espacio fase. A lo más, se puede determinar una vecindad de volumen $h^{3 N}$, con $N$ el número de partículas del gas. Bajo estas consideraciones, el número de posiciones distintas que un punto representativo puede tomar en el interior de una celda de del espacio $\Gamma$ está dado por el volumen de la misma, dividido por $h^{3 N}$. Tomando esto en cuenta, para evitar problemas con las unidades, hay que corregir las ecuaciones fundamentales de los ensembles microcanónico y canónico de la siguiente forma, respectivamente:
 
 \begin{align*}
 S(U, V, N) & =k \ln \frac{\Gamma}{h^{3 N}} \\
@@ -411,13 +411,13 @@ La integral se lleva a cabo sobre todas las coordenadas y todos los momentos gen
 
 El primer término se cancela en ambos límites dada la dependencia del hamiltoniano en $p_{j}$.
 
-Así pues, sustituyendo la integral {eq}`eq:31` en {eq}`eq:32` obtenemos 
+Así pues, sustituyendo la integral {eq}`eq:31` en {eq}`eq:30` obtenemos 
 
 $$
 \overline{p_{j} \frac{\partial K}{\partial p_{j}}}=\frac{1}{\beta} \int \frac{e^{-\beta H}}{Z} d \gamma=k T. 
 $$ (eq:32)
 
-Finalmente, de las ecuaciones {eq}`eq:33` y {eq}`eq:28` se sigue que
+Finalmente, de las ecuaciones {eq}`eq:32` y {eq}`eq:28` se sigue que
 
 $$
 \bar{K}=\frac{f}{2} k T
