@@ -136,7 +136,7 @@ Al resolver las integrales, obtenemos:
 
 \begin{align*}
 \ln c_i^{(2)} - \ln c_i^{(1)} &= -\frac{z_i F}{RT} (\phi^{(2)} - \phi^{(1)}), \\
-\ln \frac{c_i^{(2)}}{c_i^{(1)}} &= -\frac{z_i F}{RT} \Delta \phi$$. \\
+\ln \frac{c_i^{(2)}}{c_i^{(1)}} &= -\frac{z_i F}{RT} \Delta \phi. \\
 \end{align*}
 
 Finalmente, despejando $\Delta \phi$ e invirtiendo el argumento del logaritmo para eliminar el signo negativo recuperamos la ecuación de Nernst:
