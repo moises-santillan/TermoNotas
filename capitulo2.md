@@ -76,7 +76,7 @@ Del razonamiento anterior se sigue que la entropía del estado de equilibrio del
 
 $$
 S^{*}=k \ln \left[\frac{N^{*}!}{\tilde{n}_{1}^{*}!\tilde{n}_{2}^{*}!\ldots \tilde{n}_{r}^{*}!} \omega_{1}^{\tilde{n}_{r}^{*}} \omega_{2}^{\tilde{n}_{1}^{*}} \ldots \omega_{r}^{\tilde{n}_{r}^{*}}\right]. 
-$$ (eq:01)
+$$ (gato)
 
 $k$ es la constante de Boltzmann, que es una constante universal con unidades de Joules sobre Kelvin (unidades de entropía).
 
@@ -84,7 +84,7 @@ $k$ es la constante de Boltzmann, que es una constante universal con unidades de
 
 ### Entropía de Cada Sistema del Ensemble
 
-La ecuación {eq}`eq:01` permite calcular la entropía del ensemble a partir de los números de ocupación del mesoestado más probable. Todos los sistemas del ensemble están en equilibrio y tienen el mismo macroestado. Esto significa que la entropía está bien definida y que todos los sistemas tienen el mismo valor de entropía. Haciendo uso de este hecho, así como de la aditividad de la entropía, la entropía de cada sistema del ensemble se calcula como
+La ecuación {eq}`gato` permite calcular la entropía del ensemble a partir de los números de ocupación del mesoestado más probable. Todos los sistemas del ensemble están en equilibrio y tienen el mismo macroestado. Esto significa que la entropía está bien definida y que todos los sistemas tienen el mismo valor de entropía. Haciendo uso de este hecho, así como de la aditividad de la entropía, la entropía de cada sistema del ensemble se calcula como
 
 $$
 S=\frac{S^{*}}{N^{*}}=k \frac{1}{N^{*}} \ln \left[\frac{N^{*}!}{\tilde{n}_{1}^{*}!\tilde{n}_{2}^{*}!\ldots \tilde{n}_{r}^{*}!} \omega_{1}^{\tilde{n}_{r}^{*}} \omega_{2}^{\tilde{n}_{1}^{*}} \ldots \omega_{r}^{\tilde{n}_{r}^{*}}\right].
@@ -94,13 +94,13 @@ Usando la aproximación de Stirling $(\ln N!\approx N \ln N-N)$, las propiedades
 
 $$
 S=-k \sum_{i} p_{i} \ln p_{i} \omega_{i}.
-$$ (gato)
+$$ (eq:02)
 
 $p_{i}=\tilde{n}_{i}^{*} / N^{*} \omega_{i}$ es la probabilidad por unidad de volumen, o densidad de probabilidad, de que el punto representativo de uno de los sistemas del ensemble se encuentre el la $i$-ésima celda. $p_{i}$ satisface $\sum_{i} p_{i} \omega_{i}=1$.
 
 ### El Limite al Continuo
 
-La definición de entropía dada por la ecuación {eq}`gato` es inconsistente con la naturaleza física de la entropía. Esto se debe a que su valor depende de la forma en que se construye el sistema de celdas. Esto está en desacuerdo con el hecho de que la entropía, como toda vantidad termodinámica, es una propiedad del sistema cuyo valor es independiente de la forma en que se mide o se calcula. Este problema se resuelve considerando un ensemble formado por una cantidad no numerable de sistemas (tal que sus puntos representativos forman una continuidad en el espacio $\Gamma$ ) y tomando el límite al contínuo. Con esto, la ecuación {eq}`eq:02` se convierte en
+La definición de entropía dada por la ecuación {eq}`eq:02` es inconsistente con la naturaleza física de la entropía. Esto se debe a que su valor depende de la forma en que se construye el sistema de celdas. Esto está en desacuerdo con el hecho de que la entropía, como toda vantidad termodinámica, es una propiedad del sistema cuyo valor es independiente de la forma en que se mide o se calcula. Este problema se resuelve considerando un ensemble formado por una cantidad no numerable de sistemas (tal que sus puntos representativos forman una continuidad en el espacio $\Gamma$ ) y tomando el límite al contínuo. Con esto, la ecuación {eq}`eq:02` se convierte en
 
 $$
 S=-k \int_{\Omega} \rho(x) \ln \rho(x) d \gamma. 
