@@ -94,7 +94,7 @@ $$S = -k \int_{\Omega} \rho(x) \ln \rho(x) \, d\gamma,$$ (eq:03)
 
 Donde $\rho(x)$ es la función de densidad de probabilidad en el espacio $\Gamma$, la cual está normalizada:
 
-$$\int_{\Omega} \rho(x) \, d\gamma = 1.$$ {eq:04)
+$$\int_{\Omega} \rho(x) \, d\gamma = 1.$$ (eq:04)
 
 La definición de entropía dada por la ecuación {eq}`eq:03` se conoce como la entropía de Gibbs.
 
