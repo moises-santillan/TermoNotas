@@ -543,26 +543,26 @@ $$
 Como la temperatura de la fuente es constante, $Q \leq T[S(B)-S(A)]$. De la primera ley ($Q = \Delta U + W_{\mathrm{mec}}$), sustituyendo obtenemos:
 
 $$
-W_{\mathrm{mec}} \leq -[F(B)-F(A)]. 
+L_{\mathrm{mec}} \leq -[F(B)-F(A)]. 
 $$
 
-Esta desigualdad demuestra que el trabajo mecánico máximo obtenible de un sistema a temperatura constante está acotado por la disminución de su energía libre de Helmholtz. Si el volumen es constante ($dV = 0$), entonces $\Delta F \leq 0$.
+Esta desigualdad demuestra que el trabajo mecánico máximo obtenible de un sistema a temperatura constante, $L_{\mathrm{mec}}$, está acotado por la disminución de su energía libre de Helmholtz. Si el volumen es constante ($dV = 0$), entonces $\Delta F \leq 0$.
 
 ### Energía Libre de Gibbs y Trabajo Químico
 
 Para un sistema en equilibrio con fuentes de temperatura ($T$) y presión ($P$) constantes, la primera ley establece:
 
 $$
-Q = \Delta U + P \Delta V + W_{\mathrm{quim}}, 
+Q = \Delta U + P \Delta V + L_{\mathrm{quim}}, 
 $$
 
-donde $W_{\mathrm{quim}} = -\int \mu dN$ es el trabajo químico desarrollado por el sistema. Combinando con la segunda ley ($Q \leq T \Delta S$):
+donde $L_{\mathrm{quim}} = -\int \mu dN$ es el trabajo químico desarrollado por el sistema. Combinando con la segunda ley ($Q \leq T \Delta S$):
 
 $$
-W_{\mathrm{quim}} \leq -\Delta G = -[G(B)-G(A)].
+L_{\mathrm{quim}} \leq -\Delta G = -[G(B)-G(A)].
 $$
 
-Por lo tanto, el trabajo químico máximo extraíble a $T$ y $P$ constantes está acotado por la disminución de la energía libre de Gibbs. Si $N$ es constante ($W_{\text{quim}} = 0$), entonces $\Delta G \leq 0$ para cualquier proceso espontáneo.
+Por lo tanto, el trabajo químico máximo extraíble a $T$ y $P$ constantes está acotado por la disminución de la energía libre de Gibbs. Si $N$ es constante ($L_{\text{quim}} = 0$), entonces $\Delta G \leq 0$ para cualquier proceso espontáneo.
 
 ### Entalpía y Calor Isobárico
 

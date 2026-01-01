@@ -18,7 +18,7 @@
 
 ### Representación de un Macroestado en el espacio $\Gamma$
 
-En un macroestado, el valor de todas las variables termodinámicas permanece constante en el tiempo. Sin embargo y aun cuando el sistema está en equilibrio, su microestado cambia constantemente. En otras palabras, dado un macroestado, existe una gran cantidad de microestados compatibles con él. Dicho conjunto de microestados está completamente determinado por las restricciones macroscópicas (los valores de las variables termodinámicas independientes).
+En un macroestado, el valor de todas las variables termodinámicas permanece constante en el tiempo. Sin embargo, aun cuando el sistema está en equilibrio, su microestado cambia constantemente. En otras palabras, dado un macroestado, existe una gran cantidad de microestados compatibles con él. Dicho conjunto de microestados está completamente determinado por las restricciones macroscópicas (los valores de las variables termodinámicas independientes).
 
 Los puntos representativos de los microestados compatibles con el macroestado conforman una región en el espacio $\Gamma$. En adelante, llamaremos a esta región la región $\Omega$. El tamaño y forma de $\Omega$ están determinados por las restricciones macroscópicas. La región $\Omega$ es la representación geométrica del macroestado en el espacio $\Gamma$.
 
@@ -98,7 +98,7 @@ $$ (eq:02)
 
 $p_{i}=\tilde{n}_{i}^{*} / N^{*} \omega_{i}$ es la probabilidad por unidad de volumen, o densidad de probabilidad, de que el punto representativo de uno de los sistemas del ensemble se encuentre el la $i$-ésima celda. $p_{i}$ satisface $\sum_{i} p_{i} \omega_{i}=1$.
 
-### El límite al Continuo
+### El Limite al Continuo
 
 La definición de entropía dada por la ecuación {eq}`eq:02` es inconsistente con la naturaleza física de la entropía. Esto se debe a que su valor depende de la forma en que se construye el sistema de celdas. Esto está en desacuerdo con el hecho de que la entropía, como toda vantidad termodinámica, es una propiedad del sistema cuyo valor es independiente de la forma en que se mide o se calcula. Este problema se resuelve considerando un ensemble formado por una cantidad no numerable de sistemas (tal que sus puntos representativos forman una continuidad en el espacio $\Gamma$ ) y tomando el límite al contínuo. Con esto, la ecuación {eq}`eq:02` se convierte en
 
@@ -124,7 +124,7 @@ La segunda ley de la termodinámica en la representación de la entropía establ
 
 Por definición, el ensemble microcanónico está constituido por sistemas en equilibrio y rodeados por paredes rígidas, adiabáticas e impermeables; es decir, están aislados. Todos los sistemas de un ensemble canónico tienen valores constantes e iguales de $U, V$ y $N_{i}$.
 
-Dada la forma en que se construye este ensemble, no es necesaria ninguna condición además de la condición de normalización {eq}`eq:04` para garantizar que el ensemble es un sistema aislado y en equilibrio. Así pues, la densidad de probabilidad de equilibrio es aquella que maximiza la entropía {eq}`eq:03`, sujeta a la condición de normalización {eq}`eq04`. Este problema se resuelve empleando cálculo variacional. Para ello, se define el Lagrangiano:
+Dada la forma en que se construye este ensemble, no es necesaria ninguna condición además de la condición de normalización {eq}`eq:04` para garantizar que el ensemble es un sistema aislado y en equilibrio. Así pues, la densidad de probabilidad de equilibrio es aquella que maximiza la entropía {eq}`eq:03`, sujeta a la condición de normalización {eq}`eq:04`. Este problema se resuelve empleando cálculo variacional. Para ello, se define el Lagrangiano:
 
 $$
 \Lambda=\int_{\Omega}[\rho(x) \ln \rho(x)-\alpha \rho(x)] d \gamma,
@@ -213,7 +213,7 @@ $$ (eq:11)
 
 En resumen, la densidad de probabilidad de equilibrio del ensemble canónico está dada por la ecuación {eq}`eq:08`, con $Z$ y $\beta$ respectivamente dadas por las ecuaciones {eq}`eq:09` y {eq}`eq:11`.
 
-Puesto que en este caso las variables independientes son $T, V$ y $N_{i}$, que corresponden a la representación de la energía libre de Helmholtz, la ecuación fundamental se obtiene a partir de la ecuación {eq}`eq:10` y la definición de $F$ como
+Puesto que en este caso las variables independientes son $T, V$ y $N_{i}$, que corresponden a la representación de la energía libre de Helmholtz, la ecuación fundamental se obtiene a partir de la ecuación {eq}`eq:10` y la definición de $F$ como:
 
 $$
 F\left(T, V, N_{i}\right)=-k T \ln Z\left(T, V, N_{i}\right). 
@@ -260,11 +260,13 @@ P &=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{k T N}{V}. \\
 \end{align*} (eq:15)
 
 
-La ecuación (2.16) es una de las ecuaciones de estado del gas ideal. Por otra parte, de la ecuación (2.15) y de la definición de la energía libre de Helmholtz se sigue que
+La primera expresión de {eq}`eq:15`  es una de las ecuaciones de estado del gas ideal. Por otra parte, de la segunda y de la definición de la energía libre de Helmholtz se sigue que
+
 $$
 \bar{\epsilon}=F+T S=\frac{3}{2} N k T. \tag{2.18}
 $$
-Esta ecuación es otra de las ecuaciones de estado del gas ideal. La ecuación (2.17) no corresponde a la tercera ecuación de estado del sistema. Sin embargo, este problema se estudiará posteriormente.
+
+Esta ecuación es otra de las ecuaciones de estado del gas ideal. La tercera expresión de {eq}`eq:15` no corresponde a la tercera ecuación de estado del sistema. Sin embargo, este problema se estudiará posteriormente.
 
 En conclusión, a sido posible recuperar al menos dos de las ecuaciones de estado del gas ideal, usando el formalismo del ensemble canónico. Esto en cierta medida valida las suposiciones hechas en la construcción de esta teoría. Particularmente, la hipótesis de igualdad de probabilidad a priori y la definición de entropía.
 

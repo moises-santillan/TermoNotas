@@ -2,7 +2,7 @@
 
 ## Introducción: El Criterio de Espontaneidad de Gibbs
 
-En el estudio de las transformaciones químicas, el objetivo central es determinar la dirección del cambio y el punto de equilibrio. Bajo condiciones habituales de laboratorio, presión ($P$) y temperatura ($T$) constantes, la función de estado que gobierna el sistema es la Energía Libre de Gibbs ($G$).
+En el estudio de las transformaciones químicas, el objetivo central es determinar la dirección del cambio y el punto de equilibrio. Bajo condiciones habituales de laboratorio, presión ($P$) y temperatura ($T$) constantes, la función de estado que gobierna el sistema es la energía libre de Gibbs ($G$).
 
 El segundo principio de la termodinámica dicta que, para estos procesos, el sistema evolucionará espontáneamente hacia un mínimo de energía libre ($dG < 0$).
 
@@ -38,7 +38,7 @@ $$
 d N_{i} = \sum_{j} \gamma_{i j} d \xi_{j},
 $$
 
-donde $\xi$ es el grado de avance de la reacción $j$ (una variable que cuantifica el progreso de la reacción) y $\gamma_{i j}$ es el coeficiente estequiométrico (positivo para productos, negativo para reactivos) de la especie química $i$ en la reacción $j$. Al sustituir esto en la diferencial de Gibbs:
+donde $\xi$ es el grado de avance de la reacción $j$ (una variable que cuantifica el progreso de la reacción) y $\gamma_{i j}$ es el coeficiente estequiométrico (positivo para productos, negativo para reactivos) de la especie química $i$ en la reacción $j$. Al sustituir esto en la diferencial de Gibbs obtenemos:
 
 $$
 d G = \sum_{j} \left( \sum_{i} \mu_{i} \gamma_{i j} \right) d \xi_{j} = \sum_{j} A_{j} d \xi_{j}.
@@ -106,7 +106,7 @@ $$
 k^{+} \prod \bar{a}_{i}^{\alpha_{i}} = k^{-} \prod \bar{b}_{j}^{\beta_{j}}.
 $$
 
-Esto define la constante de asociación $K_A$ como el cociente de las constantes de velocidad:
+Esto define la constante de asociación $K_A$ como el cociente de las constantes de reacción:
 
 $$
 K_{A} = \frac{k^{+}}{k^{-}} = \frac{\prod \bar{b}_{j}^{\beta_{j}}}{\prod \bar{a}_{k}^{\alpha_{k}}} = \prod_{i} \bar{c}_{i}^{\gamma_{i}}.
