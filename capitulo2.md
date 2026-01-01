@@ -272,7 +272,7 @@ Esta ecuación es otra de las ecuaciones de estado del gas ideal. La tercera exp
 
 En conclusión, a sido posible recuperar al menos dos de las ecuaciones de estado del gas ideal, usando el formalismo del ensemble canónico. Esto en cierta medida valida las suposiciones hechas en la construcción de esta teoría. Particularmente, la hipótesis de igualdad de probabilidad a priori y la definición de entropía.
 
-### Ensemble microcanónico
+### Ensemble Microcanónico
 
 Considere un gas formado por $N$ partículas, contenido en un recipiente de volumen fijo $V$ y rodeado de paredes adiabáticas e impermeables, de tal forma que tiene una energía interna en el intervalo $[E-\delta E, E] (\delta E \ll E)$.
 
@@ -302,7 +302,7 @@ $$
 \Gamma=\frac{\left(V(2 \pi m E)^{3 N / 2}\right)^{N}}{(3 N / 2)!} .
 $$
 
-Del resultado anterior y la fórmula para la ecuación fundamental del ensemble microcanónico {eq}`eq06`, tenemos que la ecuación fundamental del gas ideal en condiciones de energía $E$, volumen $V$ y número de partículas $N$ constantes es
+Del resultado anterior y la fórmula para la ecuación fundamental del ensemble microcanónico {eq}`eq:06`, tenemos que la ecuación fundamental del gas ideal en condiciones de energía $E$, volumen $V$ y número de partículas $N$ constantes es
 
 $$
 S=k N\left\{\ln V\left[\frac{4 \pi m E}{3 N}\right]^{3 / 2}+\frac{3}{2}\right\}. \tag{2.19}
@@ -316,49 +316,61 @@ Las ecuaciones de estado derivadas de la anterior ecuación fundamental son
 \frac{\mu}{T}&=-k\left[\ln V+\frac{3}{2} \ln \left[\frac{4 \pi m E}{3 N}\right]\right]. 
 \end{align*}
 
-Estas ecuaciones de estado son completamente compatibles con las ecuaciones de estado derivadas con el ensemble microcanónico:{eq}`eq15`.
+Estas ecuaciones de estado son completamente compatibles con las ecuaciones de estado derivadas con el ensemble microcanónico:{eq}`eq:15`.
 
-## Fluctuaciones termodinámicas
+## Fluctuaciones Termodinámicas
 
 En el ensemble microcanónico, el valor promedio de cualquier cantidad física $f(x)$, se calcula como
+
 $$
 \bar{f}=\int_{\Omega} f(x) \rho(x) d \gamma,
 $$
-con $\rho(x)$ la densidad de probabilidad dada por la ecuación (2.8). A partir del resultado anterior y la expresión para la función de partición: ecuación (2.9), se sigue para la energía promedio del gas que
+
+con $\rho(x)$ la densidad de probabilidad dada por {eq}`eq:08`. Tomando esto en cuenta, junto con la expresión para la función de partición: ecuación {eq}`eq:09`, se sigue para la energía promedio del gas que
+
 $$
 \bar{\epsilon}=-\frac{\partial \ln Z}{\partial \beta}. 
 $$
 
 De manera análoga se demuestra que
+
 $$
 \overline{\Delta \epsilon^{2}}=\frac{\partial^{2} \ln Z}{\partial \beta^{2}}. 
 $$
 
-De las dos ecuaciones, y dado el caracter extensivo de la función de partición $Z$ y el caracter intensivo de $\beta=1 / k T$, se concluye que la magnitud relativa de las fluctuaciones en la energía obedece la siguiente relación
+De las dos ecuaciones anteriores, y dado que la función de partición $Z$ es extensiva en tanto que $\beta=1 / k T$ es intensiva, se concluye que la magnitud relativa de las fluctuaciones en la energía obedece la siguiente relación
+
 $$
 \frac{\bar{\epsilon}}{\sqrt{\overline{\Delta \epsilon^{2}}}} \approx \frac{1}{\sqrt{N}}.
-$$(eq:eq25)
+$$ (eq:25)
 
 ## Paradoja de Gibbs y otros problemas
 
-En la ecuación fundamental del gas ideal derivada con el ensemble canónico {eq}`eq13` en la representación de la energía libre de Helmholtz, como en la derivada con el ensemble microcanónico en la representación de la entropía (2.19), existen un par de problemas. En primer lugar, las unidades son incorrectas. En ambos casos, el argumento de la función logaritmo debe de ser adimensional. Este problema tiene su origen en la derivación original de la entropía de un ensemble (2.1). En dicha derivación se toma el volumen fase de una celda de la región $\Omega$ como medida del número de posiciones distintas que un punto representativo puede tomar dentro de dicha celda. Por esta razón, aparecen multiplicados los volúmenes de las celdas elevados a una potencia igual al número de ocupación de las mismas. Esto de la a la entropía del ensemble unidades de Joule soble Kelvin, por unidades de volumen fase, lo cual es incorrecto. Este problema se soluciona con argumentos cuánticos. Debido a las relaciones de incertidumbre de Heisenberg, es imposible localizar exactamente la posición de el punto relativo del sistema en el espacio fase. A lo más, se puede determinar una vecindad de volumen $h^{3 N}$, con $N$ el número de partículas del gas. Bajo estas consideraciones, el número de posiciones distintas que un punto representativo puede tomar en el interior de una celda de del espacio $\Gamma$ está dado por el volumen de la misma, dividido por $h^{3 N}$. Tomando esto en cuenta, para evitar problemas con las unidades, hay que corregir las ecuaciones fundamentales derivadas con los ensembles microcanónico y canónico de la siguiente forma, respectivamente:
-\begin{aligned}
+En la ecuación fundamental del gas ideal en el ensemble canónico {eq}`eq:13`, así como en la del ensemble microcanónico en {eq}`eq:19`, existen un par de problemas. En primer lugar, las unidades son incorrectas. En ambos casos, el argumento de la función logaritmo debe de ser adimensional. Este problema tiene su origen en la derivación original de la entropía de un ensemble {eq}`eq:01`. En dicha derivación se toma el volumen fase de una celda de la región $\Omega$ como medida del número de posiciones distintas que un punto representativo puede tomar dentro de dicha celda. Por esta razón, aparecen multiplicados los volúmenes de las celdas elevados a una potencia igual al número de ocupación de las mismas. Esto le da a la entropía del ensemble unidades de Joule soble Kelvin, por unidades de volumen fase, lo cual es incorrecto. Este problema se soluciona con argumentos cuánticos. Debido a las relaciones de incertidumbre de Heisenberg, es imposible localizar exactamente la posición de el punto relativo del sistema en el espacio fase. A lo más, se puede determinar una vecindad de volumen $h^{3 N}$, con $N$ el número de partículas del gas. Bajo estas consideraciones, el número de posiciones distintas que un punto representativo puede tomar en el interior de una celda de del espacio $\Gamma$ está dado por el volumen de la misma, dividido por $h^{3 N}$. Tomando esto en cuenta, para evitar problemas con las unidades, hay que corregir las ecuaciones fundamentales de los ensembles microcanónico y canónico de la siguiente forma, respectivamente:
+
+\begin{align*}
 S(U, V, N) & =k \ln \frac{\Gamma}{h^{3 N}} \\
 & =k N\left\{\ln V\left[\frac{4 \pi m E}{3 N h^{2}}\right]^{3 / 2}+\frac{3}{2}\right\},
-\end{aligned}
+\end{align*}
+
 y
-\begin{aligned}
+
+\begin{align*}
 F(T, V, N) & =-k T \ln \frac{Z}{h^{3 N}} \\
 & =-k T N\left[\ln V+\frac{3}{2} \ln \left(\frac{2 \pi m k T}{h^{2}}\right)\right].
-\end{aligned}
-Las fórmulas anteriores tienen las unidades correctas, pero aún presentan un problema. Tanto la entropía como la energía libre de Helmholtz son cantidades extensivas. Sin embargo, dado que en las ecuaciones anteriores aparece el logaritmo del volumen multiplicando a $N$, ellas no representan cantidades extensivas. Este problema se conoce como paradoja de Gibbs.
+\end{align*}
+
+Las fórmulas anteriores tienen las unidades correctas, pero aún presentan un problema. Tanto la entropía como la energía libre de Helmholtz son cantidades extensivas. Sin embargo, las ecuaciones anteriores no lo son pues en ellas aparece el logaritmo del volumen multiplicando a $N$. Este problema se conoce como paradoja de Gibbs.
 
 La paradoja de Gibbs se resuelve empleando argumentos cuánticos. En particular el hecho de que en realidad las partículas que forman un gas son indistinguibles, lo cual no se tomó en cuenta al contar el número de microestados compatibles con un mesoestado. Por tal razón, la probabilidad de un mesoestado está sobreestimada por un factor $N$ !. Después de corregirlas, las ecuaciones fundamentales obtenidas con los ensembles microcanónico y canónico quedan finalmente como
+
 \begin{align*}
 S(U, V, N) & =k \ln \frac{\Gamma}{h^{3 N} N!} \\
 & =k N\left\{\ln \frac{V}{N} \left[\frac{4 \pi m E}{3 N h^{2}}\right]^{3 / 2}+\frac{5}{2}\right\}, \tag{2.26}
 \end{align*}
+
 y
+
 \begin{align*}
 F(T, V, N) & =-k T \ln \frac{Z}{h^{3 N} N!} \\
 & =-k T N\left[\ln \frac{V}{N}+\frac{3}{2} \ln \left(\frac{2 \pi m k T}{h^{2}}\right)+1\right]. \tag{2.27}
@@ -367,39 +379,51 @@ F(T, V, N) & =-k T \ln \frac{Z}{h^{3 N} N!} \\
 ## Teorema de equipartición de la energía
 
 Considere un sistema cuya dinámica está determinada por un Hamiltoniano de la forma
+
 $$
 H=K+V=\sum_{i=1}^{f} A_{i} p_{i}^{2}+\sum_{i, j=1}^{f} B_{i j} q_{i} q_{j}.
 $$
+
 $f$ es el número de grados de libertad del sistema, $p_{i}$ son los momentos generalizados, $q_{i}$ las coordenadas generalizadas, y $A_{i}$ y $B_{i j}$ son constantes arbitrarias. Tanto la componente de energía cinética como la de energía potencial de este Hamiltoniano es homogéneas de segundo orden los los momentos y en las coordenadas generalizadas, respectivamente:
+
 \begin{align*}
 & \sum_{j=1}^{f} p_{j} \frac{\partial K}{\partial p_{j}}=2 \sum_{j=1}^{f} A_{j} p_{j}^{2}=2 K,  \tag{2.28}\\
 & \sum_{j=1}^{f} q_{j} \frac{\partial V}{\partial q_{j}}=2 \sum_{i, j=1}^{f} B_{i j} q_{i} q_{j}=2 V. \tag{2.29}
 \end{align*}
 
 Por otra parte, usando el ensemble canónico tenemos que
+
 $$
-\overline{p_{j} \frac{\partial K}{\partial p_{j}}}=\overline{p_{j} \frac{\partial H}{\partial p_{j}}}=\frac{1}{Z} \int e^{-\beta H} p_{j} \frac{\partial H}{\partial p_{j}} d \gamma. \tag{2.30}
-$$(eq:eq30)
+\overline{p_{j} \frac{\partial K}{\partial p_{j}}}=\overline{p_{j} \frac{\partial H}{\partial p_{j}}}=\frac{1}{Z} \int e^{-\beta H} p_{j} \frac{\partial H}{\partial p_{j}} d \gamma. 
+$$ (eq:eq30)
+
 La integral se lleva a cabo sobre todas las coordenadas y todos los momentos generalizados, incluyendo $p_{j}$. Separando la integral sobre $p_{j}$ y llevándola a cabo por partes tenemos que
+
 \begin{align*}
 \int_{-\infty}^{\infty} e^{-\beta H} \frac{\partial H}{\partial p_{j}} p_{j} d p_{j} &=-\frac{1}{\beta} \int_{-\infty}^{\infty} \frac{\partial e^{-\beta H}}{\partial p_{j}} p_{j} d p_{j}, \\
 &=-\left.\frac{e^{-\beta H} p_{j}}{\beta}\right|_{-\infty} ^{\infty}+\frac{1}{\beta} \int_{-\infty}^{\infty} e^{-\beta H} d p_{j}. 
-\end{align*}(eq:eq32)
+\end{align*}(eq:32)
+
 El primer término se cancela en ambos límites dada la dependencia del hamiltoniano en $p_{j}$.
-Así pues, reinsertando de la integral {Eq}`eq31` en {Eq}`eq32`
+
+Así pues, reinsertando de la integral {eq}`eq:31` en {eq}`eq:32`
 
 $$
 \overline{p_{j} \frac{\partial K}{\partial p_{j}}}=\frac{1}{\beta} \int \frac{e^{-\beta H}}{Z} d \gamma=k T. 
-$$(eq:eq32)
+$$ (eq:32)
 
-Finalmente, de las ecuaciones {eq}`eq32` y {eq}`eq28` se sigue que
+Finalmente, de las ecuaciones {eq}`eq32` y {eq}`eq:28` se sigue que
+
 $$
 \bar{K}=\frac{f}{2} k T
 $$
+
 De manera análoga se demuestra para la energía potencial que
+
 $$
 \bar{V}=\frac{f}{2} k T. 
 $$
+
 Las dos últimas ecuaciones constituyen el teorema de equipartición de la energía, el cual nos dice que si tanto la energía cinética como la energía potencial son respectivamente funciones homogéneas de segundo orden en las coordenadas y los momentos generalizados, entonces ambas se reparten equitativamente entre todos los grados de libertad.
 
 El teorema de equipartición de la energía también puede demostrarse en ensemble microcanónico.
@@ -407,24 +431,32 @@ El teorema de equipartición de la energía también puede demostrarse en ensemb
 ## El sólido cristalino clásico
 
 Una aplicación interesante del teorema de equipartición de la energía es el sólido cristalino. El Hamiltoniano de este sistema se puede escribir en general como
+
 $$
 H=\sum_{i=1}^{3 N} \frac{p_{i}^{2}}{2 m}+V\left(q_{1} \cdots q_{3 N}\right).
 $$
+
 $N$ es el número de átomos del sólido, $p_{i}$ representa una coordenada de momento, $q_{i}$ representa una coordenada de posición y $V$ es la energía potencial elástica del sólido. Las coordenadas $q_{i}$ están referidas a las posiciones de equilibrio de las partículas, donde toman valor cero. Por convención, $V(0 \cdots 0)=0$, además de que debido a que el equilibrio mecánico se alcanza cuando $q_{i}=0(\forall i=1 \cdots 3 N)$, se cumple que $\partial V /\left.\partial q_{i}\right|_{\left\{q_{j}=0\right\}} (\forall i 1 \cdots 3 N)$.
 
 Los átomos de un sólido paramagnético están fuertemente unidos entre sí, por lo que se alejan muy poco de su posición de equilibrio. Eso significa que $q_{j} \simeq 0,(\forall i 1 \cdots 3 N)$. En consecuencia, es factible expandir $V\left(q_{1} \cdots q_{3 N}\right)$ en serie de Taylor y cortar a segundo orden:
+
 $$
 V\left(q_{1} \cdots q_{3 N}\right) \simeq \sum_{i, j=1}^{3 N} \frac{\partial^{2} V}{\partial q_{i} \partial q_{j}} q_{i} q_{j}.
 $$
+
 Esta aproximación se llama la aproximación armónica.
 
 Del resultado anterior vemos que si es válida la aproximación armónica, el Hamiltoniano del sólido cristalino satisface las condiciones del teorema de equipartición de la energía. En consecuencia,
+
 $$
 U=3 N k T.
 $$
+
 De donde el calor específico molar a volumen constante del sólido cristalino es
+
 $$
 c_{P}^{*}=3 R.
 $$
+
 Este resultado se conoce como Ley de Dulong y Petit. Funciona bastante bien a altas temperaturas, sin embargo en el límite de temperaturas bajas falla, pues el calor específico de los sólidos cristalinos disminuye como $T^{3}$. De hecho, la Ley de Dulong y Petit contradice la tercera ley de la termodinámica, la cual predice que el calor específico de cualquier sistema tiende a cero cuando la temperatura tiende a cero.
 
