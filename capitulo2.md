@@ -76,7 +76,7 @@ Del razonamiento anterior se sigue que la entropía del estado de equilibrio del
 
 $$
 S^{*}=k \ln \left[\frac{N^{*}!}{\tilde{n}_{1}^{*}!\tilde{n}_{2}^{*}!\ldots \tilde{n}_{r}^{*}!} \omega_{1}^{\tilde{n}_{r}^{*}} \omega_{2}^{\tilde{n}_{1}^{*}} \ldots \omega_{r}^{\tilde{n}_{r}^{*}}\right]. 
-$$ (gato)
+$$ (eq:01)
 
 $k$ es la constante de Boltzmann, que es una constante universal con unidades de Joules sobre Kelvin (unidades de entropía).
 
@@ -84,7 +84,7 @@ $k$ es la constante de Boltzmann, que es una constante universal con unidades de
 
 ### Entropía de Cada Sistema del Ensemble
 
-La ecuación {eq}`gato` permite calcular la entropía del ensemble a partir de los números de ocupación del mesoestado más probable. Todos los sistemas del ensemble están en equilibrio y tienen el mismo macroestado. Esto significa que la entropía está bien definida y que todos los sistemas tienen el mismo valor de entropía. Haciendo uso de este hecho, así como de la aditividad de la entropía, la entropía de cada sistema del ensemble se calcula como
+La ecuación {eq}`eq:01` permite calcular la entropía del ensemble a partir de los números de ocupación del mesoestado más probable. Todos los sistemas del ensemble están en equilibrio y tienen el mismo macroestado. Esto significa que la entropía está bien definida y que todos los sistemas tienen el mismo valor de entropía. Haciendo uso de este hecho, así como de la aditividad de la entropía, la entropía de cada sistema del ensemble se calcula como
 
 $$
 S=\frac{S^{*}}{N^{*}}=k \frac{1}{N^{*}} \ln \left[\frac{N^{*}!}{\tilde{n}_{1}^{*}!\tilde{n}_{2}^{*}!\ldots \tilde{n}_{r}^{*}!} \omega_{1}^{\tilde{n}_{r}^{*}} \omega_{2}^{\tilde{n}_{1}^{*}} \ldots \omega_{r}^{\tilde{n}_{r}^{*}}\right].
@@ -344,7 +344,7 @@ $$
 \frac{\bar{\epsilon}}{\sqrt{\overline{\Delta \epsilon^{2}}}} \approx \frac{1}{\sqrt{N}}.
 $$ (eq:25)
 
-## Paradoja de Gibbs y otros problemas
+## Paradoja de Gibbs y Otros Problemas
 
 En la ecuación fundamental del gas ideal en el ensemble canónico {eq}`eq:13`, así como en la del ensemble microcanónico en {eq}`eq:19`, existen un par de problemas. En primer lugar, las unidades son incorrectas. En ambos casos, el argumento de la función logaritmo debe de ser adimensional. Este problema tiene su origen en la derivación original de la entropía de un ensemble {eq}`eq:01`. En dicha derivación se toma el volumen fase de una celda de la región $\Omega$ como medida del número de posiciones distintas que un punto representativo puede tomar dentro de dicha celda. Por esta razón, aparecen multiplicados los volúmenes de las celdas elevados a una potencia igual al número de ocupación de las mismas. Esto le da a la entropía del ensemble unidades de Joule soble Kelvin, por unidades de volumen fase, lo cual es incorrecto. Este problema se soluciona con argumentos cuánticos. Debido a las relaciones de incertidumbre de Heisenberg, es imposible localizar exactamente la posición de el punto relativo del sistema en el espacio fase. A lo más, se puede determinar una vecindad de volumen $h^{3 N}$, con $N$ el número de partículas del gas. Bajo estas consideraciones, el número de posiciones distintas que un punto representativo puede tomar en el interior de una celda de del espacio $\Gamma$ está dado por el volumen de la misma, dividido por $h^{3 N}$. Tomando esto en cuenta, para evitar problemas con las unidades, hay que corregir las ecuaciones fundamentales de los ensembles microcanónico y canónico de la siguiente forma, respectivamente:
 
@@ -433,7 +433,7 @@ Las dos últimas ecuaciones constituyen el teorema de equipartición de la energ
 
 El teorema de equipartición de la energía también puede demostrarse en ensemble microcanónico.
 
-## El sólido cristalino clásico
+## El Sólido Cristalino Clásico
 
 Una aplicación interesante del teorema de equipartición de la energía es el sólido cristalino. El Hamiltoniano de este sistema se puede escribir en general como
 
