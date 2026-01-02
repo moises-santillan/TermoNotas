@@ -1,817 +1,588 @@
 # Capítulo 3: Física Estadística Cuántica
 
+# Capítulo 3: Física Estadística Cuántica
+
 ## La matriz de densidad
 
-Desde el punto de vista de la mecánica cuántica, un sistema termodinámico nunca está completamente aislado. Incluso un sistema rodeado por paredes adiabáticas, rígidas e impermeables interactúa con las paredes mismas. En tal sentido, siempre es posible escribir el operador Hamiltoniano de un sistema termodinámico de la siguiente forma,
+Desde la perspectiva de la mecánica cuántica, un sistema termodinámico nunca puede considerarse estrictamente aislado. Incluso aquellos sistemas confinados por paredes perfectamente adiabáticas, rígidas e impermeables mantienen una interacción residual con los constituyentes microscópicos de dichas fronteras. En consecuencia, el operador Hamiltoniano de un sistema termodinámico real se describe mediante la expresión:
 
 $$
-\hat{H}_{o}\left(x_{i}\right)+\hat{H}_{i}\left(x_{i}, q_{j}\right)
+\hat{H}_{o}\left(x_{i}\right)+\hat{H}_{i}\left(x_{i}, q_{j}\right),
 $$
 
-$\hat{H}_{o}$ es el Hamiltoniano que da cuenta de la dinámica interna del sistema mientras que $\hat{H}_{i}$ representa la interacción del sistema con el medio. las variables $x_{i}$ son las coordenadas generalizadas de los elementos que componen el sistema, en tanto que las variables $q_{j}$ son las coordenadas generalizadas asociadas al medio.
+donde $\hat{H}_{o}$ es el Hamiltoniano intrínseco que rige la dinámica interna del sistema, mientras que $\hat{H}_{i}$ representa el término de interacción con el entorno. Aquí, las variables $x_{i}$ denotan las coordenadas generalizadas de los elementos que integran el sistema, y las variables $q_{j}$ representan las coordenadas asociadas al medio externo.
 
-Bajo la suposición de que $\hat{H}_{i}$ se puede tratar como una perturbación, la función de onda del sistema $\left(\Psi\left(x_{i}, q_{j}\right)\right)$ se puede escribir como una combinación lineal de las eigenfunciones de $\hat{H}_{o}\left(\phi_{n}\left(x_{i}\right)\right)$ :
-
-$$
-\Psi\left(x_{i}, q_{j}\right)=\sum_{n} a_{n}\left(q_{j}\right) \phi_{n}\left(x_{i}\right)
-$$
-
-En virtud de lo anterior, dado un operador $\hat{f}\left(x_{i}\right)$ asociado a un observable del sistema, su valor esperado queda como
+Bajo la premisa de que $\hat{H}_{i}$ puede tratarse como una perturbación débil, la función de onda total del sistema, $\Psi\left(x_{i}, q_{j}\right)$, puede expandirse como una combinación lineal de las eigenfunciones de la dinámica interna, $\phi_{n}\left(x_{i}\right)$, asociadas a $\hat{H}_{o}$:
 
 $$
-\bar{f}=\int \Psi^{*}\left(x_{i}, q_{j}\right) \hat{f}\left(x_{i}\right) \Psi\left(x_{i}, q_{j}\right) d x_{i} d q_{j}=\sum_{n, m} f_{n m} w_{m n}
+\Psi\left(x_{i}, q_{j}\right)=\sum_{n} a_{n}\left(q_{j}\right) \phi_{n}\left(x_{i}\right).
 $$
 
-donde
+En esta formulación, el valor esperado de un observable representado por el operador $\hat{f}\left(x_{i}\right)$ se obtiene mediante el promedio sobre todos los grados de libertad:
+
+$$
+\bar{f}=\int \Psi^{*}\left(x_{i}, q_{j}\right) \hat{f}\left(x_{i}\right) \Psi\left(x_{i}, q_{j}\right) d x_{i} d q_{j}=\sum_{n, m} f_{n m} w_{m n},
+$$
+
+donde los elementos de matriz del observable en la base de $\hat{H}_{o}$ se definen como:
 
 $$
 f_{n m}=\int \phi_{n}^{*}\left(x_{i}\right) \hat{f}\left(x_{i}\right) \phi_{m}\left(x_{i}\right) d x_{i}
 $$
 
-mientras que
+en tanto que los coeficientes que ponderan la interacción con el medio se agrupan en la matriz de densidad, $w_{n m}$, están dados por:
 
 $$
-w_{n m}=\int a_{m}\left(q_{j}\right) a_{n}^{*}\left(q_{j}\right)
+w_{n m}=\int a_{m}\left(q_{j}\right) a_{n}^{*}\left(q_{j}\right) d q_j.
 $$
 
-$w_{n m}$ recibe el nombre de matriz de densidad. Los valores de las entradas de esta matriz están determinados por las interacciones del sistema con el medio. Dado que la traza de una matriz es un invariante, el valor esperado del operador $\hat{f}$ también se puede escribir como
+Las entradas de esta matriz codifican el efecto de las interacciones externas sobre el sistema. Debido a la invariancia de la traza ante cambios de base, el valor esperado del operador $\hat{f}$ puede expresarse de manera compacta como:
 
 $$
-\bar{f}=\operatorname{tr}(\underline{\underline{f} \underline{\underline{w}}})
+\bar{f}=\operatorname{tr}(\underline{\underline{f}} \underline{\underline{w}}).
 $$
 
-Sin pérdida de generalidad podemos suponer que $\Psi\left(x_{i}, q_{j}\right)$ está normalizada y que las funciones $\phi_{n}\left(x_{i}\right)$ forman un conjunto ortonormal. De acuerdo con esto, la probabilidad $p_{n}$ de que al hacer una medición el estado del sistema sea $\phi_{n}$ está dada por
+Asumiendo, sin pérdida de generalidad, que la función de onda total $\Psi\left(x_{i}, q_{j}\right)$ está normalizada y que el conjunto $\left\{\phi_{n}\left(x_{i}\right)\right\}$ constituye una base ortonormal, la probabilidad $p_{n}$ de encontrar al sistema en el estado cuántico $\phi_{n}$ tras una medición se define como:
 
 $$
-p_{n}=\int a_{n}^{*}\left(q_{j}\right) a_{n}\left(q_{j}\right) d q_{j}=w_{n n}
+p_{n}=\int a_{n}^{*}\left(q_{j}\right) a_{n}\left(q_{j}\right) d q_{j}=w_{n n}.
 $$
 
-En otras palabras, el conjunto de estados accesibles al sistema está determinado por su dinámica interna, en tanto que la probabilidad de que el sistema esté en un estado u otro depende de el tipo de interacción con el medio.
+## Ensemble Cuántico
 
-## Ensemble cuántico
+Un ensemble estadístico cuántico se define como una colección virtual de un número muy grande de copias del sistema bajo estudio. Todos los miembros del ensemble están regidos por el mismo Hamiltoniano interno ($\hat{H}_{o}(x_{i})$), se encuentran sujetos a las mismas condiciones externas ($\hat{H}_{i}(x_{i}, q_{j})$) y permanecen en equilibrio termodinámico.
 
-Un ensemble estadístico cuántico está conformado por un conjunto muy grande de copias del sistema bajo estudio, todas ellas gobernadas por el mismo Hamiltoniano $\left(\hat{H}_{o}\left(x_{i}\right)\right)$, sujetos a las mismas condiciones externas $\left(\hat{H}_{i}\left(x_{i}, q_{j}\right)\right)$ y en equilibrio termodinámico. Esto significa que todos los miembros del ensemble tienen el mismo conjunto de estados cuánticos accesibles ( $\phi_{n}\left(x_{i}\right)$ ), así como la misma probabilidad $p_{n}$ de que, al hacer una medición, el sistema se encuentre en el estado $\phi_{n}$.
+Esto implica que todos los sistemas del ensemble comparten el mismo espectro de estados cuánticos accesibles ($\phi_{n}(x_{i})$) y la misma probabilidad $p_{n}$ de ser hallados en un estado determinado tras una medición.
 
 ## Definición de Entropía
 
 ### Microestado del ensemble
+El microestado del ensemble está determinado por la configuración de los microestados de cada uno de los sistemas integrantes. La función de estado global se construye como el producto de las funciones de estado individuales. En este contexto, al ser sistemas macroscópicos, las copias que conforman el ensemble son tratables como entidades distinguibles entre sí.
 
-El microestado del ensemble está determinado por el conjunto de microestados de cada uno de los sistemas del ensemble. De hecho, la función de estado del ensemble puede construirse como el producto de las funciones de estado de cada uno de los sistemas que lo componen. En este caso, no hay que preocuparse por la indistinguibilidad puesto que, al ser macroscópicos, los sistemas que conforman el ensemble son todos indistinguibles entre sí.
-
-### Hipótesis de igualdad de probabilidad a priori
-
-Todos los microestados del ensemble compatibles con las restricciones termodinámicas son igualmente probables.
+### Hipótesis de igual probabilidad a priori
+Se postula que todos los microestados del ensemble compatibles con las restricciones termodinámicas impuestas son igualmente probables.
 
 ### Mesoestado cuántico
-
-Tomemos un ensemble con $N^{*}$ sistemas, construido de acuerdo a la definición de la sección anterior. El mesoestado del ensemble está determinado por el conjunto $\left\{\tilde{n}_{i}\right\}$, donde $\tilde{n}_{i}$ es el número de sistemas del ensemble cuyo estado es $\phi_{i}$.
+Para un ensemble de $N^{*}$ sistemas, el mesoestado se define mediante el conjunto de números de ocupación $\{\tilde{n}_{i}\}$, donde cada $\tilde{n}_{i}$ representa el número de sistemas que se encuentran en el estado cuántico $\phi_{i}$.
 
 ### Probabilidad de un mesoestado
-
-Dada la hipótesis de igualdad de probabilidad a priori, la probabilidad de un mesoestado es proporcional al número de microestados compatibles con él, i.e.
+Bajo la hipótesis de igual probabilidad a priori, la probabilidad de un mesoestado es proporcional a su peso estadístico (el número de microestados compatibles), dado por el coeficiente multinomial:
 
 $$
-\frac{N^{*}!}{\tilde{n}_{1}!\tilde{n}_{2}!\cdots}
+W = \frac{N^{*}!}{\tilde{n}_{1}! \tilde{n}_{2}! \dots}.
 $$
 
 ### Entropía
-
-De todos los mesoestados compatibles con las restricciones termodinámicas, el que posee la probabilidad máxima es el que caracteriza el estado macroscópico de equilibrio del ensemble.
-
-Por otra parte, si el ensemble es un sistema termodinámico aislado, su estado de equilibrio es aquel que posee la entropía máxima.
-
-La anterior similitud, junto con el hecho de que la entropía es aditiva, en tanto que la probabilidad es multiplicativa nos conduce, mediante un razonamiento heurístico, a definir la entropía del ensemble ( $S^{*}$ ) como proporcional al logaritmo del mesoestado más probable:
+El mesoestado de máxima probabilidad es aquel que caracteriza el equilibrio macroscópico del sistema. Basándonos en la aditividad de la entropía y la relación logarítmica con la probabilidad, definimos la entropía del ensemble ($S^{*}$) como:
 
 $$
-\begin{equation*}
-S^{*}=k_{B} \ln \frac{N^{*}!}{\tilde{n}_{1}^{*}!\tilde{n}_{2}^{*}!\cdots} \tag{3.1}
-\end{equation*}
+S^{*} = k_{B} \ln \frac{N^{*}!}{\tilde{n}_{1}^{*}! \tilde{n}_{2}^{*}! \dots}. 
 $$
 
-donde $\left\{\tilde{n}_{i}^{*}\right\}$ es el conjunto que caracteriza al mesoestado más probable.
-
-Dado que todos los sistemas del ensemble son idénticos, la entropía ( $S$ ) de cada uno de ellos se puede calcular como
+Dado que el ensemble está compuesto por sistemas idénticos, la entropía individual ($S$) de cada sistema se deduce como:
 
 $$
-\begin{equation*}
-S=\frac{S^{*}}{N} \tag{3.2}
-\end{equation*}
+S = \frac{S^{*}}{N^{*}}. 
 $$
 
-A partir de las ecuaciones (3.1) y (3.2) y haciendo uso de la aproximación de Stirling $(\ln N!=N \ln N-N)$, se llega a la siguiente expreción para la entropía de cada sistema del ensemble:
+Aplicando la aproximación de Stirling ($\ln N! \approx N \ln N - N$), se obtiene la expresión fundamental de la entropía de Gibbs:
 
 $$
-\begin{equation*}
-S=-k_{B} \sum_{n} p_{n} \ln p_{n} \tag{3.3}
-\end{equation*}
-$$
+S = -k_{B} \sum_{n} p_{n} \ln p_{n}, 
+$$ (eq01)
 
-donde $p_{n}=\frac{\tilde{n}_{n}^{*}}{N^{*}}$ y la sumatoria se lleva a cabo sobre todos los estados accesibles a cada uno de los sistemas del ensemble. De la definición, $p_{n}$ se puede identificar con la probabilidad calculada a partir de la densidad de probabilidad. Sin embargo, cualquier intento de calcularla a partir de primeros principios es imposible en la práctica, dado que, al tratar con sistemas macroscópicos, el número de grados de libertad es del orden de $10^{24}$.
+donde $p_{n} = \tilde{n}_{n}^{*} / N^{*}$ es la probabilidad de que el sistema ocupe el estado $n$. Aunque esta probabilidad está vinculada a la dinámica microscópica, en la práctica se determina mediante las restricciones macroscópicas y la segunda ley de la termodinámica.
 
-## Ensembles microcanónico y canónico
+## Ensembles Microcanónico y Canónico
 
-Como se menciona en la sección anterior, es prácticamente imposible calcular la entropía de un sistema a partir de la definición (3.3) si se quiere encontrar las probabilidades $p_{n}$ resolviendo la ecuación de Scrödinger del sistema y sus alrededores.
+Determinar la entropía mediante la resolución directa de la ecuación de Schrödinger para un sistema macroscópico es una tarea impracticable debido a la inmensa cantidad de grados de libertad. Sin embargo, este obstáculo se supera aplicando la segunda ley de la termodinámica: en condiciones de equilibrio, la distribución de probabilidades $\{p_n\}$ es aquella que maximiza la entropía funcional bajo las restricciones macroscópicas impuestas.
 
-Es posible resolver este problema usando la segunda ley de la termodinámica. Si podemos asegurar que el ensemble es un sistema termodinámico aislado en equilibrio, entonces la distribución de probabilidades $\left\{p_{n}\right\}$ será aquella que maximize la entropía. En otras palabras, en lugar de calcular las probabilidades $p_{n}$ (estado mesoscópico) a partir de la dinámica microscópica, éstas se calculan a partir de las condiciones macroscópicas y de la segunda ley de la termodinámica. A continuación un par de ejemplos.
+A continuación, se analizan los dos formalismos fundamentales resultantes de este principio variacional.
 
-### Ensemble microcanónico
+### Ensemble Microcanónico
 
-Por definición, el ensemble canónico está formado por un conjunto muy grande de sistemas termodinámicos, todos ellos gobernados por el mismo hamiltoniano, en equilibrio termodinámico y sujetos a las restricciones macroscópicas de energía $(E)$, volumen $(V)$ y número de partículas $(N)$ constantes. Es decir, todos los sistemas del ensemble microcanónico están termodinámicamente aislados.
-
-Dado lo anterior, el único requisito adicional para garantizar que el ensemble es un sistema termodinámico aislado y en equilibrio es que el número de sistemas permanezca constante. Esto es equivalente a pedir que:
+El ensemble microcanónico describe sistemas termodinámicamente aislados, con energía ($E$), volumen ($V$) y número de partículas ($N$) constantes. Para garantizar el equilibrio, la distribución de probabilidad solo debe satisfacer la condición de normalización:
 
 $$
-\begin{equation*}
-\sum_{n} p_{n}=1 \tag{3.4}
-\end{equation*}
+\sum_{n} p_{n}=1. 
 $$
 
-En otras palabras, la distribución de probabilidades del ensemble microcanónico es aquella que maximiza la entropía (3.3), sujeta a la condición de normalización (3.4). Usando la técnica de los multiplicadores de Lagrange se encuentra que:
+Al maximizar la entropía funcional sujeta a esta restricción, se obtiene que todos los microestados accesibles son igualmente probables:
 
 $$
-\begin{equation*}
-p_{n}=\frac{1}{W} \tag{3.5}
-\end{equation*}
+p_{n}=\frac{1}{W}, 
 $$
 
-donde $W$ es el número total de estados microscópicos accesibles al sistema.
-De las ecuaciones (3.3) y (3.5) se deduce la siguiente expresión para la entropía en el ensemble microcanónico:
+donde $W$ representa el número total de microestados compatibles con la energía $E$. Sustituyendo este resultado en la definición de entropía de Gibbs, recuperamos la expresión fundamental de Boltzmann:
 
 $$
-\begin{equation*}
-S=k_{B} \ln W \tag{3.6}
-\end{equation*}
-$$
+S=k_{B} \ln W. 
+$$ (eq02)
 
-### Ensemble canónico
+### Ensemble Canónico
 
-Por definición, el ensemble microcanónico está formado por un conjunto muy grande de sistemas termodinámicos, todos ellos gobernados por el mismo hamiltoniano, en equilibrio termodinámico y sujetos a las restricciones macroscópicas de temperatura $(T)$, volumen $(V)$ y número de partículas $(N)$ constantes. Los
-sistemas del ensemble canónico no están termodinámicamente aislados, sino que se encuentran en contacto con una fuente térmica a temperatura $T$.
-
-Dado lo anterior, los requisito necesarios para garantizar que el ensemble es un sistema termodinámico aislado y en equilibrio son que el número de sistemas y la energía total del ensemble permanezcan constantes. La primera condición es equivalente a pedir que:
+El ensemble canónico describe sistemas en contacto térmico con un reservorio a temperatura $T$. En este escenario, la energía del sistema puede fluctuar, por lo que las restricciones para maximizar la entropía son la normalización y la constancia de la energía promedio ($\bar{E}$):
 
 $$
-\begin{equation*}
-\sum_{n} p_{n}=1 . \tag{3.7}
-\end{equation*}
+\sum_{n} p_{n}=1, \quad \sum_{n} E_{n} p_{n}=\bar{E}. 
 $$
 
-La condición de energía total del ensemble constante se puede expresar como:
+El uso de multiplicadores de Lagrange, junto con la definición estadística de temperatura ($1/T = \partial S / \partial \bar{E}$), conduce a la distribución de Boltzmann:
 
 $$
-\begin{equation*}
-\sum_{n} E_{n} p_{n}=\bar{E} \tag{3.8}
-\end{equation*}
+p_{n}=\frac{\exp \left(-E_{n} / k_{B} T\right)}{Z}, 
 $$
 
-donde $E_{n}$ es la energía del sistema cuando su estado cuántico es $\phi_{n}$.
-En otras palabras, la distribución de probabilidades del ensemble microcanónico es aquella que maximiza la entropía (3.3), sujeta a las condiciones de normalización (3.7) y de energía constante (3.8). Usando la técnica de los multiplicadores de Lagrange así como la relación entre entropía y temperatura ( $1 / T=\partial S / \partial \bar{E}$ ) se encuentra que:
+donde la función de partición $Z$ actúa como el factor de normalización y contiene la información estadística del sistema:
 
 $$
-\begin{equation*}
-p_{n}=\frac{\exp \left(-E_{n} / k_{B} T\right)}{Z} \tag{3.9}
-\end{equation*}
+Z=\sum_{n} \exp \left(-E_{n} / k_{B} T\right).
 $$
 
-donde $Z$ es la función de partición definida por:
+La conexión con la termodinámica macroscópica se establece a través de la energía libre de Helmholtz ($F$), que constituye la ecuación fundamental de este ensemble:
 
 $$
-\begin{equation*}
-Z=\sum_{n} \exp \left(-E_{n} / k_{B} T\right) \tag{3.10}
-\end{equation*}
-$$
-
-A partir de la ecuación (3.9) y la definición de energía libre de Helmholtz, la ecuación fundamental en el ensemble canónico queda como:
-
-$$
-\begin{equation*}
-F=-k_{B} T \ln Z \tag{3.11}
-\end{equation*}
-$$
+F=-k_{B} T \ln Z. 
+$$ (eq03)
 
 ## El sólido paramagnético
 
-Considere un sistema formado por $N$ dipolos magnéticos fijos en el espacio los cuales, en la presencia de un campo magnético externo $\vec{B}$, pueden alinearse paralela o antiparalelamente a $\vec{B}$. La energía de interacción entre un dipolo magnético y $\vec{B}$ está dada por $-\vec{\mu} \cdot \vec{B}$, donde $\vec{\mu}$ es el momento magnético del dipolo.
+Considere un sistema compuesto por $N$ dipolos magnéticos fijos en una red espacial. En presencia de un campo magnético externo $\vec{B}$, cada dipolo puede alinearse de forma paralela o antiparalela a la dirección del campo. La energía de interacción entre un dipolo individual y el campo $\vec{B}$ se define como $-\vec{\mu} \cdot \vec{B}$, donde $\vec{\mu}$ representa el momento magnético del dipolo.
 
 ### Ensemble microcanónico
 
-Para poder emplear en ensemble microcanónico necesitamos pedir que el sistema de $N$ dipolos se mantenga a energía constante $E$. No es necesario pedir que el volumen permanezca constante pues, al estar los dipolos fijos en el espacio, esta condición se satisface automáticamente. Tampoco es necesario hacer explícita la constancia de $N$, pues está implícita en la definición del sistema.
+Para aplicar el formalismo microcanónico, suponemos que el sistema de $N$ dipolos se mantiene a una energía constante $E$. Dado que los dipolos ocupan posiciones fijas en el espacio, la restricción de volumen constante se satisface de forma natural, al igual que la constancia de $N$, implícita en la definición del modelo.
 
-La energía del sistema está dada por:
-
-$$
-\begin{equation*}
-E=\mu B((N-n)-n)=\mu B(N-2 n) \tag{3.12}
-\end{equation*}
-$$
-
-donde $n$ es el número de dipolos paralelos a $\vec{B}, B=|\vec{B}|$ y $\mu=|\mu|$. El número, $W$, de microestados del sistema compatibles con la restricción de energía constante es igual al número de formas en que los $N$ dipolos se pueden arreglar estando $n$ de ellos paralelos a $\vec{B}$ y $(N-n)$ antiparalelos; es decir:
+La energía total del sistema se expresa como:
 
 $$
-\begin{equation*}
-W=\frac{N!}{n!(N-n)!} \tag{3.13}
-\end{equation*}
-$$
+E = \mu B ((N-n) - n) = \mu B (N - 2n), 
+$$ (eq04)
 
-A partir de las ecuaciones (3.6), la entropía del sistema se puede calcular, usando la aproximación de Stirling, como:
+donde $n$ es el número de dipolos alineados paralelamente a $\vec{B}$, mientras que $B$ y $\mu$ son las magnitudes del campo y del momento magnético, respectivamente. El número de microestados $W$ compatibles con una energía fija es equivalente al número de combinaciones en las que se pueden organizar $n$ dipolos paralelos y $N-n$ antiparalelos:
 
 $$
-\begin{equation*}
-S=k_{B} \ln W \simeq k_{B}\left[N \ln \frac{N}{N-n}-n \ln \frac{n}{N-n}\right] \tag{3.14}
-\end{equation*}
+W = \frac{N!}{n!(N-n)!}. 
 $$
 
-A partir de la relación $1 / T=\partial S / \partial E$, así como de las ecuaciones (3.12) y (3.14) se obtiene la siguiente relación entre la energía del sistema y su temperatura:
+Utilizando la aproximación de Stirling ($\ln N! \approx N \ln N - N$) en la definición de Boltzmann {eq}`ew02`, la entropía del sistema resulta ser:
 
 $$
-\begin{equation*}
-E=-N \mu B \tanh \frac{\mu B}{k_{B} T} \tag{3.15}
-\end{equation*}
+S = k_{B} \ln W \approx k_{B} \left[ N \ln \frac{N}{N-n} - n \ln \frac{n}{N-n} \right]. 
+$$
+
+Empleando la relación termodinámica $1/T = \partial S / \partial E$ y combinando con {eq}`04`, se obtiene la ecuación de estado que vincula la energía con la temperatura:
+
+$$
+E = -N \mu B \tanh \left( \frac{\mu B}{k_{B} T} \right). 
 $$
 
 ### Ensemble canónico
 
-En el ensemble canónico el sistema está en equilibrio con una fuente de temperatura $T$ y su energía fluctúa alrededor del valor medio. Así, lad $2^{N}$ combinaciones de bipolos paralelos y antiparalelos a $\vec{B}$ son microestados compatibles con las restricciones macroscópicas de los sistemas del ensemble.
+En el formalismo canónico, el sistema se encuentra en equilibrio con un baño térmico a temperatura $T$, permitiendo que su energía fluctúe. En este caso, todas las $2^N$ configuraciones posibles de espines son microestados accesibles para el ensemble.
 
-De la ecuación (3.11), la función de partición del sistema se calcula como:
-
-$$
-\begin{equation*}
-Z=\sum_{n_{1}, n_{2} \cdots n_{N}=-1,1} \exp \left(\frac{\left(n_{1}+n_{2} \cdots+n_{N}\right) \mu B}{k_{B} T}\right)=\left(\mathrm{e}^{\mu B / k_{B} T}+\mathrm{e}^{-\mu B / k_{B} T}\right)^{N} . \tag{3.16}
-\end{equation*}
-$$
-
-Finalmente, la energía promedio del sistema resulta ser:
+La función de partición del sistema, según la ecuación {eq}`eq03`, se calcula como la suma sobre todos los estados de espín individuales:
 
 $$
-\begin{equation*}
-\bar{E}=-\frac{1}{Z} \frac{\partial Z}{\partial \beta}=-N \mu B \tanh \frac{\mu B}{k_{B} T} \tag{3.17}
-\end{equation*}
+Z = \sum_{n_{1}, \dots, n_{N} = \pm 1} \exp \left( \frac{\sum n_{i} \mu B}{k_{B} T} \right) = \left( e^{\mu B / k_{B} T} + e^{-\mu B / k_{B} T} \right)^{N}. 
 $$
 
-$\operatorname{con} \beta=1 / k_{B} T$.
+A partir de $Z$, la energía interna promedio del sistema se obtiene como:
+
+$$
+\bar{E} = -\frac{\partial \ln Z}{\partial \beta} = -N \mu B \tanh \left( \frac{\mu B}{k_{B} T} \right).
+$$
+
+donde $\beta = 1 / k_{B} T$. Nótese que, en el límite termodinámico, ambos ensembles conducen al mismo resultado físico.
 
 ### Ensemble gran canónico
 
-Por definición, este ensemble está formado por sistemas gobernados por el mismo Hamiltoniano, que se encuentran en equilibrio termodinámico con una fuente de temperatura $T$ y una fuente de potencial químico $\mu$, y están sujetos a la restricción de volumen $V$ constante.
+Este ensemble describe sistemas en equilibrio con un reservorio que intercambia tanto energía (a temperatura $T$) como partículas (a potencial químico $\mu$), manteniendo el volumen $V$ constante. 
 
-Por como está constituido, para garantizar que el ensemble gran canónico es un sistema termodinámico aislado, es necesario pedir explícitamente que el número de sistemas del ensemble, la energía y el número de partículas del mismo sean constantes. Es decir:
+Para asegurar el equilibrio del ensemble gran canónico como un sistema globalmente aislado, se imponen las condiciones de normalización, energía promedio y número promedio de partículas constantes:
 
-$$
-\begin{gather*}
-\sum_{n} p_{n}=1  \tag{3.18}\\
-\sum_{n} E_{n} p_{n}=\bar{E} \tag{3.19}
-\end{gather*}
-$$
+\begin{align*}
+\sum_{n} p_{n} &= 1, \\
+\sum_{n} E_{n} p_{n} &= \bar{E}, \\
+\sum_{n} N_{n} p_{n} &= \bar{N}. 
+\end{align*}
 
-y
-
-$$
-\begin{equation*}
-\sum_{n} N_{n} p_{n}=\bar{N} \tag{3.20}
-\end{equation*}
-$$
-
-donde $E_{n}, N_{n}$ y $p_{n}$ son respectivamente la energía, el número de partículas y la probabilidad asociadas al estado $\phi_{n}$, accesible al sistema dadas las restricciones macroscópicas.
-
-En otras palabras, la distribución de probabilidades $\left\{p_{n}\right\}$ del ensemble microcanónico es aquella que maximiza la entropía (3.3), sujeta a las restricciones (3.18)-(3.20). Usando la técnica de los multiplicadores de Lagrange, así como las relaciones $1 / T=\partial S / \partial \bar{E}$ y $\mu / T=-\partial S / \partial \bar{N}$ se obtiene que:
+La distribución de probabilidad que maximiza la entropía funcional {eq}`eq01` sujeta a estas restricciones se halla mediante multiplicadores de Lagrange:
 
 $$
-\begin{equation*}
-p_{n}=\frac{\mathrm{e}^{-\beta\left(E_{n}-\mu N_{n}\right)}}{\mathcal{Z}} \tag{3.21}
-\end{equation*}
+p_{n} = \frac{e^{-\beta(E_{n} - \mu N_{n})}}{\mathcal{Z}} 
 $$
 
-con $\mathcal{Z}$ la gran función de partición, definida como:
+donde $\mathcal{Z}$ es la gran función de partición:
 
 $$
-\begin{equation*}
-\mathcal{Z}=\sum_{n} \mathrm{e}^{-\beta\left(E_{n}-\mu N_{n}\right)} \tag{3.22}
-\end{equation*}
+\mathcal{Z} = \sum_{n} e^{-\beta(E_{n} - \mu N_{n})}. 
 $$
 
-El potencial termodinámico asociado con el ensemble gran canónico es el llamado gran potencial termodinámico, el cual está definido por:
+El potencial termodinámico natural de este ensemble es el gran potencial ($\Omega$), definido como:
 
 $$
-\begin{equation*}
-\Omega(T, V, \mu)=U(T, V, \mu)-T S(T, V, \mu)-\mu N(T, V, \mu) \tag{3.23}
-\end{equation*}
+\Omega(T, V, \mu) = U - TS - \mu N. 
 $$
 
-De las ecuaciones (3.3), (3.21)-(3.23), se deduce que:
+Comparando con la estadística, se deduce que:
 
 $$
-\begin{equation*}
-\Omega(T, V, \mu)=k_{B} T \ln \mathcal{Z}(T, V, \mu) \tag{3.24}
-\end{equation*}
+\Omega(T, V, \mu) = -k_{B} T \ln \mathcal{Z}(T, V, \mu). 
 $$
 
-Finalmente, de las ecuaciones (3.19)-(3.22) se sigue que:
+Finalmente, los valores promedio de la energía y el número de partículas se obtienen mediante las relaciones:
 
 $$
-\begin{equation*}
-\bar{E}=-\frac{\partial \ln \mathcal{Z}}{\partial \beta} \tag{3.25}
-\end{equation*}
-$$
-
-y
-
-$$
-\begin{equation*}
-\bar{N}=k_{B} T \frac{\partial \ln \mathcal{Z}}{\partial \mu} \tag{3.26}
-\end{equation*}
+\bar{E} = -\frac{\partial \ln \mathcal{Z}}{\partial \beta}, \quad \bar{N} = k_{B} T \frac{\partial \ln \mathcal{Z}}{\partial \mu}. 
 $$
 
 ## Estadísticas de Bose-Einstein y Fermi-Dirac
 
 ### Ecuación de onda del gas ideal cuántico
 
-Considere un gas formado por $N$ partículas ideénticas e indestinguibles que no interactúan entre sí. Todas las partículas del gas obedecen el mismo Hamiltoniano, $H^{(1)}(x)$. Sean $\psi_{n}(x)$ y $\varepsilon_{n}$ las eigenfunciones y los eigenvalores de $H^{(1)}(x)$, respectvamente. Es decir, $H^{(1)} \psi_{n}=\varepsilon_{n} \psi_{n}$. Puesto que las partículas del gas no interactúan entre sí (el gas es ideal), el Hamiltoniano del gas es:
+Considere un gas compuesto por $N$ partículas idénticas e indestinguibles que no interactúan entre sí. En este sistema, cada partícula está regida por el mismo Hamiltoniano de una sola partícula, $\hat{H}^{(1)}(x)$. Sean $\psi_{n}(x)$ y $\varepsilon_{n}$ las eigenfunciones y los eigenvalores de $\hat{H}^{(1)}(x)$, respectivamente, tales que $\hat{H}^{(1)} \psi_{n} = \varepsilon_{n} \psi_{n}$. 
+
+Dado que el gas es ideal (ausencia de interacción interparticular), el Hamiltoniano total del sistema es la suma de los Hamiltonianos individuales:
 
 $$
-\begin{equation*}
-H\left(x_{1}, x_{2} \cdots x_{N}\right)=H^{(1)}\left(x_{1}\right)+H^{(1)}\left(x_{2}\right) \cdots+H^{(1)}\left(x_{n}\right) \tag{3.27}
-\end{equation*}
+\hat{H}(x_{1}, x_{2}, \dots, x_{N}) = \sum_{i=1}^{N} \hat{H}^{(1)}(x_{i}). 
 $$
 
-Por otra parte, la energía total del gas (el eigenvalor de $H\left(x_{1}, x_{2} \cdots x_{N}\right)$ ) resulta ser:
+Consecuentemente, la energía total del gas —el eigenvalor de $\hat{H}(x_{1}, \dots, x_{N})$— resulta ser la suma de las energías de cada partícula:
 
 $$
-\begin{equation*}
-E_{n_{1}, n_{2}, \cdots n_{N}}=\varepsilon_{n_{1}}+\varepsilon_{n_{2}} \cdots+\varepsilon_{n_{N}}, \tag{3.28}
-\end{equation*}
+E_{n_{1}, n_{2}, \dots, n_{N}} = \sum_{i=1}^{N} \varepsilon_{n_{i}}. 
 $$
 
-donde el ídices $n_{i}(i=1,2 \cdots N)$ determina el estado $\psi_{n_{i}}$ de la $i$-ésima partícula del gas. Sólo falta construir la función de estado del gas, $\Psi_{n_{1}, n_{2}, \cdots n_{N}}\left(x_{1}, x_{2} \cdots x_{N}\right)$, a partir de las funciones de estado individuales $\psi_{n_{i}}\left(x_{i}\right)$. Por ser solución de la ecuación de Scrödinger, esta funcón debe satisfacer que:
+Donde el índice $n_{i}$ (con $i=1, 2, \dots, N$) determina el estado $\psi_{n_{i}}$ de la $i$-ésima partícula. Para construir la función de estado global del gas, $\Psi_{n_{1}, \dots, n_{N}}(x_{1}, \dots, x_{N})$, a partir de las funciones de estado individuales $\psi_{n_{i}}(x_{i})$, debemos asegurar que satisfaga la ecuación de Schrödinger:
 
 $$
-\begin{equation*}
-H\left(x_{1}, x_{2} \cdots x_{N}\right) \Psi_{n_{1}, n_{2}, \cdots n_{N}}=E_{n_{1}, n_{2}, \cdots n_{N}} \Psi_{n_{1}, n_{2}, \cdots n_{N}} \tag{3.29}
-\end{equation*}
+\hat{H}(x_{1}, \dots, x_{N}) \Psi_{n_{1}, \dots, n_{N}} = E_{n_{1}, \dots, n_{N}} \Psi_{n_{1}, \dots, n_{N}}. 
 $$
 
-Como las partículas del gas son indistinguibles, la función de estado del gas debe contener la misma información cuando se intercambian cualesquiera dos partículas. Dado que es $|\Psi|$, y no $\Psi$, quien tiene significado físico, se debe cumplir que
+Debido a la indistinguibilidad de las partículas, la función de estado debe preservar la misma información física ante el intercambio de cualesquiera dos partículas. Dado que el significado físico reside en la densidad de probabilidad $|\Psi|^2$ y no en $\Psi$ directamente, se debe cumplir que:
 
 $$
-\begin{equation*}
-\Psi_{n_{1}, n_{2}, \cdots n_{N}}\left(\cdots x_{i} \cdots x_{j} \cdots\right)= \pm \Psi_{n_{1}, n_{2}, \cdots n_{N}}\left(\cdots x_{j} \cdots x_{i} \cdots\right) \tag{3.30}
-\end{equation*}
+\Psi(\dots, x_{i}, \dots, x_{j}, \dots) = \pm \Psi(\dots, x_{j}, \dots, x_{i}, \dots). 
 $$
 
-Es decir, la indistinguibilidad entre partículas implica que la función de estado del gas sólo puede ser simétrica (en cuyo caso diremos que el gas está formado por bosones) o antisimétrica (las partículas) del gas son fermiones.
+Esta simetría de intercambio divide a las partículas en dos categorías fundamentales:
+* **Bosones:** Aquellas con funciones de estado simétricas (+).
+* **Fermiones:** Aquellas con funciones de estado antisimétricas (-).
 
-Se puede demostrar que la únuca posibilidad de construir la función de estado de un gas de fermiones a partir de las funciones de ondas individuales es:
-
-$$
-\begin{equation*}
-\Psi_{n_{1}, n_{2}, \cdots n_{N}}\left(x_{1}, x_{2} \cdots x_{N}\right)=\frac{N_{1}!N_{2}!\cdots}{N!} \sum_{\sigma} \psi_{n_{\sigma_{1}}}\left(x_{1}\right) \psi_{n_{\sigma_{2}}}\left(x_{2}\right) \cdots \psi_{n_{\sigma_{N}}}\left(x_{N}\right), \tag{3.31}
-\end{equation*}
-$$
-
-donde la suma se lleva a cabo sobre todas las posibles permutaciones $\sigma$ de $\{1,2 \cdots N\}$ y $N_{\nu}=\sum_{i=1}^{N} \delta_{n_{i}, \nu}$, es el número de partículas del gas cuyo estado es $\psi_{\nu}$. En adelante, llamaremos a $N_{\nu}$ el número de ocupación del estado $\psi_{\nu}$. En el caso de un gas de bosones, el número de ocupación de cualquier estado puede variar entre cero y el número de partículas del gas, $N$. Para un gas de fermiones, la función de estado es:
+Para un gas de bosones, la función de estado se construye como una combinación lineal simétrica de las funciones individuales:
 
 $$
-\begin{equation*}
-\Psi_{n_{1}, n_{2}, \cdots n_{N}}\left(x_{1}, x_{2} \cdots x_{N}\right)=\frac{1}{N!} \sum_{\sigma} \epsilon^{\sigma_{1}, \sigma_{2} \cdots \sigma_{N}} \psi_{n_{\sigma_{1}}}\left(x_{1}\right) \psi_{n_{\sigma_{2}}}\left(x_{2}\right) \cdots \psi_{n_{\sigma_{N}}}\left(x_{N}\right), \tag{3.32}
-\end{equation*}
-$$
+\Psi_{B}(x_{1}, \dots, x_{N}) = \frac{\sqrt{N_{1}! N_{2}! \dots}}{\sqrt{N!}} \sum_{\sigma} \psi_{n_{\sigma_{1}}}(x_{1}) \dots \psi_{n_{\sigma_{N}}}(x_{N}), 
+$$ (eq05)
 
-$\operatorname{con} \epsilon^{\sigma_{1}, \sigma_{2} \cdots \sigma_{N}}$ el tensor antisimétrico de Levi-Civita. Dada la antisimetría de la función de estado de un gas de fermiones, se sigue que no es posible tener dos partículas en el mismo estado cuántico ( $n_{i} \neq n_{j}, \forall i \neq j$ ). Este es el llamado principio de Pauli. Una consequencia del principio de Pauli es que el número de ocupación de cualquier estado de una partícula sólo puede ser cero o uno.
+donde la suma se realiza sobre todas las permutaciones posibles $\sigma$ del conjunto $\{1, 2, \dots, N\}$ y $N_{\nu} = \sum_{i=1}^{N} \delta_{n_{i}, \nu}$ representa el número de ocupación del estado $\psi_{\nu}$. En el caso de los bosones, el número de ocupación puede variar desde cero hasta $N$.
+
+Para un gas de fermiones, la función de estado debe ser totalmente antisimétrica y se expresa mediante el tensor de Levi-Civita $\epsilon^{\sigma_{1} \dots \sigma_{N}}$ (o equivalentemente, mediante un determinante de Slater):
+
+$$
+\Psi_{F}(x_{1}, \dots, x_{N}) = \frac{1}{\sqrt{N!}} \sum_{\sigma} \epsilon^{\sigma_{1}, \dots, \sigma_{N}} \psi_{n_{\sigma_{1}}}(x_{1}) \dots \psi_{n_{\sigma_{N}}}(x_{N}). 
+$$ (eq06}
+
+La antisimetría intrínseca de los fermiones impide que dos partículas ocupen el mismo estado cuántico ($n_{i} \neq n_{j}$ para todo $i \neq j$), principio conocido como el Principio de Exclusión de Pauli. Como consecuencia directa, el número de ocupación $N_{\nu}$ para cualquier estado fermiónico solo puede tomar los valores cero o uno.
 
 ### Representación de los números de ocupación
 
-De las ecuaciones (3.31) y (3.32) se sigue que, si conocemos el conjunto de funciones de estado de una partícula $\left\{\psi_{n}\right\}$, basta con conocer los números de ocupación $\left\{N_{n}\right\}$ para reconstruir la función de estado del gas, tanto si se trata de fermiones como de bosones. Lo anterior, sugiere introducir una representación cuántica en la que los números de ocupación son también los números cuánticos del sistema. En esta nueva representación, la función de estado del gas se escribe como:
+A partir de las expresiones {eq}`eq05` y {eq}`eq06`, se concluye que si se dispone del conjunto de funciones de estado de una partícula $\{\psi_{n}\}$, el estado global del gas queda unívocamente determinado por los números de ocupación $\{N_{n}\}$, independientemente de si el sistema está constituido por fermiones o bosones. 
+
+Esto sugiere la adopción de una representación cuántica donde los números de ocupación actúan como los números cuánticos del sistema (espacio de Fock). En este formalismo, la función de estado del gas se escribe como:
 
 $$
-\begin{equation*}
-\Psi=\mid N_{1}, N_{2}, \cdots> \tag{3.33}
-\end{equation*}
+\Psi = | N_{1}, N_{2}, \dots \rangle. 
 $$
 
-### Números de ocupacion promedio
+### Números de ocupación promedio
 
-En la representación de los números de ocupación, la gran función de partición para un gas de bosones se calcula como:
-
-$$
-\begin{equation*}
-\mathcal{Z}=\sum_{N_{1}, N_{2}, \cdots=0}^{\infty} \exp \left(-\beta\left[N_{1} \varepsilon_{1}+N_{2} \varepsilon_{2} \cdots-\mu N_{1}-\mu N_{2} \cdots\right]\right)=\prod_{\nu}\left(1-\mathrm{e}^{-\beta\left(\varepsilon_{\nu}-\mu\right)}\right)^{-1} \tag{3.34}
-\end{equation*}
-$$
-
-El índice $\nu=1,2 \cdots$ identifica los diferentes estados de una partícula. Por otra parte, la gran función de partición de un gas de fermiones resulta ser:
+En esta representación, la gran función de partición ($\mathcal{Z}$) para un gas de bosones se calcula sumando sobre todos los posibles valores de los números de ocupación ($N_{\nu} = 0, 1, 2, \dots$):
 
 $$
-\begin{equation*}
-\mathcal{Z}=\sum_{N_{1}, N_{2}, \cdots=0,1} \exp \left(-\beta\left[N_{1} \varepsilon_{1}+N_{2} \varepsilon_{2} \cdots-\mu N_{1}-\mu N_{2} \cdots\right]\right)=\prod_{\nu}\left(1+\mathrm{e}^{-\beta\left(\varepsilon_{\nu}-\mu\right)}\right) \tag{3.35}
-\end{equation*}
+\mathcal{Z} = \sum_{N_{1}, N_{2}, \dots = 0}^{\infty} \exp \left( -\beta \sum_{\nu} N_{\nu}(\varepsilon_{\nu} - \mu) \right) = \prod_{\nu} \left( 1 - e^{-\beta(\varepsilon_{\nu} - \mu)} \right)^{-1}, 
 $$
 
-Las ecuaciones (3.34) y (3.35) se pueden resumir en una sola de la siguiente forma:
+donde el índice $\nu$ identifica los distintos estados monoportícula. Por otro lado, para un gas de fermiones, debido al principio de exclusión de Pauli, los números de ocupación solo admiten los valores $0$ y $1$:
 
 $$
-\begin{equation*}
-\mathcal{Z}=\prod_{\nu}\left(1 \pm \mathrm{e}^{-\beta\left(\varepsilon_{\nu}-\mu\right)}\right)^{ \pm 1} \tag{3.36}
-\end{equation*}
+\mathcal{Z} = \sum_{N_{1}, N_{2}, \dots = 0, 1} \exp \left( -\beta \sum_{\nu} N_{\nu}(\varepsilon_{\nu} - \mu) \right) = \prod_{\nu} \left( 1 + e^{-\beta(\varepsilon_{\nu} - \mu)} \right). 
 $$
 
-donde los signo $+\mathrm{y}-$ se usan cuando el gas está respectivamente compuesto por fermiones o bosones.
-De las ecuaciones (3.26) y (3.36), el número de partículas promedio del gas es:
+Ambos resultados pueden sintetizarse en una única expresión compacta:
 
 $$
-\begin{equation*}
-\bar{N}=\sum_{\nu} \frac{1}{\mathrm{e}^{\beta\left(\varepsilon_{\nu}-\mu\right)} \pm 1}, \tag{3.37}
-\end{equation*}
+\mathcal{Z} = \prod_{\nu} \left( 1 \pm e^{-\beta(\varepsilon_{\nu} - \mu)} \right)^{\pm 1}, 
 $$
 
-donde, una vez más, el signo + corresponde a fermiones, en tanto que el signo - corresponde a bosones.
-Sea $\bar{n}_{\nu}$ el número de ocupación promedio del estado $\psi_{\nu}$. Dado que $N=\sum_{\nu} n_{\nu}$,
+donde los signos superior ($+$) e inferior ($-$) corresponden a fermiones y bosones, respectivamente. Utilizando la relación termodinámica para el número promedio de partículas $\bar{N}$, se obtiene:
 
 $$
-\begin{equation*}
-\bar{N}=\sum_{\nu} \bar{n}_{\nu} \tag{3.38}
-\end{equation*}
+\bar{N} = \sum_{\nu} \frac{1}{e^{\beta(\varepsilon_{\nu} - \mu)} \pm 1}. 
 $$
 
-De las ecuaciones (3.37) y (3.38) se sigue que los números de ocupación promedio de los direfentes estados de una partícula de un gas ideal cuántico están dados, en términos de la energía $\varepsilon_{\nu}$ de cada estado, por:
+Considerando que $\bar{N} = \sum_{\nu} \bar{n}_{\nu}$, se deduce que los números de ocupación promedio para cada estado en un gas ideal cuántico están dados por:
 
 $$
-\begin{equation*}
-\bar{n}_{\nu}=\frac{1}{\mathrm{e}^{\beta\left(\varepsilon_{\nu}-\mu\right)} \pm 1} \tag{3.39}
-\end{equation*}
+\bar{n}_{\nu} = \frac{1}{e^{\beta(\varepsilon_{\nu} - \mu)} \pm 1}. 
 $$
 
-En el caso de un gas de fermiones, en el límite cuando la temperatura tiende a cero ( $\operatorname{lím} \beta \rightarrow \infty$ ), $\bar{n}_{\nu}$ tiende a la función escalón, que vale uno si $\varepsilon_{\nu}<\mu$ y vale cero en caso contrario. En el caso de un gas de bosones, como $\bar{n}_{\nu} \geq 0$, las energías $\varepsilon_{\nu}$ deben ser tales que $\varepsilon_{\nu} \geq \mu$. De hecho, para bosones, $\operatorname{lím}_{\varepsilon_{\nu} \rightarrow \mu} \bar{n}_{\nu}=\infty$.
+En el límite de temperatura cero ($\beta \to \infty$), el comportamiento de estas distribuciones diverge notablemente:
+* Para **fermiones**, $\bar{n}_{\nu}$ tiende a una función escalón que vale uno si $\varepsilon_{\nu} < \mu$ y cero en caso contrario.
+* Para **bosones**, la condición $\bar{n}_{\nu} \geq 0$ exige que $\varepsilon_{\nu} \geq \mu$. De hecho, cuando $\varepsilon_{\nu} \to \mu$, $\bar{n}_{\nu}$ diverge al infinito (condensación de Bose-Einstein).
 
-Puesto que el número de ocupación promedio del estado $\psi_{\nu}$ sólo depende de la energía $\varepsilon_{\nu}$ del mismo, se suele escribir $\bar{n}(\varepsilon)$ en vez de $\bar{n}_{\nu}$. Con esta nueva notación, tenemos que:
+Puesto que el número de ocupación promedio solo depende de la energía del estado, se utiliza habitualmente la notación simplificada $\bar{n}(\varepsilon)$:
 
 $$
-\begin{equation*}
-\bar{n}(\varepsilon)=\frac{1}{\mathrm{e}^{\beta(\varepsilon-\mu)} \pm 1} \tag{3.40}
-\end{equation*}
+\bar{n}(\varepsilon) = \frac{1}{e^{\beta(\varepsilon - \mu)} \pm 1}. 
 $$
 
 ## Función de densidad de estados
 
-Considere una partícula de masa $m$, libre en en interior de un recipiente cúbico de lado $L$ y volumen $L=V^{3}$. La ecuación de Schrödinger de dicho sistema es:
+Considere una partícula de masa $m$ confinada en un recipiente cúbico de lado $L$ y volumen $V = L^3$. La ecuación de Schrödinger para este sistema de partícula libre está dada por:
 
 $$
-\begin{equation*}
--\frac{\hbar^{2}}{2 m} \nabla^{2} \psi(x, y, z)=\varepsilon \psi(x, y, z) \tag{3.41}
-\end{equation*}
+-\frac{\hbar^{2}}{2 m} \nabla^{2} \psi(x, y, z) = \varepsilon \psi(x, y, z). 
 $$
 
-Usando las ecuaciones de frontera:
+Imponiendo las condiciones de frontera de pozo de potencial infinito (donde la función de onda se anula en las paredes del recipiente):
 
 $$
-\begin{array}{ll}
-\psi(0, y, z)=\psi(L, y, z)=0, & \forall x, y, \\
-\psi(x, 0, z)=\psi(x, L, z)=0, & \forall x, z, \\
-\mathrm{y} & \\
-\psi(x, y, 0)=\psi(x, y, L)=0, & \forall y, z,
-\end{array}
+\psi = 0 \quad \text{en} \quad x,y,z \in \{0, L\}.
 $$
 
-la solución de la ecuación de Schrödinger queda como:
+La solución para la función de onda es:
 
 $$
-\begin{equation*}
-\psi(x, y, z)=C \sin \left(\frac{\kappa_{x} \pi}{L} x\right) \sin \left(\frac{\kappa_{y} \pi}{L} y\right) \sin \left(\frac{\kappa_{z} \pi}{L} z\right) \tag{3.42}
-\end{equation*}
+\psi(x, y, z) = C \sin \left(\frac{\kappa_{x} \pi}{L} x\right) \sin \left(\frac{\kappa_{y} \pi}{L} y\right) \sin \left(\frac{\kappa_{z} \pi}{L} z\right), 
 $$
 
-donde $C$ es una constante de normalización y $\kappa_{x}, \kappa_{y}$ y $\kappa_{z}$ están obligados a obedecer la siguiente relación:
+donde los números cuánticos $\kappa_{x}, \kappa_{y}, \kappa_{z}$ son enteros positivos que deben satisfacer la relación de energía:
 
 $$
-\begin{equation*}
-\kappa_{x}^{2}+\kappa_{y}^{2}+\kappa_{z}^{2}=\frac{2 m \varepsilon L^{2}}{\pi^{2} \hbar^{2}} \tag{3.43}
-\end{equation*}
+\kappa_{x}^{2} + \kappa_{y}^{2} + \kappa_{z}^{2} = \frac{2 m \varepsilon L^{2}}{\pi^{2} \hbar^{2}}. 
 $$
 
-A partir de la ecuación (3.43), podemos representar gráficamente los estados accesibles a la partícula libre como los vertices de una malla cúbica de lado uno, localizada en el octante $\kappa_{x}, \kappa_{y}, \kappa_{z}>0$ del espacio $\left(\kappa_{x}, \kappa_{y}, \kappa_{z}\right)$. Si la energía es lo suficientemente grande, entonces podemos aproximar el número de estados con energía menor o igual que $\varepsilon(\Gamma(\varepsilon))$ como la octava parte del volumen de una esfera de radio $\left(2 m \varepsilon V^{2 / 3} / \pi^{2} \hbar^{2}\right)^{1 / 2}$, es decir:
+Geométricamente, los estados accesibles se representan como los vértices de una red cúbica unitaria en el octante positivo del espacio $\vec{\kappa}$. En el límite de energías elevadas, el número de estados acumulados con energía menor o igual a $\varepsilon$, denotado como $\Gamma(\varepsilon)$, se aproxima como la octava parte del volumen de una esfera:
 
 $$
-\begin{equation*}
-\Gamma(\varepsilon)=\frac{V}{6 \pi^{2}}\left(\frac{2 m \varepsilon}{\hbar^{2}}\right)^{3 / 2} \tag{3.44}
-\end{equation*}
+\Gamma(\varepsilon) = \frac{V}{6 \pi^{2}} \left(\frac{2 m \varepsilon}{\hbar^{2}}\right)^{3/2}. 
 $$
 
-De la ecuación (3.44), la función de densidad de estados $(\mathcal{D}(\varepsilon) d \varepsilon)$, que nos da el número de estados de la partícula con energías en el intervalo $[\varepsilon, \varepsilon+d \varepsilon]$, se calcula como $\mathcal{D}(\varepsilon)=d \Gamma(\varepsilon) / d \varepsilon$, i.e.,
+La función de densidad de estados, $\mathcal{D}(\varepsilon)$, representa el número de estados por unidad de energía en el intervalo $[\varepsilon, \varepsilon + d\varepsilon]$ y se calcula como $d\Gamma/d\varepsilon$:
 
 $$
-\begin{equation*}
-\mathcal{D}(\varepsilon) d \varepsilon=\frac{\gamma V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{3 / 2} \varepsilon^{1 / 2} d \varepsilon \tag{3.45}
-\end{equation*}
+\mathcal{D}(\varepsilon) d\varepsilon = \frac{\gamma V}{4 \pi^{2}} \left(\frac{2 m}{\hbar^{2}}\right)^{3/2} \varepsilon^{1/2} d\varepsilon, 
 $$
 
-donde $\gamma$ es una constante que toma en cuenta la posibilidad de degeneración debida a números cuánticos como el espín.
-
-Con el número de ocupación promedio (3.40) y la función de densidad de estados (3.45), se puede calcular el valor promedio de cualquier función de la energía $(F(\varepsilon))$ como:
+donde $\gamma$ es el factor de degeneración (por ejemplo, $\gamma=2$ para el espín). El valor promedio de cualquier observable $F(\varepsilon)$ se determina mediante:
 
 $$
-\begin{equation*}
-\bar{F}=\int_{0}^{\infty} F(\varepsilon) \bar{n}(\varepsilon) \mathcal{D}(\varepsilon) d \varepsilon \tag{3.46}
-\end{equation*}
+\bar{F} = \int_{0}^{\infty} F(\varepsilon) \bar{n}(\varepsilon) \mathcal{D}(\varepsilon) d\varepsilon. 
 $$
 
 ## El límite clásico
 
-Considere el límite en que, independientemente de si se trata de un gas de fermiones o bosones, el número de ocupación promedio es bastante menor que la unidad. Para que este sea el caso se necesita que $\exp \left((\varepsilon-\mu) / k_{B} T\right) \gg 1$, con lo que la expresión para calcular los números de ocupación promedio se puede aproximar como:
+Consideremos el régimen en el que el número de ocupación promedio es mucho menor que la unidad ($\bar{n} \ll 1$). Esta condición se cumple cuando $\exp[(\varepsilon - \mu)/k_{B}T] \gg 1$, permitiendo aproximar la ocupación mediante la estadística de Boltzmann:
 
 $$
-\begin{equation*}
-\bar{n}(\varepsilon)=\lambda e^{-\varepsilon / k_{B} T} \tag{3.47}
-\end{equation*}
+\bar{n}(\varepsilon) = \lambda e^{-\varepsilon / k_{B} T}, 
 $$
 
-$\operatorname{con} \lambda=\exp \left(\mu / k_{B} T\right)$. Note que la expresión en la ecuación (3.47) es la misma independientemente de si estamos hablando de fermiones o de bosones. Es decir, en el límite en el que los números de ocupación son muy pequeños, la estadística se vuelve indiferente al tipo de partículas. La ecuación (3.47) define la llamada estadística de Boltzmann.
+donde $\lambda = \exp(\mu / k_{B} T)$ es la fugacidad. En este límite de baja ocupación, la distinción cuántica entre fermiones y bosones se vuelve irrelevante.
 
-El número promedio de partículas de un gas se puede calcular como:
-
-$$
-\begin{equation*}
-\bar{N}=\int_{0}^{\infty} \bar{n}(\varepsilon) \mathcal{D}(\varepsilon) d \varepsilon \tag{3.48}
-\end{equation*}
-$$
-
-Sustituyendo las ecuaciones (3.45) y (3.47) en (3.48), obtenemos para el número promedio de partículas de un gas de Boltzmann lo siguiente (por simplicidad consideramos $\gamma=1$ en la presente sección):
+El número promedio de partículas $\bar{N}$ se calcula integrando sobre todos los estados:
 
 $$
-\bar{N}=\frac{\pi \lambda V}{2}\left(\frac{2 m k_{B} T}{\pi^{2} \hbar^{2}}\right)^{3 / 2} \int_{0}^{\infty} x^{2} e^{-x^{2}} d x
+\bar{N} = \int_{0}^{\infty} \bar{n}(\varepsilon) \mathcal{D}(\varepsilon) d\varepsilon = V \lambda \left(\frac{m k_{B} T}{2 \pi \hbar^{2}}\right)^{3/2}. 
 $$
 
-$\operatorname{con} x^{2}=\varepsilon / k T$. Como la integral definida vale $\pi^{1 / 2} / 4, \bar{N}$ resulta estar dado por:
+Al despejar $\lambda$, obtenemos la ocupación promedio en términos de variables macroscópicas:
 
 $$
-\begin{equation*}
-\bar{N}=V \lambda\left(\frac{m k T}{2 \pi \hbar^{2}}\right)^{3 / 2} \tag{3.49}
-\end{equation*}
+\bar{n}(\varepsilon) = \frac{N}{V} \left(\frac{2 \pi \hbar^{2}}{m k_{B} T}\right)^{3/2} e^{-\varepsilon / k_{B} T}. 
 $$
 
-Despejando $\lambda$ de (3.49) y sustituyendo en (3.47), obtenemos la siguiente expresión para el número de ocupación promedio en la estadística de Boltzmann:
+Finalmente, la energía promedio del sistema en este límite resulta ser:
 
 $$
-\begin{equation*}
-\bar{n}(\varepsilon)=\frac{N}{V}\left(\frac{2 \pi \hbar^{2}}{m k_{B} T}\right)^{3 / 2} e^{-\varepsilon / k_{B} T} \tag{3.50}
-\end{equation*}
+\bar{\varepsilon} = \frac{3}{2} \bar{N} k_{B} T. 
 $$
 
-La energía promedio del gas de Boltzmann es:
-
-$$
-\begin{equation*}
-\bar{\varepsilon}=\int_{0}^{\infty} \varepsilon \bar{n}(\varepsilon) \mathcal{D}(\varepsilon) d \varepsilon=\frac{3}{2} \bar{N} k_{B} T \tag{3.51}
-\end{equation*}
-$$
-
-la cual coincide con la correspondiente expresión del gas ideal clásico. Esto confirma que la estadística de Boltzmann corresponde al gas ideal clásico y explica por qué en tal caso es innecesario hacer la distinción entre fermiones y bosones.
+Este resultado coincide exactamente con la energía interna de un gas ideal clásico, confirmando que la estadística de Boltzmann constituye el límite clásico de los gases cuánticos.
 
 ## La energía de Fermi
 
-Sabemos que para fermiones el número de ocupación promedio tiende a la función escalón, que vale uno para energías menores que $\mu$ y cero para energías mayores, en el límite cuando la temperatura tiende a cero. Esto implica que en el límite de temperatura cero, el número promedio de partículas de un gas de fermiones se puede calcular como:
+En el límite de temperatura cero ($T \to 0$), la distribución de ocupación promedio para fermiones se comporta como una función escalón: los estados con energía inferior al potencial químico $\mu$ están totalmente ocupados ($\bar{n}=1$), mientras que aquellos con energía superior están vacíos ($\bar{n}=0$). En este régimen, el potencial químico se define como la **energía de Fermi** ($\varepsilon_{F} = \mu$).
+
+Bajo estas condiciones, el número total de partículas de un gas de fermiones se calcula integrando la densidad de estados hasta el nivel de Fermi:
 
 $$
-\begin{equation*}
-\bar{N}=\int_{0}^{\infty} \bar{n}(\varepsilon) \mathcal{D}(\varepsilon) d \varepsilon=\int_{0}^{\varepsilon_{F}} \mathcal{D}(\varepsilon) d \varepsilon \tag{3.52}
-\end{equation*}
+\bar{N} = \int_{0}^{\varepsilon_{F}} \mathcal{D}(\varepsilon) d \varepsilon. 
 $$
 
-donde $\varepsilon_{F}=\mu$ se conoce como la energía de Fermi. Después de realizar la integral y despejar $\varepsilon_{F}$ se tiene que:
+Resolviendo la integral a partir de la expresión para $\mathcal{D}(\varepsilon)$ y despejando el término energético, se obtiene la expresión para la energía de Fermi:
 
 $$
-\begin{equation*}
-\varepsilon_{F}=\frac{\hbar^{2}}{2 m}\left(\frac{6 \pi^{2} \bar{N}}{\gamma V}\right)^{2 / 3} \tag{3.53}
-\end{equation*}
+\varepsilon_{F} = \frac{\hbar^{2}}{2 m} \left( \frac{6 \pi^{2} \bar{N}}{\gamma V} \right)^{2/3}. 
 $$
 
 ## Gas de electrones
 
-El incremento en la energía total en un gas formado por $N$ electrones cuando se calienta desde el cero absoluto hasta una temperatura $T$ está dado por:
+Consideremos el incremento en la energía total ($\Delta \bar{E}$) de un gas de $N$ electrones cuando el sistema se calienta desde el cero absoluto hasta una temperatura $T$. Esta variación se expresa como la diferencia entre la energía térmica y la energía en el estado fundamental:
 
 $$
-\begin{equation*}
-\Delta \bar{E}=\int_{0}^{\infty} \varepsilon \mathcal{D}(\varepsilon) \bar{n}(\varepsilon) d \varepsilon-\int_{0}^{\varepsilon_{F}} \varepsilon \mathcal{D}(\varepsilon) d \varepsilon \tag{3.54}
-\end{equation*}
+\Delta \bar{E} = \int_{0}^{\infty} \varepsilon \mathcal{D}(\varepsilon) \bar{n}(\varepsilon) d \varepsilon - \int_{0}^{\varepsilon_{F}} \varepsilon \mathcal{D}(\varepsilon) d \varepsilon.
 $$
 
-con
+Utilizando la identidad del número de partículas $N = \int \bar{n} \mathcal{D} d\varepsilon$ y manipulando las integrales mediante la energía de Fermi, podemos reescribir la variación de energía de una forma más intuitiva:
 
 $$
-\bar{n}(\varepsilon)=\frac{1}{e^{\beta(\varepsilon-\mu)}+1}
+\Delta \bar{E} = \int_{\varepsilon_{F}}^{\infty} (\varepsilon - \varepsilon_{F}) \mathcal{D}(\varepsilon) \bar{n}(\varepsilon) d \varepsilon + \int_{0}^{\varepsilon_{F}} (\varepsilon_{F} - \varepsilon) \mathcal{D}(\varepsilon) [1 - \bar{n}(\varepsilon)] d \varepsilon. 
 $$
 
-Consideremos ahora la identidad
+En esta ecuación, el primer término representa la energía necesaria para promover electrones desde el nivel de Fermi hacia niveles superiores, mientras que el segundo término representa la energía requerida para desplazar electrones desde orbitales profundos hacia la superficie de Fermi.
+
+### Capacidad calorífica electrónica
+
+Dado que la dependencia térmica reside exclusivamente en $\bar{n}(\varepsilon)$, la capacidad calorífica del gas de electrones se define como:
 
 $$
-N=\int_{0}^{\infty} \mathcal{D}(\varepsilon) \bar{n}(\varepsilon) d \varepsilon=\int_{0}^{\varepsilon_{F}} \mathcal{D}(\varepsilon) d \varepsilon
+C_{\mathrm{el}} = \frac{d \bar{E}}{d T} = \int_{0}^{\infty} (\varepsilon - \varepsilon_{F}) \mathcal{D}(\varepsilon) \frac{d \bar{n}(\varepsilon)}{d T} d \varepsilon. 
 $$
 
-y multipliquémosla por $\varepsilon_{F}$ para obtener
+En metales a temperaturas ordinarias ($T \ll T_F$), la derivada $d\bar{n}/dT$ solo es significativa en la vecindad de $\varepsilon_{F}$. Por lo tanto, aproximamos la densidad de estados como una constante $\mathcal{D}(\varepsilon) \simeq \mathcal{D}(\varepsilon_{F})$:
 
 $$
-\begin{equation*}
-\left(\int_{0}^{\varepsilon_{F}}+\int_{\varepsilon_{F}}^{\infty}\right) \varepsilon_{F} \mathcal{D}(\varepsilon) \bar{n}(\varepsilon) d \varepsilon=\int_{0}^{\varepsilon_{F}} \varepsilon_{F} \mathcal{D}(\varepsilon) d \varepsilon \tag{3.55}
-\end{equation*}
+C_{\mathrm{el}} \simeq \mathcal{D}(\varepsilon_{F}) \int_{0}^{\infty} (\varepsilon - \varepsilon_{F}) \frac{d \bar{n}}{d T} d \varepsilon. 
 $$
 
-Usando (3.55) podemos reescribir (3.54) como
+Realizando el cambio de variable $x = (\varepsilon - \varepsilon_{F}) / k_{B} T$ y utilizando el valor de la integral estándar ($\pi^{2} / 3$), junto con la relación $\mathcal{D}(\varepsilon_{F}) = 3N / 2\varepsilon_{F}$, la capacidad calorífica electrónica final resulta ser:
 
 $$
-\begin{equation*}
-\Delta \bar{E}=\int_{\varepsilon_{F}}^{\infty}\left(\varepsilon-\varepsilon_{F}\right) \mathcal{D}(\varepsilon) \bar{n}(\varepsilon) d \varepsilon+\int_{0}^{\varepsilon_{F}}\left(\varepsilon_{F}-\varepsilon\right) \mathcal{D}(\varepsilon)[1-\bar{n}(\varepsilon)] d \varepsilon \tag{3.56}
-\end{equation*}
+C_{\mathrm{el}} \simeq \frac{1}{2} \pi^{2} N k_{B} \left( \frac{k_{B} T}{\varepsilon_{F}} \right). 
 $$
 
-El primer término en la ecuación (3.56) denota la energía necesaria para llevar electrones en orbitales con energía $\varepsilon_{F}$ a orbitales con energías mayores, en tanto que el segundo término representa la energía necesaria para llevar electrones desde orbitales inferiores hasta el nivel $\varepsilon_{F}$.
-
-Puesto que en la ecuación (3.56) el único término dependiente de la temperatura es $\bar{n}(\varepsilon)$, la capacidad calorífica del gas de electrones se puede calcular como:
-
-$$
-\begin{equation*}
-C_{\mathrm{el}}=\frac{d U}{d T}=\int_{0}^{\infty} \mathcal{D}(\varepsilon)\left(\varepsilon-\varepsilon_{F}\right) \frac{d \bar{n}(\varepsilon)}{d T} d \varepsilon \tag{3.57}
-\end{equation*}
-$$
-
-La temperatura de interés en metales es bastante pequeña $\left(k_{B} T / \varepsilon_{F}<0,01\right)$. Lo anterior implica que la derivada de $\operatorname{overlinen}(\varepsilon)$ es muy grande para valores de $\varepsilon$ cercanos a $\varepsilon_{F}$ y despreciable para cualquier otro valor. Por tanto, podemos aproximar $\mathcal{D}(\varepsilon) \simeq \mathcal{D}\left(\varepsilon_{F}\right)$ :
-
-$$
-\begin{equation*}
-C_{\mathrm{el}} \simeq \mathcal{D}\left(\varepsilon_{F}\right) \int_{0}^{\infty}\left(\varepsilon-\varepsilon_{F}\right) \frac{d \bar{n}}{d T} d \varepsilon \tag{3.58}
-\end{equation*}
-$$
-
-A bajas temperaturas $\left(T \ll \varepsilon_{F} / k_{B}\right)$, el potencial qímico de un gas de electrones es prácticamente constante e igual a $\varepsilon_{F}$. En consecuencia:
-
-$$
-\begin{equation*}
-\frac{d \bar{n}}{d t} \simeq \frac{\varepsilon-\varepsilon_{F}}{k_{B} T^{2}} \cdot \frac{e^{\left(\varepsilon-\varepsilon_{F}\right) / k_{B} T}}{\left[e^{\left(\varepsilon-\varepsilon_{F}\right) / k_{B} T}+1\right]^{2}} \tag{3.59}
-\end{equation*}
-$$
-
-Sustituyendo (3.59) en (3.58) y haciendo el cambio de variable $x=\left(\varepsilon-\varepsilon_{F}\right) / k_{B} T$ se sigue que
-
-$$
-\begin{equation*}
-C_{\mathrm{el}} \simeq k_{B}^{2} T \mathcal{D}\left(\varepsilon_{F}\right) \int_{-\varepsilon_{F} / k_{B} T}^{\infty} x^{2} \frac{e^{x}}{\left(e^{x}+1\right)^{2}} d x \tag{3.60}
-\end{equation*}
-$$
-
-Aproximando $-\varepsilon_{F} / k_{B} T \simeq-\infty$ y usando que $\mathcal{D}\left(\varepsilon_{F}\right)=3 N / 2 \varepsilon_{F}$ y
-
-$$
-\int_{-\infty}^{\infty} x^{2} \frac{e^{x}}{\left(e^{x}+1\right)^{2}} d x=\frac{\pi^{2}}{3}
-$$
-
-la ecuación (3.60) queda como
-
-$$
-\begin{equation*}
-C_{\mathrm{el}} \simeq \frac{1}{2} \pi^{2} N k_{B} \cdot \frac{k_{B} T}{\varepsilon_{F}} \tag{3.61}
-\end{equation*}
-$$
+Este resultado demuestra que la contribución electrónica a la capacidad calorífica es lineal con la temperatura, lo cual explica el comportamiento observado en metales a bajas temperaturas donde la contribución de la red (proporcional a $T^3$) se vuelve despreciable.
 
 ### Radiación de cuerpo negro
 
-Considere un gas de fotones en equilibrio a temperature $T$, en el interior de un recipiente de volumen $V$. La energía de un fotón está en función de la frecuencia angular $(\omega)$ del mismo: $\varepsilon=\hbar \omega$. Por otra parte, el potencial químico de un gas de fotones es cero: $\mu=0$. Con esto, el número de ocupación promedio del gas de fotones se puede escribir como:
+Considere un gas de fotones en equilibrio térmico a una temperatura $T$ dentro de un recipiente de volumen $V$. La energía de cada fotón está determinada por su frecuencia angular $\omega$ mediante la relación $\varepsilon = \hbar \omega$. Dado que el número de fotones no se conserva en el sistema, el potencial químico del gas es nulo ($\mu = 0$). En consecuencia, el número de ocupación promedio se rige estrictamente por la estadística de Bose-Einstein:
 
 $$
-\begin{equation*}
-\bar{n}(\omega)=\frac{1}{e^{\hbar \omega} / k_{B} T}-1 \tag{3.62}
-\end{equation*}
+\bar{n}(\omega) = \frac{1}{e^{\hbar \omega / k_{B} T} - 1}. 
 $$
 
-Por otra parte, tomando en cuenta que para una misma frecuencia existen dos polarizaciones independientes, es posible derivar (resolviendo la ecuación de onda $\nabla^{2} \psi=\ddot{\psi} / c^{2}$ ) la siguiente función de densidad de estados para fotones:
+Considerando que para cada frecuencia existen dos estados de polarización independientes, la resolución de la ecuación de onda electromagnética permite derivar la densidad de estados para los fotones:
 
 $$
-\begin{equation*}
-\mathcal{D}(\omega) d \omega=\frac{V}{\pi^{2} c^{3}} \omega^{2} d \omega \tag{3.63}
-\end{equation*}
+\mathcal{D}(\omega) d \omega = \frac{V}{\pi^{2} c^{3}} \omega^{2} d \omega, 
 $$
 
-donde $c$ es la velocidad de la luz.
-La energía por unidad de volumen de los fotones cuya frecuencia se encuentra en el intervalo $[\omega, \omega+d \omega]$, también conocida como densidad de energía espectral, está dada por:
+donde $c$ representa la velocidad de la luz. La energía por unidad de volumen para los fotones en el intervalo de frecuencias $[\omega, \omega + d\omega]$, conocida como densidad de energía espectral, se define como:
 
 $$
-\begin{equation*}
-u_{\omega} d \omega=\frac{\bar{n}(\omega) \hbar \omega \mathcal{D}(\omega)}{V} d \omega=\frac{\hbar}{\pi^{2} c^{3}} \frac{\omega^{3}}{e^{\hbar \omega / k_{B} T}-1} d \omega \tag{3.64}
-\end{equation*}
+u_{\omega} d \omega = \frac{\bar{n}(\omega) \hbar \omega \mathcal{D}(\omega)}{V} d \omega = \frac{\hbar}{\pi^{2} c^{3}} \frac{\omega^{3}}{e^{\hbar \omega / k_{B} T} - 1} d \omega. 
 $$
 
-La densidad de energía del gas de fotones se calcula como
+La densidad de energía total del gas se obtiene integrando sobre todas las frecuencias posibles:
 
 $$
-\begin{equation*}
-u=\int_{0}^{\infty} u_{\omega} d \omega=\left(\frac{\pi^{2} k_{B}^{4}}{60 \hbar^{3} c^{2}}\right) T^{4} \tag{3.65}
-\end{equation*}
+u = \int_{0}^{\infty} u_{\omega} d \omega = \left( \frac{\pi^{2} k_{B}^{4}}{60 \hbar^{3} c^{2}} \right) T^{4}.
 $$
 
-Esta es la llamada ley de radiación de Stefan-Boltzmann. El coeficiente de $T^{4}$ es la constante $\sigma$ de StefanBoltzmann.
-
-Un pequeño orificio en la pared del recipiente que contiene al gas de fotones es una muy buena aproximación de un cuerpo negro. La intensidad de la radiación que escapa por el orificio $(I)$ está relacionada con la densidad de energía del gas por $I=c u / 4$, i.e.,
+Este resultado constituye la Ley de Stefan-Boltzmann. Si se practica un pequeño orificio en el recipiente, este actúa como un cuerpo negro ideal. La intensidad de la radiación emitida ($I$) se relaciona con la densidad de energía mediante $I = cu/4$, resultando en:
 
 $$
-\begin{equation*}
-I=\left(\frac{\pi^{2} k_{B}^{4}}{15 \hbar^{3} c^{3}}\right) T^{4} \tag{3.66}
-\end{equation*}
+I = \left( \frac{\pi^{2} k_{B}^{4}}{15 \hbar^{3} c^{3}} \right) T^{4} = \sigma T^4. 
 $$
 
-## Capacidad Calorífica del sólido cristalino
+## Capacidad calorífica del sólido cristalino
 
-Un sólido cristalino compuesto por $N$ átomos arreglados en una red periódica posee $3 N$ modos normales de oscilación. Esto significa que cualquier oscilación del sólido puede expresarse como una combinación lineal de oscilaciones con las $3 N$ frecuencias normales y diferentes amplitudes. Desde el punto de vista de la mecánica cuántica, la energía de una oscilación determinada está cuantizada y sólo puede tomar valores que sean múltiplos de $\hbar \omega$, con $\omega$ la frecuencia angular de la oscilación. Puesto que la energía de oscilación es proporcional al cuadrado de la intensidad, resulta que la intensidad también está cuantizada. De lo anterior se desprende que cualquier oscilación de un sólido cristalino se puede interpretar como un gas ideal de cuasipartículas cuánticas llamadas fononoes. Pueden existir fonones de $3 N$ frecuencias distintas y el número de fonones de una determinada frecuencias depende de la intensidad del correspondiente modo normal de oscilación.
+Un sólido cristalino compuesto por $N$ átomos dispuestos en una red periódica posee $3N$ modos normales de oscilación. Según la mecánica cuántica, la energía de estas vibraciones está cuantizada en paquetes de magnitud $\hbar \omega$. Estas excitaciones elementales se comportan como un gas ideal de cuasipartículas denominadas fonones.
 
-Por otra parte, los fonones son bosones con una degeneración igual a 3 y potencial químico nulo. Puede haber 3 fonones independientes de una frecuencia dada, 2 de ellos correspondientes a las 2 polarizaciones independientes de ondas transversales y otro más correspondiente a ondas longitudinales. Los fonones se desplazan con la velocidad de las ondas transversales o longitudinales correspondientes. Finalmente, puesto que el número de modos normales de oscilación es finito, existe una cota superior $\omega_{\text {max }}$ para la frecuencia de los fonones.
+Los fonones son bosones de potencial químico nulo ($\mu = 0$) y presentan una degeneración característica de 3, correspondiente a las tres ramas de polarización: dos transversales y una longitudinal. A diferencia de los fotones, el espectro de frecuencias de los fonones es finito, existiendo una frecuencia de corte superior $\omega_{\text{max}}$ impuesta por la naturaleza discreta de la red atómica.
 
-De lo establecido en los párrafos anteriores y de la ecuación 3.46 se sigue que la energía promedio de un gas de fonones en equilibrio se puede calcular como:
+Bajo este modelo, la energía promedio del sólido en equilibrio térmico se calcula integrando sobre el espectro de frecuencias permitido:
 
 $$
-\begin{equation*}
-\bar{E}=\int_{0}^{\omega_{\max }} \frac{\hbar \omega}{e^{\beta \hbar \omega}-1} \mathcal{D}(\omega) d \omega \tag{3.67}
-\end{equation*}
-$$
+\bar{E} = \int_{0}^{\omega_{\text{max}}} \frac{\hbar \omega}{e^{\beta \hbar \omega} - 1} \mathcal{D}(\omega) d \omega. 
+$$ (eq07)
 
 ### Aproximación de Einstein
 
-En uno de sus celebrados artículos de 1905, Einstein estudió la capacidad calorífica del sólido cristalino. Para ello supuso que todos los modos normales de oscilación se pueden caracterizar mediante una única
-frecuencia omega. Esto equivale a suponer que $\mathcal{D}(\omega)=3 N \delta\left(\omega-\omega_{E}\right)$, con lo que la ecuación (3.67) se convierte en:
+En 1907, Albert Einstein propuso un modelo fundamental para la capacidad calorífica de los sólidos cristalinos. Su hipótesis central consistía en suponer que todos los modos normales de oscilación de la red poseen una única frecuencia angular característica $\omega_E$. Matemáticamente, esto se traduce en una densidad de estados proporcional a una función delta de Dirac: $\mathcal{D}(\omega) = 3N\delta(\omega - \omega_E)$. 
+
+Bajo esta premisa, la energía promedio del sistema (derivada de la ecuación {eq}`eq07`) se reduce a:
 
 $$
-\begin{equation*}
-\bar{E}=\frac{3 N \hbar \omega_{E}}{e^{\beta \hbar \omega_{E}}-1} \tag{3.68}
-\end{equation*}
+\bar{E} = \frac{3N\hbar\omega_E}{e^{\beta\hbar\omega_E} - 1}. 
 $$
 
-Al derivar la ecuación (3.68) con respecto a $T=1 / k_{B} \beta$ se obtiene la siguiente expresión para la capacidad calorífica de un sólido cristalino en la aproximación de Einstein:
+Al derivar esta expresión respecto a la temperatura $T$ (donde $\beta = 1/k_B T$), se obtiene la capacidad calorífica a volumen constante para el modelo de Einstein:
 
 $$
-\begin{equation*}
-C_{V}=3 N k_{B}\left(\frac{\Theta_{E}}{T}\right)^{2} \frac{\exp \left(\Theta_{E} / T\right)}{\left[\exp \left(\theta_{E} / T\right)-1\right]^{2}} \tag{3.69}
-\end{equation*}
+C_V = 3Nk_B \left( \frac{\Theta_E}{T} \right)^2 \frac{e^{\Theta_E/T}}{(e^{\Theta_E/T} - 1)^2}. 
 $$
 
-$\operatorname{con} \Theta_{E}=\hbar \omega_{E} / k_{B}$. De la ecuación (3.69) se desprende que el calor específico molar está dado por:
+donde $\Theta_E = \hbar\omega_E / k_B$ es la temperatura de Einstein. El calor específico molar se expresa entonces como:
 
 $$
-\begin{equation*}
-c_{V}^{*}=3 R\left(\frac{\Theta_{E}}{T}\right)^{2} \frac{\exp \left(\Theta_{E} / T\right)}{\left[\exp \left(\theta_{E} / T\right)-1\right]^{2}} \tag{3.70}
-\end{equation*}
+c_V^* = 3R \left( \frac{\Theta_E}{T} \right)^2 \frac{e^{\Theta_E/T}}{(e^{\Theta_E/T} - 1)^2}. 
 $$
 
-donde se ha tomado en cuenta que el número de moles $(n)$ y el número de partículas $(N)$ satisfacen la eelación $n R=N k_{B}$.
+Este modelo predice correctamente que, en el límite de altas temperaturas ($T \gg \Theta_E$), el calor específico tiende al valor clásico de $3R$ (Ley de Dulong y Petit). Sin embargo, en el límite $T \to 0$, predice un decaimiento exponencial que contradice la evidencia experimental, la cual muestra una dependencia proporcional a $T^3$.
 
-De la ecuación (3.70) es fácil comprobar que $\lim _{T \rightarrow \infty}=3 R$, lo cual esta de acuerdo con el resultado clásico. Similarmente, en la región de muy bajas temperaturas $c_{V}^{*} \propto \exp \left(-\Theta_{E} / T\right)$, lo cual significa que el calor específico del sólido cristalino debido a las oscilaciones elásticas decáe exponencialmente conforme la temperatura se aproxima al cero absoluto. Este último resultado esá de acuerdo con la tercera ley de la termodinámica (que exige que $\operatorname{lím}_{T \rightarrow 0} c_{X}^{*}=0$ ), pero contradice los resultados experimentales de acuerdo con los cuales $c_{V}^{*}$ decáe como $T^{3}$ en la región de muy bajas temperaturas.
 
 ### Aproximación de Debye
 
-Para mejorar el modelo de Einstein Debye supuso que la función de densidad de estados es de la forma
+Para corregir la discrepancia del modelo de Einstein, Peter Debye propuso en 1912 una densidad de estados basada en el comportamiento de las ondas elásticas en un medio continuo (fonones acústicos), siguiendo una ley cuadrática hasta una frecuencia de corte $\omega_D$:
 
 $$
-\mathcal{D}= \begin{cases}\frac{3 V}{2 \pi^{2} v_{s}^{3}} \omega^{2}, & \omega \leq \omega_{D}  \tag{3.71}\\ 0 & \omega>\omega_{D}\end{cases}
+\mathcal{D}(\omega) = 
+\begin{cases} 
+\frac{3V}{2\pi^2 v_s^3} \omega^2, & \omega \leq \omega_D. \\ 
+0, & \omega > \omega_D .
+\end{cases} 
 $$
 
-En la expresión anterior $V$ es el volumen del sólido, $v_{s}$ es un promedio apropiado de la velacidad de las ondas elásticas longitudinales y transversales, el factor 3 da cuenta de las tres polarizaciones (dos longitudinales y una transversal) independientes de las óndas elásticas y $\omega_{D}$ es la frecuencia máxima posible para las ondas elásticas en el sólido. El valor de la frecuencia de Debye $\omega_{D}$ se determina de la siguiente restricción:
+La frecuencia de Debye ($\omega_D$) se determina mediante la normalización del número total de modos ($3N$):
 
 $$
-3 N=\int_{0}^{\omega_{D}} \mathcal{D}(\omega) d \omega=\frac{V}{2 \pi^{2} v_{s}^{3}} \omega_{D}^{3}
+\omega_D = \left( \frac{6\pi^2 N v_s^3}{V} \right)^{1/3}. 
 $$
 
-de donde imediatamente se sigue que
+La energía elástica promedio del sólido queda expresada por:
 
 $$
-\begin{equation*}
-\omega_{D}=\left(\frac{6 \pi^{2} N v_{s}^{3}}{V}\right)^{1 / 3} \tag{3.72}
-\end{equation*}
+\bar{E} = \frac{9N(k_B T)^4}{(\hbar\omega_D)^3} \int_{0}^{x_D} \frac{x^3}{e^x - 1} dx, 
 $$
 
-A partir de la ecuación (3.72) la función de densidad de estados se puede escribir como
+donde $x_D = \Theta_D / T$ y $\Theta_D = \hbar\omega_D / k_B$ es la temperatura de Debye. En el límite de bajas temperaturas ($T \ll \Theta_D$), la integral puede aproximarse extendiendo el límite a infinito, resultando en:
 
 $$
-\begin{equation*}
-\mathcal{D}\left(\omega<\omega_{D}\right)=9 N \frac{\omega^{2}}{\omega_{D}^{3}} \tag{3.73}
-\end{equation*}
+\bar{E} \simeq \frac{3\pi^4 N k_B T^4}{5 \Theta_D^3}. 
 $$
 
-La energía elástica promedio de un sólido cristalino a temperatura $T$ se calcula a partir de las ecuaciones (3.67), (3.72) y (3.73) quedando como
+Finalmente, el calor específico molar en este régimen resulta ser:
 
 $$
-\begin{equation*}
-\bar{E}=\frac{9 N\left(k_{B} T\right)^{4}}{\left(\hbar \omega_{D}\right)^{3}} \int_{0}^{x_{D}} \frac{x^{3}}{e^{x}-1} d x \tag{3.74}
-\end{equation*}
+c_V^* = \frac{12\pi^4 R}{5} \left( \frac{T}{\Theta_D} \right)^3. 
 $$
 
-En esta ecuación $x_{D}=\hbar \omega_{D} / k_{B} T=\Theta_{D} / T$, con $\Theta_{D}=\hbar \omega_{D} / k_{B}$.
+Esta famosa ley de $T^3$ de Debye concuerda con gran precisión con los resultados experimentales, capturando correctamente la física de las excitaciones de baja energía (fonones de gran longitud de onda) a bajas temperaturas.
 
-En la región de muy bajas temperaturas $x_{D} \gg 1$, por lo que podemos aproximar
 
-$$
-\begin{equation*}
-\bar{E}=\frac{9 N\left(k_{B} T\right)^{4}}{\left(\hbar \omega_{D}\right)^{3}} \int_{0}^{\infty} \frac{x^{3}}{e^{x}-1} d x=\frac{3 \pi^{4} N k_{B} T^{4}}{5 \Theta_{D}^{3}} \tag{3.75}
-\end{equation*}
-$$
 
-De la ecuación anterior, el calor específico debido a las oscilaciones elásticas en el límite de bajas temperaturas resulta, en esta aproximación, estar dado por
 
-$$
-\begin{equation*}
-c_{V}^{*}=\frac{12 \pi^{4} N k_{B}}{5}\left(\frac{T}{\Theta_{D}}\right)^{3} \tag{3.76}
-\end{equation*}
-$$
+
+
+
+
+
+
+
+
 
