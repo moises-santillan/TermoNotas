@@ -364,13 +364,20 @@ $$\mu = \left( \frac{\partial F}{\partial N} \right)_{T, V}.$$
 
 Calculando la derivada y simplificando obtenemos la ecuación de estado correcta para el potencial químico:
 
-$$\mu = -kT \left[ \ln \left( \frac{V}{N} \right) + \frac{3}{2} \ln \left( \frac{2 \pi m kT}{h^2} \right) + 1 \right] + kT.$$
+$$\mu = -kT \left[ \ln \left( \frac{V}{N} \right) + \frac{3}{2} \ln \left( \frac{2 \pi m kT}{h^2} \right) \right].$$
 
 Esta expresión es físicamente consistente por las siguientes razones:
 
 * **Intensividad:** A diferencia de la versión previa a la corrección de Gibbs, el argumento del logaritmo ahora depende del volumen específico $(v = V/N)$, lo que garantiza que $\mu$ sea una propiedad intensiva (no cambia si duplicamos el tamaño del sistema manteniendo la densidad constante).
 * **Adimensionalidad:** Gracias a la introducción de $h^2$, el argumento del logaritmo es adimensional.
 
+Es común en aplicaciones prácticas escribir la expresión anterior como:
+
+$$
+\mu = \mu^0 + kT \ln c,
+$$
+
+con $c = N/V$ la concentración de moléculas del gas.
 
 ## Teorema de Equipartición de la Energía
 
