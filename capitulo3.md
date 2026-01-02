@@ -165,13 +165,13 @@ $$
 W = \frac{N!}{n!(N-n)!}. 
 $$
 
-Utilizando la aproximación de Stirling ($\ln N! \approx N \ln N - N$) en la definición de Boltzmann {eq}`ew02`, la entropía del sistema resulta ser:
+Utilizando la aproximación de Stirling ($\ln N! \approx N \ln N - N$) en la definición de Boltzmann {eq}`eq02`, la entropía del sistema resulta ser:
 
 $$
 S = k_{B} \ln W \approx k_{B} \left[ N \ln \frac{N}{N-n} - n \ln \frac{n}{N-n} \right]. 
 $$
 
-Empleando la relación termodinámica $1/T = \partial S / \partial E$ y combinando con {eq}`04`, se obtiene la ecuación de estado que vincula la energía con la temperatura:
+Empleando la relación termodinámica $1/T = \partial S / \partial E$ y combinando con {eq}`eq04`, se obtiene la ecuación de estado que vincula la energía con la temperatura:
 
 $$
 E = -N \mu B \tanh \left( \frac{\mu B}{k_{B} T} \right). 
@@ -283,7 +283,7 @@ Para un gas de fermiones, la función de estado debe ser totalmente antisimétri
 
 $$
 \Psi_{F}(x_{1}, \dots, x_{N}) = \frac{1}{\sqrt{N!}} \sum_{\sigma} \epsilon^{\sigma_{1}, \dots, \sigma_{N}} \psi_{n_{\sigma_{1}}}(x_{1}) \dots \psi_{n_{\sigma_{N}}}(x_{N}). 
-$$ (eq06}
+$$ (eq06)
 
 La antisimetría intrínseca de los fermiones impide que dos partículas ocupen el mismo estado cuántico ($n_{i} \neq n_{j}$ para todo $i \neq j$), principio conocido como el Principio de Exclusión de Pauli. Como consecuencia directa, el número de ocupación $N_{\nu}$ para cualquier estado fermiónico solo puede tomar los valores cero o uno.
 
