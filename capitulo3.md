@@ -95,13 +95,13 @@ donde $p_{n} = \tilde{n}_{n}^{*} / N^{*}$ es la probabilidad de que el sistema o
 
 ## Ensembles Microcanónico y Canónico
 
-Determinar la entropía mediante la resolución directa de la ecuación de Schrödinger para un sistema macroscópico es una tarea impracticable debido a la inmensa cantidad de grados de libertad. Sin embargo, este obstáculo se supera aplicando la segunda ley de la termodinámica: en condiciones de equilibrio, la distribución de probabilidades $\{p_n\}$ es aquella que maximiza la entropía funcional bajo las restricciones macroscópicas impuestas.
+Determinar la entropía mediante la resolución directa de la ecuación de Schrödinger para un sistema macroscópico es una tarea impracticable debido a la inmensa cantidad de grados de libertad. Sin embargo, este obstáculo se supera aplicando la segunda ley de la termodinámica: en condiciones de equilibrio, la distribución de probabilidades $\{p_n\}$ es aquella que maximiza la entropía bajo las restricciones macroscópicas impuestas.
 
-A continuación, se analizan los dos formalismos fundamentales resultantes de este principio variacional.
+A continuación, se analizan los dos formalismos fundamentales resultantes de este principio extremal.
 
 ### Ensemble Microcanónico
 
-El ensemble microcanónico describe sistemas termodinámicamente aislados, con energía ($E$), volumen ($V$) y número de partículas ($N$) constantes. Para garantizar el equilibrio, la distribución de probabilidad solo debe satisfacer la condición de normalización:
+El ensemble microcanónico describe sistemas termodinámicamente aislados, con energía ($E$), volumen ($V$) y número de partículas ($N$) constantes. Para garantizar el equilibrio, la distribución de probabilidad sólo debe satisfacer la condición de normalización:
 
 $$
 \sum_{n} p_{n}=1. 
@@ -145,56 +145,6 @@ $$
 F=-k_{B} T \ln Z. 
 $$ (eq03)
 
-## El sólido paramagnético
-
-Considere un sistema compuesto por $N$ dipolos magnéticos fijos en una red espacial. En presencia de un campo magnético externo $\vec{B}$, cada dipolo puede alinearse de forma paralela o antiparalela a la dirección del campo. La energía de interacción entre un dipolo individual y el campo $\vec{B}$ se define como $-\vec{\mu} \cdot \vec{B}$, donde $\vec{\mu}$ representa el momento magnético del dipolo.
-
-### Ensemble microcanónico
-
-Para aplicar el formalismo microcanónico, suponemos que el sistema de $N$ dipolos se mantiene a una energía constante $E$. Dado que los dipolos ocupan posiciones fijas en el espacio, la restricción de volumen constante se satisface de forma natural, al igual que la constancia de $N$, implícita en la definición del modelo.
-
-La energía total del sistema se expresa como:
-
-$$
-E = \mu B ((N-n) - n) = \mu B (N - 2n), 
-$$ (eq04)
-
-donde $n$ es el número de dipolos alineados paralelamente a $\vec{B}$, mientras que $B$ y $\mu$ son las magnitudes del campo y del momento magnético, respectivamente. El número de microestados $W$ compatibles con una energía fija es equivalente al número de combinaciones en las que se pueden organizar $n$ dipolos paralelos y $N-n$ antiparalelos:
-
-$$
-W = \frac{N!}{n!(N-n)!}. 
-$$
-
-Utilizando la aproximación de Stirling ($\ln N! \approx N \ln N - N$) en la definición de Boltzmann {eq}`eq02`, la entropía del sistema resulta ser:
-
-$$
-S = k_{B} \ln W \approx k_{B} \left[ N \ln \frac{N}{N-n} - n \ln \frac{n}{N-n} \right]. 
-$$
-
-Empleando la relación termodinámica $1/T = \partial S / \partial E$ y combinando con {eq}`eq04`, se obtiene la ecuación de estado que vincula la energía con la temperatura:
-
-$$
-E = -N \mu B \tanh \left( \frac{\mu B}{k_{B} T} \right). 
-$$
-
-### Ensemble canónico
-
-En el formalismo canónico, el sistema se encuentra en equilibrio con un baño térmico a temperatura $T$, permitiendo que su energía fluctúe. En este caso, todas las $2^N$ configuraciones posibles de espines son microestados accesibles para el ensemble.
-
-La función de partición del sistema, según la ecuación {eq}`eq03`, se calcula como la suma sobre todos los estados de espín individuales:
-
-$$
-Z = \sum_{n_{1}, \dots, n_{N} = \pm 1} \exp \left( \frac{\sum n_{i} \mu B}{k_{B} T} \right) = \left( e^{\mu B / k_{B} T} + e^{-\mu B / k_{B} T} \right)^{N}. 
-$$
-
-A partir de $Z$, la energía interna promedio del sistema se obtiene como:
-
-$$
-\bar{E} = -\frac{\partial \ln Z}{\partial \beta} = -N \mu B \tanh \left( \frac{\mu B}{k_{B} T} \right).
-$$
-
-donde $\beta = 1 / k_{B} T$. Nótese que, en el límite termodinámico, ambos ensembles conducen al mismo resultado físico.
-
 ### Ensemble gran canónico
 
 Este ensemble describe sistemas en equilibrio con un reservorio que intercambia tanto energía (a temperatura $T$) como partículas (a potencial químico $\mu$), manteniendo el volumen $V$ constante. 
@@ -237,11 +187,61 @@ $$
 \bar{E} = -\frac{\partial \ln \mathcal{Z}}{\partial \beta}, \quad \bar{N} = k_{B} T \frac{\partial \ln \mathcal{Z}}{\partial \mu}. 
 $$
 
+## El sólido paramagnético
+
+Considere un sistema compuesto por $N$ dipolos magnéticos fijos en una red espacial. En presencia de un campo magnético externo $\vec{B}$, cada dipolo puede alinearse de forma paralela o antiparalela a la dirección del campo. La energía de interacción entre un dipolo individual y el campo $\vec{B}$ se define como $-\vec{\mu} \cdot \vec{B}$, donde $\vec{\mu}$ representa el momento magnético del dipolo.
+
+### Ensemble microcanónico
+
+Para aplicar el formalismo microcanónico, suponemos que el sistema de $N$ dipolos se mantiene a una energía constante $E$. Dado que los dipolos ocupan posiciones fijas en el espacio, la restricción de volumen constante se satisface de forma natural, al igual que la constancia de $N$, implícita en la definición del modelo.
+
+La energía total del sistema se expresa como:
+
+$$
+E = \mu B ((N-n) - n) = \mu B (N - 2n), 
+$$ (eq04)
+
+donde $n$ es el número de dipolos alineados paralelamente a $\vec{B}$, mientras que $B$ y $\mu$ son las magnitudes del campo y del momento magnético, respectivamente. El número de microestados $W$ compatibles con una energía fija es equivalente al número de combinaciones en las que se pueden organizar $n$ dipolos paralelos y $N-n$ antiparalelos:
+
+$$
+W = \frac{N!}{n!(N-n)!}. 
+$$
+
+Utilizando la aproximación de Stirling ($\ln N! \approx N \ln N - N$) en la definición de Boltzmann {eq}`eq02`, la entropía del sistema resulta ser:
+
+$$
+S = k_{B} \ln W \approx k_{B} \left[ N \ln \frac{N}{N-n} - n \ln \frac{n}{N-n} \right]. 
+$$
+
+Empleando la relación termodinámica $1/T = \partial S / \partial E$ y combinando con {eq}`eq04`, se obtiene la ecuación de estado que vincula la energía con la temperatura:
+
+$$
+E = -N \mu B \tanh \left( \frac{\mu B}{k_{B} T} \right). 
+$$
+
+### Ensemble canónico
+
+En el formalismo canónico, el sistema se encuentra en equilibrio con un baño térmico a temperatura $T$, permitiendo que su energía fluctúe. En este caso, todas las $2^N$ configuraciones posibles de orientaciones de dipolos son microestados accesibles para el ensemble.
+
+La función de partición del sistema, según la ecuación {eq}`eq03`, se calcula como la suma sobre todos los estados de espín individuales:
+
+$$
+Z = \sum_{n_{1}, \dots, n_{N} = \pm 1} \exp \left( \frac{\sum n_{i} \mu B}{k_{B} T} \right) = \left( e^{\mu B / k_{B} T} + e^{-\mu B / k_{B} T} \right)^{N}. 
+$$
+
+A partir de $Z$, la energía interna promedio del sistema se obtiene como:
+
+$$
+\bar{E} = -\frac{\partial \ln Z}{\partial \beta} = -N \mu B \tanh \left( \frac{\mu B}{k_{B} T} \right).
+$$
+
+donde $\beta = 1 / k_{B} T$. Nótese que, en el límite termodinámico, ambos ensembles conducen al mismo resultado físico.
+
 ## Estadísticas de Bose-Einstein y Fermi-Dirac
 
 ### Ecuación de onda del gas ideal cuántico
 
-Considere un gas compuesto por $N$ partículas idénticas e indestinguibles que no interactúan entre sí. En este sistema, cada partícula está regida por el mismo Hamiltoniano de una sola partícula, $\hat{H}^{(1)}(x)$. Sean $\psi_{n}(x)$ y $\varepsilon_{n}$ las eigenfunciones y los eigenvalores de $\hat{H}^{(1)}(x)$, respectivamente, tales que $\hat{H}^{(1)} \psi_{n} = \varepsilon_{n} \psi_{n}$. 
+Considere un gas compuesto por $N$ partículas idénticas e indestinguibles que no interactúan entre sí. En este sistema, cada partícula está regida por el mismo Hamiltoniano de una sola partícula, $\hat{H}^{(1)}(x)$. Sean $\psi_{n}(x)$ y $\varepsilon_{n}$ las eigenfunciones y los eigenvalores de $\hat{H}^{(1)}(x)$ tales que $\hat{H}^{(1)} \psi_{n} = \varepsilon_{n} \psi_{n}$. 
 
 Dado que el gas es ideal (ausencia de interacción interparticular), el Hamiltoniano total del sistema es la suma de los Hamiltonianos individuales:
 
