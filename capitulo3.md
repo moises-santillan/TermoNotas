@@ -302,13 +302,13 @@ $$
 En esta representación, la gran función de partición ($\mathcal{Z}$) para un gas de bosones se calcula sumando sobre todos los posibles valores de los números de ocupación ($N_{\nu} = 0, 1, 2, \dots$):
 
 $$
-\mathcal{Z} = \sum_{N_{1}, N_{2}, \dots = 0}^{\infty} \exp \left( -\beta \sum_{\nu} N_{\nu}(\varepsilon_{\nu} - \mu) \right) = \prod_{\nu} \left( 1 - e^{-\beta(\varepsilon_{\nu} - \mu)} \right)^{-1}, 
+\mathcal{Z} = \sum_{N_{1}, N_{2}, \dots = 0}^{\infty} \exp \left[ -\beta \left( N_{1}(\varepsilon_{1} - \mu) + N_{2}(\varepsilon_{2} - \mu) + \cdots  \right) \right] = \prod_{\nu} \left( 1 - e^{-\beta(\varepsilon_{\nu} - \mu)} \right)^{-1}, 
 $$
 
 donde el índice $\nu$ identifica los distintos estados monoportícula. Por otro lado, para un gas de fermiones, debido al principio de exclusión de Pauli, los números de ocupación solo admiten los valores $0$ y $1$:
 
 $$
-\mathcal{Z} = \sum_{N_{1}, N_{2}, \dots = 0, 1} \exp \left( -\beta \sum_{\nu} N_{\nu}(\varepsilon_{\nu} - \mu) \right) = \prod_{\nu} \left( 1 + e^{-\beta(\varepsilon_{\nu} - \mu)} \right). 
+\mathcal{Z} = \sum_{N_{1}, N_{2}, \dots = 0, 1} \exp \left[ -\beta \left( N_{1}(\varepsilon_{1} - \mu) + N_{2}(\varepsilon_{2} - \mu) + \cdots  \right) \right]  = \prod_{\nu} \left( 1 + e^{-\beta(\varepsilon_{\nu} - \mu)} \right). 
 $$
 
 Ambos resultados pueden sintetizarse en una única expresión compacta:
