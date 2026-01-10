@@ -9,6 +9,7 @@ project:
     - name: Moisés Santillán
       affiliation: Cinvestav Monterrey 
       email: msantillan@cinvestav.mx
+      url: https://github.com/moises-santillan
   github: https://github.com/moises-santillan/TermoNotas
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
